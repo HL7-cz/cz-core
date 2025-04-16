@@ -16,6 +16,7 @@ Description: """Czech national profile for an organization. This profile sets mi
 * name 0..1
 * identifier 0..*
 * partOf only Reference (CZ_OrganizationCore)
+* obeys cz-org-1
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Invariant: cz-org-1
