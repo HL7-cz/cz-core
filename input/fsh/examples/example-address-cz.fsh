@@ -1,9 +1,7 @@
 Instance: cz-patient-addr-example-1
 InstanceOf: cz-patient-core
 Usage: #example
-Description: "Address of both typu (physical and delivery)"
-//* identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/rid"
-//* identifier[=].value = "4567891237"
+Description: "Address of both types (physical and delivery)"
 * identifier[RID].system = "https://ncez.mzcr.cz/fhir/sid/rid"
 * identifier[RID].value = "4567891237"
 * name.family = "Příklad"
@@ -24,10 +22,9 @@ Description: "Address of both typu (physical and delivery)"
 Instance: cz-patient-addr-example-2
 InstanceOf: cz-patient-core
 Usage: #example
-Description: "Address of P.O.Boxem"
+Description: "Address with P.O.Box"
 
 * identifier[RID].system = "https://ncez.mzcr.cz/fhir/sid/rid"
-//* identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/rid"
 * identifier[RID].value = "4567891237"
 * name.family = "Příklad"
 * name.given = "Adam"
@@ -45,7 +42,7 @@ Description: "Address of P.O.Boxem"
 Instance: cz-patient-addr-example-3
 InstanceOf: cz-patient-core
 Usage: #example
-Description: "Address of permanent residence"
+Description: "Permanent residence address"
 
 * identifier[RID].system = "https://ncez.mzcr.cz/fhir/sid/rid"
 * identifier[RID].value = "4567891237"
@@ -67,7 +64,7 @@ Description: "Address of permanent residence"
 Instance: cz-patient-addr-example-4
 InstanceOf: cz-patient-core
 Usage: #example
-Description: "Address of permanent residence outside the Czech Republic"
+Description: "Permanent residence address outside of the Czech Republic"
 
 * identifier[RID].system = "https://ncez.mzcr.cz/fhir/sid/rid"
 * identifier[RID].value = "4567891237"
@@ -89,7 +86,7 @@ Description: "Address of permanent residence outside the Czech Republic"
 Instance: cz-patient-addr-example-5
 InstanceOf: cz-patient-core
 Usage: #example
-Description: "Address indicating the place of address according to RUIAN"
+Description: "Address identified by RUIAN system"
 * identifier[RID].system = "https://ncez.mzcr.cz/fhir/sid/rid"
 * identifier[RID].value = "4567891237"
 * name.family = "Příklad"
@@ -105,7 +102,7 @@ Description: "Address indicating the place of address according to RUIAN"
 * address.city = "Praha"
 * address.postalCode = "15000"
 * address.country = "CZ"
-//* address.extension[addressPoint].valueIdentifier.system = "https://ncez.mzcr.cz/fhir/sid/ruian"
+* address.extension[addressPoint].valueIdentifier.system = "https://ncez.mzcr.cz/fhir/sid/ruian"
 * address.extension[addressPoint].valueIdentifier.value = "27318508"
 
 
