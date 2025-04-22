@@ -4,8 +4,11 @@ Id: cz-patient-animal
 Title:    "Patient: Animal"
 Description: "This profile defines how to represent an Animal as subject of care in FHIR for the purpose of this guide.
 This is used to identify the species when a specimen is collected from an animal"
-// * ^publisher = "HL7 CZ"
-// * ^copyright = "HL7 CZ"
+* ^experimental = false
+* . ^comment = ""
+* . ^short = "Czech Animal Patient"
+* . ^definition = "This profile defines how to represent Animal Patient in FHIR for the purpose of the Czech national interoperability standards."
+
 * insert SetFmmandStatusRule ( 1, draft )
 * extension contains $patient-animal named patient-animal 1..1
 * extension[patient-animal].extension[species]

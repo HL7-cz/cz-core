@@ -6,12 +6,8 @@ Title:      "Address (CZ)"
 Description: "Czech national profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box.
 It is always RECOMMENDED to give these elements separately. The national specification also includes the option of entering the address location according to the RUIAN register and marking the address as the permanent residence address."
 //-------------------------------------------------------------------------------------------
-//* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
 * ^experimental = false
-
 * . ^comment = "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource)."
-* ^purpose = "This profile constrains the representation of address in the context of the Czech national interoperability project."
 * . ^short = "Address according to Czech postal conventions"
 * . ^definition = "Address according to Czech postal conventions. The address can be used both for delivering mail and for locating locations that do not have a valid mailing address. The use of extensions is not mandatory."
 * insert SetFmmandStatusRule ( 1, draft )

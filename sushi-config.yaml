@@ -65,14 +65,24 @@ dependencies:
 pages:
   index.md:
     title: Home
-  general-guidance.md:
-    title: General Guidance
-  identifiers.md:
-    title: Identifiers
+  elements-FHIR-en.md:
+    title: Basic FHIR elements in English
+  elements-FHIR-cs.md:
+    title: Basic FHIR elements in Czech
+  subjects-en.md:
+    title: Subjects in English
+  subjects-cs.md:
+    title: Subjects in Czech
+  objects-en.md:
+    title: Objects in English
+  objects-cs.md:
+    title: Objects in Czech
+  identifiers-en.md:
+    title: Identifiers in English
+  identifiers-cs.md:
+    title: Identifiers in Czech
   artifacts.xml:
     title: Summary artifacts
-  profiles-and-extensions.md:
-    title: Profiles and extensions
   downloads.md:
     title: Download
 #
@@ -145,12 +155,18 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Guidance:
-    General guidance: general-guidance.html
-    Identifiers: identifiers.html
+  Introduction: 
+    Basic FHIR elements (en): elements-FHIR-en.html
+    Basic FHIR elements (cs): elements-FHIR-cs.html
+  Funtion view: 
+    Subjects (en): subjects-en.html
+    Subjects (cs): subjects-cs.html
+    Objects (en): objects-en.html
+    Objects (cs): objects-cs.html
+    Identifiers (en): identifiers-en.html
+    Identifiers (cs): identifiers-cs.html
   Artifacts:
     Czech artifacts: artifacts.html
-    Profiles and extensions: profiles-and-extensions.html
   About:
     Downloads: downloads.html
 
