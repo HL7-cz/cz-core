@@ -1,7 +1,8 @@
 Instance: signature-rentgen
 InstanceOf: CZ_Provenance
+Title: "Signature pf image order"
 Usage: #example
-Description: "Signature pf image order"
+Description: "Czech national profile on Signature holds an electronic representation of a signature or timestamp and its supporting context in a FHIR accessible form."
 * target.identifier.system = "https://ncez.mzcr.cz/fhir/sid/ico"
 * target.identifier.value = "27520536"
 * target.display = "Reference(ServiceRequest/Image-order) Rentgen"

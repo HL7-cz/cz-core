@@ -1,6 +1,7 @@
 Instance: Medication
 InstanceOf: CZ_MedicationStatement
-Description: "MedicationStatement - Ongoing Simvastatin Treatment"
+Title: "MedicationStatement - Ongoing Simvastatin Treatment"
+Description: "Czech national profile for a medication statement."
 Usage: #example
 * identifier.system = "http://hospital.cz/" //vydavatel identifikatoru nemocnice vs. NIS
 * identifier.value = "medstat-1"
