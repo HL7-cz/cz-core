@@ -12,6 +12,8 @@ Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $atc = https://ncez.mzcr.cz/CodeSystem/atc-cz
 Alias: $standardterms = http://standardterms.edqm.eu
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 // Extensions:
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
