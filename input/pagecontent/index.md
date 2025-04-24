@@ -9,12 +9,18 @@ This document presents Czech use concepts defined via FHIR processable artefacts
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - Home: This page provides the introduction and scope for this guide.
-- Guidance:
-  - [General Guidance](general-guidance.html): This page provides guidance on using the profiles defined in this guide.
-  - [Identifiers](identifiers.html): This page provides guidance on using identifiers.
+- Introduction:
+  - [Basic FHIR elements (EN)](elements-FHIR-en.html): This page describes the basic FHIR elements in english.
+  - [Basic FHIR elements (CS)](elements-FHIR-cs.html): This page describes the basic FHIR elements in czech.
+- Function view:
+  - [Subjects (EN)](subjects-en.html): This page describes the basic components in the position of subjects in english.
+  - [Subjects (CS)](subjects-cs.html): This page describes the basic components in the position of subjects in czech.
+  - [Objects (EN)](objects-en.html): This page describes the basic components in the position of objects in english.
+  - [Objects (CS)](objects-cs.html): This page describes the basic components in the position of objects in czech.
+  - [Identifiers (EN)](identifiers-en.html): This page describes the identifiers that are used in the components in english.
+  - [Identifiers (CS)](identifiers-cs.html): This page describes the identifiers that are used in the components in czech.
 - Artifacts:
   - [Artifacts Summary](artifacts.html): These page lists detailed descriptions and formal definitions for all the Czech artifacts defined in this guide.
-  - [Profiles and Extensions](profiles-and-extensions.html): This page describes the profiles and extensions that are defined in this guide to represent Czech local concepts using FHIR. Each profile page includes a narrative description, guidance, and formal definition. Although the guidance typically focuses on the profiled elements and seeks to provide a ‘how-to’ guide when representing concepts, it may also may focus on un-profiled elements to aid with implementation.
 - About:
   - [Downloads](downloads.html): This page provides links to downloadable artefacts.
 
