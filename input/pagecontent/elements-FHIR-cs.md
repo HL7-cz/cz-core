@@ -1,7 +1,11 @@
 Fast Healthcare Interoperability Resources (dále jen FHIR) je standardem obsahující soubor pravidel a specifikací pro bezpečnou výměnu elektronických dat zdravotní péče. Je navržen tak, aby byl flexibilní a adaptabilní, takže jej lze používat v široké škále nastavení a s různými informačními systémy zdravotní péče. Norma popisuje datové zdroje (resource), datové prvky (elementy), datové typy a aplikační programovací rozhraní (API) pro výměnu elektronických zdravotních záznamů (EHR).
+
 ### Datové typy
+
 Standard HL7 FHIR definuje jednoduché (primitivní) i komplexní datová typy, které jsou použity pro specifikaci jednotlivých zdrojů. Datové typy, podobně jako jednotlivé zdroje mohou být dále profilovány pro potřeby konkrétních implementací. Pro tyto účely byly vytvořeny národní profily pro specifické národní identifikátory, jména osob a adresy.
+
 ### Element
+
 Všechny datové typy a objekty popsané standardem FHIR jsou odvozeny od základního prvku, tzv. Elementu. Jako základní typ pro všechny prvky je Element důležitým strukturálním prvkem FHIR. Dokonce i primitivní typy dědí základní funkce a pravidla reprezentace, která platí pro typ Element. Všechny prvky, ať už jsou definovány jako datový typ (včetně primitivních datových typů) nebo jako resource (součást struktury zdrojů), mají tento základní obsah:
 *	Interní id
 *	Extension (Rozšíření)
@@ -36,6 +40,7 @@ V JSON reprezentaci jsou elementy (kromě primitivních typů) reprezentovány j
 ~~~
 
 ### Resource
+
 Tato specifikace definuje řadu různých typů zdrojů (resource), které lze použít k výměně a/nebo ukládání dat za účelem řešení široké škály problémů souvisejících se zdravotní péčí, jak klinických, tak administrativních. Kromě toho tato specifikace definuje několik různých způsobů výměny zdrojů.
 Pro Resource vždy platí tyto pravidla:
 *	má známou identitu (URL), pomocí které může být adresován
@@ -51,6 +56,7 @@ Všechny resource mohou obsahovat tyto prvky (elementy) a vlastnosti (properties
 V resource může být obsažen odkaz na sadu pravidel (implicitní pravidla), která byla dodržena při vytváření samotného objektu typu resource. Pravidla určují nejen tvorbu zdroje ale i jeho obsahu. Zpravidla se jedná o odkaz na implementační guide, který definuje tyto pravidla.
 
 ### Kódované koncepty a binding
+
 Jedním ze základních datových typů, které jsou zpravidla obsaženy v objektech a resources je kódovaný koncept. Jedná se o datový typ, který reprezentuje hodnotu, která je obvykle poskytnuta poskytnutím odkazu na jednu nebo více terminologií nebo ontologií, ale může být také definována poskytnutím textu.
  
 Tento datový typ lze svázat s určitou terminologií (ValueSet) pomocí binding (vazby). Tato vazba jako taková je také základním elementem s určitými vlastnostmi. CodeableConcept může obsahovat žádný nebo více kódovaných údajů (Coding) z jednoho či více různých kódových systémů a může také obsahovat textové vyjádření konceptu. 

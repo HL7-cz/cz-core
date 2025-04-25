@@ -1,7 +1,11 @@
 Fast Healthcare Interoperability Resources (FHIR) is a standard that contains a set of rules and specifications for the secure exchange of electronic healthcare data. It is designed to be flexible and adaptable, so that it can be used in a wide range of settings and with different healthcare information systems. The standard describes data resources, data elements, data types, and application programming interfaces (APIs) for the exchange of electronic health records (EHRs).
+
 ### Data Types
+
 The HL7 FHIR standard defines both simple (primitive) and complex data types that are used to specify individual resources. Data types, like individual resources, can be further profiled for the needs of specific implementations. For these purposes, national profiles have been created for specific national identifiers, names of persons, and addresses.
+
 ### Element
+
 All data types and objects described by the FHIR standard are derived from a base element, called an Element. As the base type for all elements, an Element is an important structural element of FHIR. Even primitive types inherit the basic functionality and representation rules that apply to the Element type. All elements, whether defined as a data type (including primitive data types) or as a resource (part of a resource structure), have this basic content:
 * Internal id
 * Extension
@@ -34,7 +38,9 @@ In the JSON representation, elements (except primitive types) are represented as
     }
 }
 ~~~
+
 ### Resource
+
 This specification defines a number of different types of resources that can be used to exchange and/or store data to solve a wide range of healthcare-related problems, both clinical and administrative. In addition, this specification defines several different ways of exchanging resources.
 The following rules always apply to a Resource:
 * has a known identity (URL) by which it can be addressed
@@ -50,6 +56,7 @@ All resources may contain the following elements and properties:
 A resource may contain a reference to a set of rules (implicit rules) that were followed when creating the resource object itself. The rules determine not only the creation of the resource but also its content. As a rule, this is a link to the implementation guide that defines these rules.
 
 ### Codeable Concepts and Binding
+
 One of the basic data types that are usually included in objects and resources is a coded concept. This is a data type that represents a value that is usually provided by providing a reference to one or more terminologies or ontologies, but can also be defined by providing text.
 
 This data type can be bound to a certain terminology (ValueSet) using a binding. This binding as such is also a basic element with certain properties. A CodeableConcept can contain zero or more coded data (Coding) from one or more different coding systems and can also contain a textual representation of the concept. 

@@ -1,5 +1,5 @@
 ### Introduction
-The CZ Base and Core implementation guide is based on [FHIR version R4]. It defines the minimum rules for interoperability and national customization of FHIR resources, which is applied when creating national profiles for specific use cases. The establishment of standards to support interoperability and their implementation in information systems creates a common basis for the interoperable exchange of health data.
+The CZ Base and Core implementation guide is based on [FHIR version R4](https://hl7.org/fhir/R4/). It defines the minimum rules for interoperability and national customization of FHIR resources, which is applied when creating national profiles for specific use cases. The establishment of standards to support interoperability and their implementation in information systems creates a common basis for the interoperable exchange of health data.
 
 In this implementation guide, you will find the rules for creating national profiles, the use of identifiers and basic information components.
 

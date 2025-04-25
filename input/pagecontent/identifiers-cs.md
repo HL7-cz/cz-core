@@ -16,7 +16,7 @@ V případě, že pro identifikaci objektu nebo subjektu není definováno jinak
 
 #### UUID
 
-UUID (Universally Unique Identifier) je normován standardem URI [RFC 9562](https://datatracker.ietf.org/doc/html/rfc9562) [(zastaralý RFC 4122)](http://www.ietf.org/rfc/rfc4122.txt). Identifikátor je generován tak, aby byl prakticky celosvětově jedinečný, a je často používán pro identifikaci objektů a entit v různých systémech, databázích a aplikacích. UUID je 128-bitové číslo, které je obvykle reprezentováno jako 32 hexadecimálních čísel, oddělených pomlčkami do podoby: urn:uuid:c757873d-ec9a-4326-a141-556f43239520.
+UUID (Universally Unique Identifier) je normován standardem URI [RFC 9562](https://datatracker.ietf.org/doc/html/rfc9562) [(zastaralý RFC 4122)](http://www.ietf.org/rfc/rfc4122.txt). Identifikátor je generován tak, aby byl prakticky celosvětově jedinečný, a je často používán pro identifikaci objektů a entit v různých systémech, databázích a aplikacích. UUID je 128-bitové číslo, které je obvykle reprezentováno jako 32 hexadecimálních čísel, oddělených pomlčkami do podoby: `urn:uuid:c757873d-ec9a-4326-a141-556f43239520`.
 
 HL7 FHIR používá UUID jako primitivní datový typ jako součást komplexních datových typů a reprezentuje jej ve formě URI (universal resource identifier) ​​podle RFC 4122. UUID shell by měl být reprezentován malými písmeny.
 
@@ -84,7 +84,7 @@ Rodná čísla jsou přidělována:
 
 Jmenný prostor vydavatele identifikátoru, v případě definice namespace prostřednictvím url, odpovídá hodnotě: `https://ncez.mzcr.cz/fhir/sid/rcis`.
 
-Identifikátor reprezentuje unikátní hodnota, kterou přiděluje některé z výdejových míst. Podle zákona č. 133/2000 Sb., o evidenci obyvatel a rodných číslech a o změně některých zákonů, konkrétně podle § 14, jsou výdejová místa rodného čísla následující: 
+Identifikátor reprezentuje unikátní hodnota, kterou přiděluje některé z výdejových míst. Podle zákona `č. 133/2000 Sb.`, o evidenci obyvatel a rodných číslech a o změně některých zákonů, konkrétně podle `§14`, jsou výdejová místa rodného čísla následující: 
 
 - Matriční úřady:
   - Přidělují rodná čísla fyzickým osobám narozeným na území České republiky. 
@@ -98,7 +98,7 @@ Identifikátor reprezentuje unikátní hodnota, kterou přiděluje některé z v
     - cizincům, kteří o přidělení rodného čísla požádali pro splnění podmínek podle zvláštních právních předpisů
   - Ministerstvo vnitra, konkrétně odbor správních činností, provádí také změny rodných čísel přidělených před účinností tohoto zákona. 
 
-Podléhá jednoznačné definici formátu (podle zákona č. 133/2000 Sb.), který je při jeho generování nutné dodržovat. Z historických důvodů dává smysl pravidla formátu pro elektronickou podobu omezit na:
+Podléhá jednoznačné definici formátu (podle zákona `č. 133/2000 Sb.`), který je při jeho generování nutné dodržovat. Z historických důvodů dává smysl pravidla formátu pro elektronickou podobu omezit na:
 * Minimální délka: 9 znaků
 * Maximální délka: 10 znaků
 * Musí se jednat o číslo, které odpovídá regulárnímu výrazu:
@@ -128,7 +128,7 @@ Jmenný prostor identifikátoru je v tomto případě prezentován hodnotou: `ht
 
 #### Identifikátor zařízení
 
-Jedná se o jedinečný identifikátor přístroje nebo prostředku, který je standardizován podle nařízení EU 2017/745. Jedinečný identifikátor zařízení (v originále ‘Unique Device Identifier’, který je známý jako 'UDI') je série numerických nebo alfanumerických znaků vytvořená prostřednictvím globálně přijatého standardu identifikace a kódování zařízení. Umožňuje jednoznačnou identifikaci konkrétního zařízení na trhu. UDI se skládá z UDI-DI a UDI-PI. 
+Jedná se o jedinečný identifikátor přístroje nebo prostředku, který je standardizován podle `nařízení EU 2017/745`. Jedinečný identifikátor zařízení (v originále ‘Unique Device Identifier’, který je známý jako 'UDI') je série numerických nebo alfanumerických znaků vytvořená prostřednictvím globálně přijatého standardu identifikace a kódování zařízení. Umožňuje jednoznačnou identifikaci konkrétního zařízení na trhu. UDI se skládá z UDI-DI a UDI-PI. 
 
 UDI-DI je jedinečný numerický nebo alfanumerický kód specifický pro model zařízení, který je také použit jako 'přístupový klíč' k informacím uloženým v databázi UDI. 
 
@@ -196,7 +196,7 @@ V rámci IČZ může existovat více různých IČP. IČZ obvykle končí 000, I
 
 #### Identifikátory zdravotnického pracovníka
 
-Slouží k identifikaci lékařských i nelékařských pracovníků dle zákona č. 372/2011 Sb.. V rámci organizace je nezbytné použít alespoň jeden národní unikátní Identifikátor. Preferovaným identifikátorem je identifikátor typu KRZP. 
+Slouží k identifikaci lékařských i nelékařských pracovníků dle zákona `č. 372/2011 Sb.`. V rámci organizace je nezbytné použít alespoň jeden národní unikátní Identifikátor. Preferovaným identifikátorem je identifikátor typu KRZP. 
 
 ##### KRZP
 
