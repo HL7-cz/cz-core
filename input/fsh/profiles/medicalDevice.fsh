@@ -2,13 +2,12 @@ Profile: CZ_MedicalDevice
 Parent: Device
 Id: cz-medical-device
 Title: "Medical device (CZ)"
-Description: "This profile represents the constraints applied to the Device resource by the Czech national interoperability project."
+Description: "Czech profile represents the constraints applied to the Device resource by the Czech national interoperability project.This profile constrains the representation of a medical device used by or implanted on the patient."
 //* ^status = #active
 * ^experimental = false
-//* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
-* ^purpose = "This profile constrains the representation of a medical device used by or implanted on the patient."
 * . ^comment = "This profile applies the rules defined by NCEZ for representing the UDI in the FHIR standard, by the document \"HL7 IG: UDI Pattern R2\""
+* . ^short = "Czech medical devices"
+* . ^definition = "Profile represents the Device resource by the Czech national interoperability project."
 * insert SetFmmandStatusRule ( 1, draft )
 
 * type 0..1

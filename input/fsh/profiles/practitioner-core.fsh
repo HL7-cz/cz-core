@@ -3,12 +3,12 @@ Profile: CZ_PractitionerCore
 Parent: CZ_PractitionerBase
 Id: cz-practitioner-core
 Title: "Practitioner (CZ core)"
-Description: "Czech national profile for practitioner."
+Description: "Czech national profile for practitioner. Contains information about a person who provides healthcare or is a participant in the creation of a medical document."
 //-------------------------------------------------------------------------------------------
-//* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
-//* ^status = #active
 * ^experimental = false
+* . ^comment = ""
+* . ^short = "Czech Practitioner (core)"
+* . ^definition = "Czech national profile sets minimum expectations for represention of practitioner in HL7 FHIR."
 * insert SetFmmandStatusRule ( 1, draft )
 * insert ImposeProfile($Practitioner-eu-core, 0)
 /*

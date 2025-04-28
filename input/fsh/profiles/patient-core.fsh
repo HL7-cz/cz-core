@@ -6,9 +6,10 @@ Title:    "Patient (CZ core)"
 Description: "This profile sets minimum expectations for the Patient resource common to most of the use cases. It is based on EU Patient Core."
 
 //* ^description = "This profile sets minimum expectations for the Patient resource common to most of the use cases. It is based on EU Patient Core."
-* ^publisher = "HL7 CZ"
-//* ^status = #active
 * ^experimental = false
+* . ^comment = ""
+* . ^short = "Czech Patient (base)"
+* . ^definition = "This profile sets minimum expectations for represention of Patient in FHIR for the purpose of the Czech national interoperability standards."
 * insert SetFmmandStatusRule ( 1, draft )
 * insert ImposeProfile($Patient-eu-core, 0)
 

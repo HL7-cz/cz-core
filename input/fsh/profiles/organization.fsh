@@ -3,14 +3,13 @@ Profile:    CZ_OrganizationBase
 Parent:     OrganizationEu
 Id:         cz-organization-base
 Title:      "Organization (CZ base)"
-Description: "Czech national profile for an organization."
+Description: "Czech national profile defines the way the organization is represented in the context of the Czech national interoperability project."
 //-------------------------------------------------------------------------------------------
-//* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
-//* ^status = #active
 * ^experimental = false
 * insert SetFmmandStatusRule ( 1, draft )
-* ^purpose = "This profile specifies how the HL7 FHIR Organization resource should be used for conveying commonly used concepts in the Czech national context."
+* . ^comment = ""
+* . ^short = "Czech Organization (base)"
+* . ^definition = "Czech national profile defines how to represent an organization in HL7 FHIR."
 
 //* identifier MS
 * identifier ^slicing.discriminator.type = #value

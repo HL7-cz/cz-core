@@ -3,13 +3,12 @@ Profile:    CZ_OrganizationCore
 Parent:     CZ_OrganizationBase
 Id:         cz-organization-core
 Title:      "Organization (CZ core)"
-Description: """Czech national profile for an organization. This profile sets minimum expectations for the Organization resource common to most of the use cases."""
+Description: """Czech national profile sets minimum expectations for the Organization resource common to most of the use cases."""
 //-------------------------------------------------------------------------------------------
-//* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
-//* ^status = #active
 * ^experimental = false
-* ^purpose = "This profile constrains the representation of organization in the context of the Czech national interoperability project."
+* . ^comment = ""
+* . ^short = "Czech Organization (core)"
+* . ^definition = "Czech national profile sets minimum expectations for represention of organization in HL7 FHIR."
 * insert SetFmmandStatusRule ( 1, draft )
 * insert ImposeProfile($Organization-eu-core, 0)
 

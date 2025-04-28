@@ -6,10 +6,10 @@ Title:    "Patient (CZ base)"
 Description: """This profile specifies how the HL7 FHIR Patient resource should be used to convey commonly used concepts in context of the Czech national interoperability standards."""
 
 * ^description = "This profile defines how to represent Patient in FHIR for the purpose of the Czech national interoperability standards."
-* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
-//* ^status = #active
 * ^experimental = false
+* . ^comment = ""
+* . ^short = "Czech Patient (base)"
+* . ^definition = "This profile defines how to represent Patient in FHIR for the purpose of the Czech national interoperability standards."
 * insert SetFmmandStatusRule ( 1, draft )
 
 //* language = urn:ietf:bcp:47#cs  -- todo EJAZYK

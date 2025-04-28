@@ -1,4 +1,4 @@
-Instance: Patient-animal-example
+Instance: Kocka
 InstanceOf: CZ_PatientAnimal
 Usage: #example
 Description: "Pacient animal - Domestic cat"

@@ -11,6 +11,11 @@ Description: "This structure contains the Czech identifier of a person (personal
   * obeys rid-rule
   * ^maxLength = 10
 //  * ^mustSupport = true
+* ^experimental = false
+* . ^comment = "Its format is a meaningless ten-digit number that cannot start with a zero. It is divisible by thirteen and not divisible by eleven."
+* ^purpose = "This unique identifier is assigned by the Patient Master Register (KRP) to a given patient. The number is randomly assigned and may not be reused."
+* . ^short = "Czech national health sector identifier"
+* . ^definition = "Czech national health sector identifier is a unique identifier that assigns the Patient Master Register (KRP) to a given patient."
 
 
 Invariant: rid-rule

@@ -4,11 +4,17 @@ Alias: $sct =  http://snomed.info/sct
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $drzar = https://ncez.mzcr.cz/fhir/CodeSystem/cz-drzar
 Alias: $sct-supplement-service-type = https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
 Alias: $nrzp_povolani = https://ncez.mzcr.cz/fhir/CodeSystem/nrzp-povolani
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
+Alias: $atc = https://ncez.mzcr.cz/CodeSystem/atc-cz
+Alias: $standardterms = http://standardterms.edqm.eu
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $allergyintolerance-certainty = http://terminology.hl7.org/CodeSystem/reaction-event-certainty
 
 // Extensions:
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
@@ -42,8 +48,7 @@ Alias: $hl7AllergyintoleranceCategory = http://hl7.org/fhir/ValueSet/allergy-int
 Alias: $hl7MedicationStatementStatus = http://hl7.org/fhir/ValueSet/medication-statement-status
 Alias: $SNOMEDCTMedicationCodes = http://hl7.org/fhir/ValueSet/medication-codes
 Alias: $hl7OrganizationType = http://hl7.org/fhir/ValueSet/organization-type
-Alias: $PassportNSVS = http://hl7.org/fhir/ValueSet/passport-ns
-Alias: $PassportNSVS = http://hl7.org/fhir/ValueSet/passport-ns
+Alias: $PassportNSVS = https://ncez.mzcr.cz/fhir/ValueSet/PassportNS-vs
 Alias: $hl7BodySite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $hl7BodyStructure = http://hl7.org/fhir/ValueSet/bodystructure-code
 

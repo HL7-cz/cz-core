@@ -3,12 +3,12 @@ Profile:    CZ_PractitionerRoleCore
 Parent:     CZ_PractitionerRoleBase
 Id:         cz-practitionerrole-core
 Title:      "Practitioner Role (CZ core)"
-Description: "Czech national profile for an practitioner role."
+Description: "Czech national profile for an practitioner role.It enables the identification of healthcare and non-healthcare workers, their expertise, workplaces and contact details. "
 //-------------------------------------------------------------------------------------------
-//* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
-//* ^status = #active
 * ^experimental = false
+* . ^comment = "Key elements include a reference to the healthcare worker (practitioner), institution (organization), role code according to the National Code of Healthcare Professions (NCZP), specialization according to the KRPZS, place of performance (location), contact details (telecom), role status (active) and validity period (period). A specific extension for the Czech Republic is the connection with the Master Register of Healthcare Workers (KRZP) and the KRPZS, which enables verification of expertise and valid registration."
+* . ^short = "Czech Practitioner Role (core)"
+* . ^definition = "This profile sets minimum expectations for a healthcare role in the Czech healthcare system based on the FHIR PractitionerRole."
 * insert SetFmmandStatusRule ( 1, draft )
 * insert ImposeProfile($PractitionerRole-eu-core, 0)
 

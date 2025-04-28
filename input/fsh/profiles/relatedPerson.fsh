@@ -6,9 +6,11 @@ Title:      "Related person (CZ base)"
 Description: "Czech national profile for a related person. Contains an information about a person that is involved in the care for a patient, 
 but who is not the target of healthcare, nor has a formal responsibility in the care process."
 //-------------------------------------------------------------------------------------------
-//* ^publisher = "HL7 CZ"
-//* ^version = "1.0.0"
 * ^experimental = false
+* . ^comment = ""
+* ^purpose = "Related persons typically have a personal or non-healthcare professional relationship with the patient. The source is primarily used for attribution of information, as individuals are often the source of information about the patient."
+* . ^short = "Czech Related person (base profile)"
+* . ^definition = "Czech national base profile defines how to represent Related Person in HL7 FHIR."
 
 * identifier 0..* //MS
 * identifier ^slicing.discriminator.type = #value
