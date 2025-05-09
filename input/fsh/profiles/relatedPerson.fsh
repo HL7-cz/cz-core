@@ -3,7 +3,7 @@ Profile:    CZ_RelatedPersonBase
 Parent:     RelatedPerson
 Id:         cz-relatedPerson-base
 Title:      "Related person (CZ base)"
-Description: "Czech national profile for a related person. Contains an information about a person that is involved in the care for a patient, 
+Description: "Czech national profile for a related person. Contains an information about a person that is involved in the care for a patient,
 but who is not the target of healthcare, nor has a formal responsibility in the care process."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
@@ -44,7 +44,7 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
 //* relationship contains $PersonalRelationshipCzVS
 
 * name 0..1 //MS
-* name only HumanNameEu
+//* name only HumanNameEu - removed from HL7EU Base profile
 
 * address only CZ_Address
 

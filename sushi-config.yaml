@@ -37,7 +37,7 @@ publisher:
 #     version: 1.0.0
 dependencies:
   hl7.fhir.uv.ips: 1.1.0
-  hl7.fhir.eu.base.r4: current
+  hl7.fhir.eu.base: current
   hl7.fhir.cz.terminology: current
   hl7.fhir.extensions.r5: 4.0.1
 #
@@ -155,10 +155,10 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Introduction: 
+  Introduction:
     Basic FHIR elements (en): elements-FHIR-en.html
     Basic FHIR elements (cs): elements-FHIR-cs.html
-  Funtion view: 
+  Funtion view:
     Subjects (en): subjects-en.html
     Subjects (cs): subjects-cs.html
     Objects (en): objects-en.html

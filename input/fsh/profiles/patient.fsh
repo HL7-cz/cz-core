@@ -41,8 +41,6 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier[CPOJ].value 1..1
   * ^example.label = "CPOJ Example"
   * ^example.valueString = "6309211234"
-//* identifier[CPOJ].value ^example.label = "CPOJ"
-//* identifier[CPOJ].value ^example.valueString = "6309211234"
 * identifier contains OP 0..1 //MS
 * identifier[OP]
   * ^short = "National Identity Card Number"
@@ -61,7 +59,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 
 
 * name 1..* MS  // patient name element must be provided
-* name only HumanNameEu
+//* name only HumanNameEu // HumanNameEu is not anymore in hl7EU base profile
 * name obeys cz-pat-1
 * name ^definition = "A name associated with the individual. \n\nIt is RECOMMENDED to give at least one family name and at least one given name when possible and define an 'official' use. When names are given, a consumer SHALL NOT ignore it."
 * name ^requirements = "A patient may be known by several different names. An example is an official name and a nickname or pseudonym.\r\nIn all cases, the alphabetical representation of the name is always used."
