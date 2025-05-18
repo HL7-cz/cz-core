@@ -50,7 +50,7 @@ Description:   "Value set of NCLP MAT"
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "MZČR"
-* ^url = "https://hl7.cz/fhir/core/ValueSet/dlpformy-cz-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/nclpmat-cz-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * include codes from system NCLPMatCzCs

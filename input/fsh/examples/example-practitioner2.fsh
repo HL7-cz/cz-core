@@ -8,8 +8,8 @@ Description: "Practitioner id(KRZP)=987654321"
 //* identifier[=].value = "4567891230"
 * name.use = #usual
 * name.prefix = "MUDr."
-* name.family = "Kubšová"
-* name.given = "Stanislava"
+* name.family = "Doktorová"
+* name.given = "Hana"
 
 * gender = #female
 * communication[+] = urn:ietf:bcp:47#cs

@@ -1,6 +1,7 @@
 Instance: Specimen-example-animal
 InstanceOf: CZ_Specimen
 Usage: #example
+Description: "Example of a specimen for animal patient."
 
 * status = #available
 * type = $sct#119297000	"Blood specimen"

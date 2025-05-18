@@ -86,5 +86,5 @@ Usage: #example //#inline
 * identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/ico"
 * identifier[=].value = "456789655"
 * type[+] = $drzar#320 "Samost. ordinace všeob. prakt. lékaře"
-* name = "MUDr. Stanislava Kubšová"
+* name = "MUDr. Hana Doktorová"
 

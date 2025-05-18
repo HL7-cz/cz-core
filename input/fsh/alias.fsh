@@ -15,7 +15,7 @@ Alias: $standardterms = http://standardterms.edqm.eu
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $allergyintolerance-certainty = http://terminology.hl7.org/CodeSystem/reaction-event-certainty
-Alias: $emdn = urn:oid:1.2.250.1.213.2.68 
+Alias: $emdn = https://smt.esante.gouv.fr/terminologie-emdn //zatim odkaz na francii, nez bude možné použít lepší 
 
 // Extensions:
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
@@ -23,7 +23,7 @@ Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birt
 Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
 Alias: $iso21090-ADXP-houseNumber = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
 Alias: $iso21090-ADXP-postBox = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox
-Alias: $iso21090-SC-coding = http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding
+Alias: $iso21090-SC-coding = http://hl7.org/fhir/StructureDefinition/iso21090-codedString
 Alias: $ext-data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $patient-animal = http://hl7.org/fhir/StructureDefinition/patient-animal
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -60,10 +60,10 @@ Alias: $hl7BodyStructure = http://hl7.org/fhir/ValueSet/bodystructure-code
 
 
 // Profiles:
-Alias: $Organization-eu-core = http://hl7.eu/fhir/base/StructureDefinition/OrganizationEuCore
+Alias: $Organization-eu-core = http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core
 Alias: $Patient-eu-core = http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core
-Alias: $Practitioner-eu-core = http://hl7.eu/fhir/base/StructureDefinition/PractitionerEuCore
-Alias: $PractitionerRole-eu-core = http://hl7.eu/fhir/base/StructureDefinition/PractitionerRoleEuCore
+Alias: $Practitioner-eu-core = http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core
+Alias: $PractitionerRole-eu-core = http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu-core
 Alias: $RelatedPerson = http://hl7.org/fhir/StructureDefinition/RelatedPerson
 //Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
 //Alias: $flag-detail = http://hl7.org/fhir/StructureDefinition/flag-detail
