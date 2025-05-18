@@ -41,7 +41,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier[CPOJ].value 1..1
   * ^example.label = "CPOJ Example"
   * ^example.valueString = "6309211234"
-* identifier contains OP 0..1 //MS
+* identifier contains OP 0..* //MS
 * identifier[OP]
   * ^short = "National Identity Card Number"
   * ^definition = "An unique patient identifier (National ID Card Number) issued by the ministry of interior"

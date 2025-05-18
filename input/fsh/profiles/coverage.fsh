@@ -16,4 +16,5 @@ Description: "Czech national profile for a coverage.The coverage is intended to 
 * type MS
 * type.coding from $hl7CoverageType
 
+* beneficiary only Reference(CZ_PatientCore)
 * payor only Reference(CZ_PatientCore or CZ_OrganizationCore)

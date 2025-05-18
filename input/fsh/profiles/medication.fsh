@@ -19,3 +19,5 @@ Description: "Czech national profile for a medication statement."
 //* medicationCodeableConcept from $SNOMEDCTMedicationCodes // doplnit DLP a ATC
 * dosage 
 * dosage only Dosage
+
+//českou medikaci TODO
