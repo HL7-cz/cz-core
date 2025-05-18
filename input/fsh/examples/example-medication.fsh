@@ -3,7 +3,7 @@ InstanceOf: CZ_MedicationStatement
 Title: "MedicationStatement - Ongoing Simvastatin Treatment"
 Description: "Czech national profile for a medication statement."
 Usage: #example
-* identifier[+].system = "http://hospital.cz/" //vydavatel identifikatoru nemocnice vs. NIS
+* identifier[+].system = "http://example.org/exampleSystem" //vydavatel identifikatoru nemocnice vs. NIS
 * identifier[=].value = "medstat-1"
 * status = #active
 * medicationReference = Reference(Medication/med-1) "simvastatin"
@@ -16,11 +16,11 @@ Usage: #example
 * dosage.doseAndRate.doseQuantity = 40 'mg' "mg"
 
 Instance: med-1
-InstanceOf: Medication
+InstanceOf: CZ_Medication
 Title: "Medication - Simvastatin 40 MG Disintegrating Oral Tablet"
 Description: "Medication - Simvastatin 40 MG Disintegrating Oral Tablet"
 Usage: #example
-* identifier[+].system = "http://hospital.cz/" //vydavatel identifikatoru nemocnice vs. NIS
+* identifier[+].system = "http://example.org/exampleSystem" //vydavatel identifikatoru nemocnice vs. NIS
 * identifier[=].value = "med-1"
 * code.coding[0] = https://hl7.cz/fhir/core/CodeSystem/dlplecivepripravky-cz-cs#0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
 * code.coding[+] = $atc#C10AA01 "simvastatin"
