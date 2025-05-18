@@ -107,6 +107,7 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - https://ncez.mzcr.cz/fhir/CodeSystem/role-code-supplement
     - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
     - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
+  pin-canonicals: pin-multiples
 #    - http://ncez.mzcr.cz/fhir/StructureDefinition/address-point-cz
 # path-resource:
 #    - input/resources
