@@ -21,5 +21,5 @@ Description: """Czech national profile sets minimum expectations for the Organiz
 Invariant: cz-org-1
 Description: "Organization.name or Identifier.value MUST be filled."
 Severity: #error
-Expression: "name.text.exists() or identifier.value.exists()"
+Expression: "name.exists() or identifier.value.exists()"
 

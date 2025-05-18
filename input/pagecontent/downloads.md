@@ -26,6 +26,10 @@ There are also specific packages for the R4 and R4B FHIR specifications:
 
 - [R4B NPM Package](package.r4b.tgz)
 
+#### Globals Table
+
+{% include globals-table.xhtml %}
+
 ### Examples
 
 All of the examples that are used in this Implementation Guide are available for download:
