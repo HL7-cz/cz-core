@@ -3,7 +3,7 @@ Id:   additional-data-cz
 Title:  "Additional data"
 Description: "This extension presents additional formalised sample data"
 // publisher, contact, and other metadata here using caret (^) syntax (omitted)
-* insert ExtensionContext(Patient)
+* insert ExtensionContext(Specimen)
 * insert SetFmmandStatusRule(1, draft)
 * . ^short = "Additional data"
 * . ^definition = "This extension presents additional formalised sample data"
