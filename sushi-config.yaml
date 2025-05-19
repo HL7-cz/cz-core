@@ -10,13 +10,13 @@ title: HL7 Czech Base and Core Implementation Guide
 description: HL7 Czech Base and Core Resources Implementation Guide
 status: draft # draft | active | retired | unknown
 version: 0.3.0
+language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#203 "Czech Republic (CZE)"
-# jurisdiction: urn:iso:std:iso:3166#CZ  # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#CZ "Czechia"
 publisher:
   name: HL7 Czech Republic
   url: https://www.hl7.cz/
@@ -168,7 +168,7 @@ menu:
     Identifiers (en): identifiers-en.html
     Identifiers (cs): identifiers-cs.html
   Artifacts:
-    Czech artifacts: artifacts.html
+    Artifacts Summary: artifacts.html
   About:
     Downloads: downloads.html
 
