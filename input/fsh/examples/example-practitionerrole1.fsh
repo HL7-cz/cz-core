@@ -9,8 +9,8 @@ Description: "General practitioner's office"
 * active = true
 * period.start = "2022-08-01T00:00:00.000Z"
 * period.end = "2022-12-31T00:00:00.000Z"
-* practitioner = Reference(Practitioner/Practitioner-2) "MUDr. Stanislava Kubšová"
-* organization = Reference(Organization/Organization-2) "Ordinace praktického lékaře, MUDr. Stanislava Kubšová"
+* practitioner = Reference(Practitioner/Practitioner-2) "MUDr. Hana Doktorová"
+* organization = Reference(Organization/Organization-2) "Ordinace praktického lékaře, MUDr. Hana Doktorová"
 * code = $nrzp_povolani#L00 "Lékař"
 
 * specialty = $sct#419772000 "Family practice"

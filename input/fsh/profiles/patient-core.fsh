@@ -24,6 +24,7 @@ Description: "This profile sets minimum expectations for the Patient resource co
 * obeys cz-pat-2
 * identifier 1..* //at least one identifier is required
 * identifier[RID] 1..1  // national health identifier is required
+* identifier obeys cz-pat-3
 * name 1..* //MS  // patient name element must be provided
 * name obeys cz-pat-1
 * name.given ^min = 1
@@ -39,3 +40,8 @@ Invariant: cz-pat-2
 Description: "A patient can have only one registering physician of a given type"
 Severity: #error
 Expression: "extension('https://hl7.cz/fhir/core/StructureDefinition/registering-provider-cz').extension('category').isDistinct()"
+
+Invariant: cz-pat-3
+Description: "Patient.identifier[OP] MUST has only one with use=official"
+Severity: #error
+Expression: "where($this is OP and use='official').count() <= 1"

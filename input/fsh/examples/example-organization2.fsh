@@ -5,7 +5,7 @@ Description: "An example of the organization of a provider, a practitioner"
 * identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/ico"
 * identifier[=].value = "456789655"
 * type[+] = $drzar#320 "Samost. ordinace všeob. prakt. lékaře"
-* name = "MUDr. Stanislava Kubšová"
+* name = "MUDr. Hana Doktorová"
 * telecom[0].system = #phone
 * telecom[=].value = "+420257216007"
 * telecom[=].use = #work
