@@ -19,3 +19,8 @@ This is used to identify the species when a specimen is collected from an animal
   * ^short = "Usage: contact.telecom"
   * ^comment = "Animals do not have phones, their contacts do. Contact.telecom should be used."
 * maritalStatus ..0
+
+* contact.organization only Reference(CZ_OrganizationCore)
+* generalPractitioner only Reference(CZ_OrganizationCore or CZ_PractitionerCore or CZ_PractitionerRoleCore)
+* managingOrganization only Reference(CZ_OrganizationCore)
+* link.other only Reference(CZ_PatientCore or CZ_RelatedPersonCore)

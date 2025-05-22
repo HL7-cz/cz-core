@@ -31,4 +31,7 @@ Description: "Czech profile represents the constraints applied to the Device res
 * type ^binding.description = "The type of device or a code for absent/unknown device"
 * patient 1..
 * patient only Reference(CZ_PatientCore)
+* owner only Reference(CZ_OrganizationCore)
+* location only Reference(CZ_LocationCore)
+* parent only Reference(CZ_MedicalDevice or CZ_DeviceObserver)
 * patient.reference 1..

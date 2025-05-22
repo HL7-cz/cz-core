@@ -32,4 +32,5 @@ Description: "Czech national base profile for location resource. This profile im
 //* name ^short = "Location name"
 //* telecom ^short = "Location telecom"
 * managingOrganization only Reference(CZ_OrganizationBase)
+* partOf only Reference(CZ_LocationCore)
 * address only CZ_Address

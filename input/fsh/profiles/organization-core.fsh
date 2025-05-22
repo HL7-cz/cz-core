@@ -14,7 +14,7 @@ Description: """Czech national profile sets minimum expectations for the Organiz
 
 * name 0..1
 * identifier 0..*
-* partOf only Reference (CZ_OrganizationCore)
+//* partOf only Reference(CZ_OrganizationCore)
 * obeys cz-org-1
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

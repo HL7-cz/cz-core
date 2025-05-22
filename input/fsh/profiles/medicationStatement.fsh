@@ -19,3 +19,6 @@ Description: "Czech national profile for a medication statement."
 * medicationCodeableConcept from DLPLecivePripravkyCzVs (required)
 * dosage 
 * dosage only Dosage
+
+//TODO-Pá stejné případy jako v medication.fsh - je nutné pouze část reference změnit na CZ!
+//medication[x].medicationReference, subject, reasonReference

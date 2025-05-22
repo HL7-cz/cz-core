@@ -15,3 +15,6 @@ Description: "Czech profile represents the constraints applied to the Device res
 * manufacturer //MS
 * modelNumber //MS
 * patient only Reference(CZ_PatientCore)
+* owner only Reference(CZ_OrganizationCore)
+* location only Reference(CZ_LocationCore)
+* parent only Reference(CZ_DeviceObserver or CZ_MedicalDevice)

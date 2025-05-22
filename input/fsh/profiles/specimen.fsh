@@ -25,14 +25,18 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * subject MS
 * subject ^short = "In the initial iteration of the Czech interoperability project, this is CZ_PatientCore."
 * receivedTime MS
+//TODO-Pá - do IG se nepromítne CZ Specimen!
 * parent only Reference(CZ_Specimen)
 * parent MS
+
 * request MS
 * collection  
   * bodySite from $hl7BodySite (preferred)
     * ^comment = "If the specimen.type conveys information about the site the specimen has been collected from, then, if the bodySite is present, it shall be coherent with the type"
   * extension contains $bodySite-reference named bodySite 0..1
   * extension[bodySite].valueReference only Reference(BodyStructureCz)
+  * collector only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore)
+  //TDOO - nemůže být collectorem i organizace?
 * processing.additive only Reference(Substance or SpecimenAdditiveSubstance)
 * container
   * type from SpecimenContainerCz (preferred)

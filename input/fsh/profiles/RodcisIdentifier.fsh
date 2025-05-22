@@ -23,6 +23,7 @@ Description: "This structure contains the Czech identifier of a person (personal
   * ^maxLength = 10
   * ^mustSupport = false
 
+* assigner only Reference(CZ_OrganizationCore)
 
 Invariant: rc
 Description: "Czech national personal ID rule"

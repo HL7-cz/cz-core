@@ -17,3 +17,5 @@ Description: """This profile represents the Body Structure resource by the Czech
 * location from $hl7BodySite (preferred)
 * locationQualifier from SiteQualifierCzVs (preferred)
 * image 0..0
+
+* patient only Reference(CZ_PatientCore)

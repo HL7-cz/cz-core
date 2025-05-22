@@ -18,3 +18,5 @@ Description: "Czech national profile for a coverage.The coverage is intended to 
 
 * beneficiary only Reference(CZ_PatientCore)
 * payor only Reference(CZ_PatientCore or CZ_OrganizationCore)
+* policyHolder only Reference(CZ_PatientCore or CZ_RelatedPersonCore or CZ_OrganizationCore)
+* subscriber only Reference(CZ_PatientCore or CZ_RelatedPersonCore)
