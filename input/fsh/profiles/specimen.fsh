@@ -6,7 +6,7 @@ Title:      "Specimen"
 Description: "Czech national profile defines how to represent Specimens in HL7 FHIR for the purpose of this guide."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
-* ^purpose = "Specimens are samples of material that may be: 
+* ^purpose = "Specimens are samples of material that may be:
 \r\n• taken from a biological entity, living or dead
 \r\n• taken from a physical object or environment
 \r\nSome samples are biological and may contain one or more components including, but not limited to, cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretions. The source of samples includes substances used for diagnostic and environmental testing. The focus of sample sources is on the process of collecting, maintaining, and processing the sample, as well as where the sample came from."
@@ -28,12 +28,12 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * parent only Reference(CZ_Specimen)
 * parent MS
 * request MS
-* collection  
+* collection
   * bodySite from $hl7BodySite (preferred)
     * ^comment = "If the specimen.type conveys information about the site the specimen has been collected from, then, if the bodySite is present, it shall be coherent with the type"
   * extension contains $bodySite-reference named bodySite 0..1
   * extension[bodySite].valueReference only Reference(BodyStructureCz)
-* processing.additive only Reference(Substance or SpecimenAdditiveSubstance)
+* processing.additive only Reference(Substance or CZ_SpecimenAdditiveSubstance)
 * container
   * type from SpecimenContainerCz (preferred)
   * additive[x] 0..0
@@ -43,6 +43,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * condition MS
 * note MS
 
+/*
 * extension contains
   $material named material 0..1 and
   $instrument named instrument 0..1 and
@@ -65,14 +66,16 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * extension[samplingPoint]
   * ^short = "Sampling Point"
   * ^definition = "The area where the material was collected; refers to the environment, not the patient."
-* extension[samplingPoint].value[x] from SpecimenSamplingPointCzVs 
+* extension[samplingPoint].value[x] from SpecimenSamplingPointCzVs
 * extension[additionalData]
   * ^short = "Additional Data"
   * ^definition = "Additional formalised sample data"
+*/
+
 
 // ----------------------------------------
 
-Profile: SpecimenAdditiveSubstance
+Profile: CZ_SpecimenAdditiveSubstance
 Parent: Substance
 Id: Substance-additive-cz
 Title: "Substance: Specimen Additive Substance"
