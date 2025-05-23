@@ -29,7 +29,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier contains RID 0..1 //MS
 * identifier[RID]
   * ^short = "National Health Identifier"
-  * ^definition = "An unique patient identifier (resortní identifikátor) according to the National Patient Register"
+  * ^definition = "An unique patient identifier (resortní identifikátor RID) or temporary patient identifier (DRID) according to the National Patient Register (KRP)"
 * identifier[RID] only CZ_RID_Identifier
 * identifier[RID].system = "https://ncez.mzcr.cz/fhir/sid/rid" (exactly)
 * identifier[RID].value 1..1
