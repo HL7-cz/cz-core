@@ -2,7 +2,7 @@
 Profile:    CZ_MedicationStatement
 Parent:     MedicationStatement
 Id:         cz-MedicationStatement
-Title:      "Medication Statement"
+Title:      "MedicationStatement (CZ)"
 Description: "Czech national profile for a medication statement."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
@@ -19,3 +19,5 @@ Description: "Czech national profile for a medication statement."
 * medicationCodeableConcept from DLPLecivePripravkyCzVs (required)
 * dosage 
 * dosage only Dosage
+* subject only Reference(CZ_PatientCore or Group)
+* informationSource only Reference(CZ_PatientCore or CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_RelatedPersonCore or CZ_OrganizationCore)

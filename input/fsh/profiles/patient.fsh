@@ -28,7 +28,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier[RC].value 1..1
 * identifier contains RID 0..1 //MS
 * identifier[RID]
-  * ^short = "National Health Identifier"
+  * ^short = "National Health Sector Identifier"
   * ^definition = "An unique patient identifier (resortní identifikátor RID) or temporary patient identifier (DRID) according to the National Patient Register (KRP)"
 * identifier[RID] only CZ_RID_Identifier
 * identifier[RID].system = "https://ncez.mzcr.cz/fhir/sid/rid" (exactly)
@@ -41,12 +41,14 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier[CPOJ].value 1..1
   * ^example.label = "CPOJ Example"
   * ^example.valueString = "6309211234"
+* identifier[CPOJ].assigner only Reference(CZ_OrganizationCore)
 * identifier contains OP 0..* //MS
 * identifier[OP]
   * ^short = "National Identity Card Number"
   * ^definition = "An unique patient identifier (National ID Card Number) issued by the ministry of interior"
 * identifier[OP].system = "https://ncez.mzcr.cz/fhir/sid/op" (exactly)
 * identifier[OP].value 1..1
+* identifier[OP].assigner only Reference(CZ_OrganizationCore)
 * identifier contains PAS 0..* //MS
 * identifier[PAS]
   * ^short = "Passport Number"
@@ -56,7 +58,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier[PAS].use = #official
 * identifier[PAS].type = $v2-0203#PPN
 * identifier[PAS].value 1..1
-
+* identifier[PAS].assigner only Reference(CZ_OrganizationCore)
 
 * name 1..* MS  // patient name element must be provided
 //* name only HumanNameEu // HumanNameEu is not anymore in hl7EU base profile
@@ -131,6 +133,8 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * contact.address only CZ_Address
 * contact.organization only Reference(CZ_OrganizationBase)
 * contact.gender from $CZ_AdministrativegenderVS
+
+* link.other only Reference(CZ_PatientBase or CZ_RelatedPersonBase)
 
 // zvážit zda přidat:
 // - národnost (česká, moravská ...)

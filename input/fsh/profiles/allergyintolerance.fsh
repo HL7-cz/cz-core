@@ -2,7 +2,7 @@
 Profile:    CZ_AllergyIntolerance
 Parent:     AllergyIntolerance
 Id:         cz-allergyIntolerance
-Title:      "AllergyIntolerance"
+Title:      "AllergyIntolerance (CZ)"
 Description: "Czech national profile for an Allergy Intolerance"
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
@@ -21,3 +21,6 @@ Description: "Czech national profile for an Allergy Intolerance"
 * category from $hl7AllergyintoleranceCategory
 * code MS
 * note MS
+
+* recorder only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_PatientCore or CZ_RelatedPersonCore)
+* asserter only Reference(CZ_PatientCore or CZ_RelatedPersonCore or CZ_PractitionerCore or CZ_PractitionerRoleCore)

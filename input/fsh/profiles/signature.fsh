@@ -17,7 +17,7 @@ Description: "Czech national profile on Signature holds an electronic representa
 * when MS
 * who MS
 * who only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_RelatedPersonCore or CZ_DeviceObserver or CZ_MedicalDevice or CZ_OrganizationCore or CZ_PatientCore)
-
+* onBehalfOf only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_RelatedPersonCore or CZ_DeviceObserver or CZ_MedicalDevice or CZ_OrganizationCore)
 * targetFormat
 * sigFormat
 * data MS
