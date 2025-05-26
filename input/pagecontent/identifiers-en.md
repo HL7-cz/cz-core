@@ -53,7 +53,7 @@ All identifiers must be unique within the identifier type.
 
 Usually, if available, one of the national identifiers is used (patient number from the national patient register, birth number, insurance number).
 
-##### Personal (National) Healthcare Identifier (RID, DRID)
+##### Personal (National) Healthcare Sector Identifier (RID, DRID)
 
 **RID** (Resortní Identifikátor) is a unique personal identifier of each patient in who has been in contact with health services in the Czech Republic and has been duly identified. The identifier is assigned when the patient is recorded in the national Master patient register (KRP). RID is a meaningless ten-digit number that cannot begin with zero, is divisible by 13, and is not divisible by 11.
 

@@ -2,7 +2,7 @@
 Profile:    CZ_PractitionerRoleBase
 Parent:     PractitionerRoleEu
 Id:         cz-practitionerrole-base
-Title:      "Practitioner Role (CZ base)"
+Title:      "PractitionerRole (CZ base)"
 Description: "Czech national profile for an practitioner role.It enables the identification of healthcare and non-healthcare workers, their expertise, workplaces and contact details."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
@@ -11,8 +11,8 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 * . ^short = "Czech Practitioner Role (base)"
 * . ^definition = "The profile defines the representation of a healthcare role in the Czech healthcare system based on the FHIR PractitionerRole."
 
-* practitioner only Reference(CZ_PractitionerBase)
-* organization only Reference(CZ_OrganizationBase)
+* practitioner only Reference(CZ_PractitionerCore)
+* organization only Reference(CZ_OrganizationCore)
 //* organization
 
 * code
@@ -44,3 +44,5 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 * specialty[SNOMED-CT].coding.system = "http://snomed.info/sct" (exactly)
 * specialty[SNOMED-CT].coding.code 1..
 * specialty[SNOMED-CT].coding.code ^definition = "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).\r\n\r\nIf needed codes can be used from a different system, SNOMED-CT is preferred."
+
+* location only Reference(CZ_LocationCore)

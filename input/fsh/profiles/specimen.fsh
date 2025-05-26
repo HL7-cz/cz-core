@@ -2,7 +2,7 @@
 Profile:    CZ_Specimen
 Parent:     Specimen
 Id:         cz-specimen
-Title:      "Specimen"
+Title:      "Specimen (CZ)"
 Description: "Czech national profile defines how to represent Specimens in HL7 FHIR for the purpose of this guide."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
@@ -21,7 +21,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * type MS
 * type ^definition = "The kind of material that forms the specimen. RECOMMENDED to include."
 //* type from CZ_MikrobiologickeVzorkyDASTAVS (preferred)
-* subject only Reference(Group or Device or CZ_MedicalDevice or Substance or Location or CZ_PatientCore)
+* subject only Reference(Group or CZ_DeviceObserver or CZ_MedicalDevice or Substance or CZ_LocationCore or CZ_PatientCore)
 * subject MS
 * subject ^short = "In the initial iteration of the Czech interoperability project, this is CZ_PatientCore."
 * receivedTime MS
@@ -33,12 +33,13 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
     * ^comment = "If the specimen.type conveys information about the site the specimen has been collected from, then, if the bodySite is present, it shall be coherent with the type"
   * extension contains $bodySite-reference named bodySite 0..1
   * extension[bodySite].valueReference only Reference(BodyStructureCz)
+  * collector only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore)
 * processing.additive only Reference(Substance or CZ_SpecimenAdditiveSubstance)
 * container
   * type from SpecimenContainerCz (preferred)
   * additive[x] 0..0
   * extension contains $specimen-container-device-r5 named device 0..1
-  * extension[device].valueReference only Reference(Device)
+  * extension[device].valueReference only Reference(CZ_MedicalDevice)
 * processing ^short = "Processing and processing step details to include when not implicit from specimen."
 * condition MS
 * note MS
@@ -78,6 +79,6 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 Profile: CZ_SpecimenAdditiveSubstance
 Parent: Substance
 Id: Substance-additive-cz
-Title: "Substance: Specimen Additive Substance"
+Title: "Substance:SpecimenAdditiveSubstance (CZ)"
 Description: """This profile defines how to represent Specimen Additive Substances in HL7 FHIR for the purpose of this guide."""
 * code from SpecimenAdditiveCz (preferred)

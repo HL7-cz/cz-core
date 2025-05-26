@@ -2,7 +2,7 @@
 Profile:    CZ_PractitionerRoleCore
 Parent:     CZ_PractitionerRoleBase
 Id:         cz-practitionerrole-core
-Title:      "Practitioner Role (CZ core)"
+Title:      "PractitionerRole (CZ core)"
 Description: "Czech national profile for an practitioner role.It enables the identification of healthcare and non-healthcare workers, their expertise, workplaces and contact details. "
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
