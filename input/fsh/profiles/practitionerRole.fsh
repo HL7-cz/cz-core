@@ -16,12 +16,11 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 //* organization
 
 * code
-//* code only CZ_CodeableConcept
-* code ^slicing.discriminator.type = #value
-* code ^slicing.discriminator.path = "coding.system"
-* code ^slicing.rules = #open
-* code ^definition = "Roles which this practitioner is authorized to perform for the organization.\r\n\r\nFor compatibility reasons, CD-HCPARTY is described here to express the role of the practitioner. Other coding systems remain allowed.\r\nTowards the future, the use of SNOMED-CT codes is also RECOMMENDED here. In the future, other ways to codfy might however be also proposed.\r\n\r\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
-* code contains  // TO-DO: zvážit ISCO urn:oid:2.16.840.1.113883.2.9.6.2.7 a zjistit, zda v této oblasti existuje použitelný kódový systém NZIS
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "coding.system"
+  * ^slicing.rules = #open
+  * ^definition = "Roles which this practitioner is authorized to perform for the organization.\r\n\r\nFor compatibility reasons, CD-HCPARTY is described here to express the role of the practitioner. Other coding systems remain allowed.\r\nTowards the future, the use of SNOMED-CT codes is also RECOMMENDED here. In the future, other ways to codfy might however be also proposed.\r\n\r\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
+  * contains  // TO-DO: zvážit ISCO urn:oid:2.16.840.1.113883.2.9.6.2.7 a zjistit, zda v této oblasti existuje použitelný kódový systém NZIS
     NRZP_POVOLANI 0..* //and
     //SNOMED-CT 0..*
 * code[NRZP_POVOLANI] ^definition = "Roles which this practitioner is authorized to perform for the organization according to the National registry of healthcare practitioners."
@@ -33,7 +32,7 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 * code[SNOMED-CT].coding.system = $sct (exactly)
 * code[SNOMED-CT].coding.code 1..
 */
-//* specialty only CZ_CodeableConcept
+/*
 * specialty ^slicing.discriminator.type = #value
 * specialty ^slicing.discriminator.path = "coding.system"
 * specialty ^slicing.rules = #open
@@ -44,5 +43,5 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 * specialty[SNOMED-CT].coding.system = "http://snomed.info/sct" (exactly)
 * specialty[SNOMED-CT].coding.code 1..
 * specialty[SNOMED-CT].coding.code ^definition = "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).\r\n\r\nIf needed codes can be used from a different system, SNOMED-CT is preferred."
-
+*/
 * location only Reference(CZ_LocationCore)
