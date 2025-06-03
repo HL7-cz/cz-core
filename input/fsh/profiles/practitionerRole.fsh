@@ -20,7 +20,7 @@ Description: "Czech national profile for an practitioner role.It enables the ide
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
   * ^definition = "Roles which this practitioner is authorized to perform for the organization.\r\n\r\nFor compatibility reasons, CD-HCPARTY is described here to express the role of the practitioner. Other coding systems remain allowed.\r\nTowards the future, the use of SNOMED-CT codes is also RECOMMENDED here. In the future, other ways to codfy might however be also proposed.\r\n\r\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
-  * contains  // TO-DO: zvážit ISCO urn:oid:2.16.840.1.113883.2.9.6.2.7 a zjistit, zda v této oblasti existuje použitelný kódový systém NZIS
+* code contains  // TO-DO: zvážit ISCO urn:oid:2.16.840.1.113883.2.9.6.2.7 a zjistit, zda v této oblasti existuje použitelný kódový systém NZIS
     NRZP_POVOLANI 0..* //and
     //SNOMED-CT 0..*
 * code[NRZP_POVOLANI] ^definition = "Roles which this practitioner is authorized to perform for the organization according to the National registry of healthcare practitioners."
