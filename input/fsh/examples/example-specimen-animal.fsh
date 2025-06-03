@@ -19,17 +19,6 @@ Description: "Example of a specimen taken from environment."
 * subject = Reference(Location/Praha5) "Nádražní 1, Praha 5"
 * collection.collectedDateTime = "2022-10-25T13:35:00+01:00"
 
-
-Instance: Specimen-example-environment2
-InstanceOf: CZ_Specimen
-Usage: #example
-Description: "Example of a specimen taken from environment."
-
-* status = #available
-* type = $sct#446302006	"Air specimen"
-* subject = Reference(Location/Location-Praha5)
-* collection.collectedDateTime = "2022-10-25T13:35:00+01:00"
-
 Instance: Location-Praha5
 InstanceOf: Location
 Usage: #example
