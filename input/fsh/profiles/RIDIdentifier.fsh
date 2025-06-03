@@ -1,7 +1,7 @@
 Profile: CZ_RID_Identifier
 Parent: Identifier
 Id: cz-rid-identifier
-Title: "Czech national health sector identifier"
+Title: "National health sector identifier (CZ)"
 Description: "This structure contains the Czech identifier of a person (personal identification number) in healthcare sector"
 * insert SetFmmandStatusRule(1, draft)
 * use = #official (exactly)
@@ -17,6 +17,7 @@ Description: "This structure contains the Czech identifier of a person (personal
 * . ^short = "Czech national health sector identifier"
 * . ^definition = "Czech national health sector identifier is a unique identifier that assigns the Patient Master Register (KRP) to a given patient."
 
+* assigner only Reference(CZ_OrganizationCore)
 
 Invariant: rid-rule
 Description: "Czech national personal ID rule"

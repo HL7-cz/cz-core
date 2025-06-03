@@ -2,7 +2,7 @@
 Profile:    CZ_RelatedPersonBase
 Parent:     RelatedPerson
 Id:         cz-relatedPerson-base
-Title:      "Related person (CZ base)"
+Title:      "RelatedPerson (CZ base)"
 Description: "Czech national profile for a related person. Contains an information about a person that is involved in the care for a patient,
 but who is not the target of healthcare, nor has a formal responsibility in the care process."
 //-------------------------------------------------------------------------------------------
@@ -30,6 +30,7 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
   * ^definition = "An unique patient identifier (číslo pojištěnce) according to the National Health Insurance Register"
 * identifier[CPOJ].system = "https://ncez.mzcr.cz/fhir/sid/cpoj" (exactly)
 * identifier[CPOJ].value 1..1
+* identifier[CPOJ].assigner only Reference(CZ_OrganizationCore)
 * identifier contains PAS 0..* //MS
 * identifier[PAS]
   * ^short = "Passport Number"
@@ -39,6 +40,7 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
 * identifier[PAS].use = #official
 * identifier[PAS].type = $v2-0203#PPN
 * identifier[PAS].value 1..1
+* identifier[PAS].assigner only Reference(CZ_OrganizationCore)
 
 * relationship 0..* //MS
 //* relationship contains $PersonalRelationshipCzVS

@@ -22,10 +22,13 @@ Description: "Czech national profile for practitioner.Contains information about
     CLeK 0..*
 * identifier[KRZP].system = "https://ncez.mzcr.cz/fhir/sid/krzp" (exactly)
 * identifier[KRZP].value 1..
+* identifier[KRZP].assigner only Reference(CZ_OrganizationCore)
 * identifier[CLK].system = "https://ncez.mzcr.cz/fhir/sid/clk" (exactly)
 * identifier[CLK].value 1..
+* identifier[CLK].assigner only Reference(CZ_OrganizationCore)
 * identifier[CLeK].system = "https://ncez.mzcr.cz/fhir/sid/clek" (exactly)
 * identifier[CLeK].value 1..
+* identifier[CLeK].assigner only Reference(CZ_OrganizationCore)
 * active ^definition = "Whether this practitioner's record is in active use. \r\n\r\nIt is RECOMMENDED to keep the value ‘true’ as long as the practitioner is still being treated by the provider of the data."
 /*
 * name 0..1 MS
@@ -43,3 +46,5 @@ Description: "Czech national profile for practitioner.Contains information about
 * communication ^definition = "A language the practitioner can use in patient communication.\r\n\r\nIt is RECOMMENDED to include this when available"
 * communication ^comment = "The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.\r\n\r\nSpecial remarks for KMEHR users:\r\nThe 'usuallanguage' element in a KMEHR message only refers to the use of W3C language codes. As such, the language codes as proposed in the FHIR standard should not present any interoperability issue.\r\nNote the KMEHR element implies it is the language usally used by the practitioner. "
 */
+
+* qualification.issuer only Reference(CZ_OrganizationCore)

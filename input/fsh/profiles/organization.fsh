@@ -25,15 +25,20 @@ Description: "Czech national profile defines the way the organization is represe
 * identifier[KRPZS].system = "https://ncez.mzcr.cz/fhir/sid/krpzs" (exactly)
 * identifier[KRPZS].value 1..
 * identifier[KRPZS] ^short = "This identification is according to the National Register of Health Service Providers."
+* identifier[KRPZS].assigner only Reference(CZ_OrganizationCore)
 * identifier[ICO].system = "https://ncez.mzcr.cz/fhir/sid/ico" (exactly)
 * identifier[ICO].value 1..
+* identifier[ICO].assigner only Reference(CZ_OrganizationCore)
 * identifier[ICZ].system = "https://ncez.mzcr.cz/fhir/sid/icz" (exactly)
 * identifier[ICZ].value 1..
+* identifier[ICZ].assigner only Reference(CZ_OrganizationCore)
 * identifier[ICP].system = "https://ncez.mzcr.cz/fhir/sid/icp" (exactly)
 * identifier[ICP].value 1..
+* identifier[ICP].assigner only Reference(CZ_OrganizationCore)
 * identifier[KP].system = "https://ncez.mzcr.cz/fhir/sid/kp" (exactly)
 * identifier[KP].value 1..
 * identifier[KP].value from HealthInsuranceCompanyCodeCzVs
+* identifier[KP].assigner only Reference(CZ_OrganizationCore)
 
 * active ^definition = "Whether the organization's record is still in active use."
 
@@ -53,3 +58,5 @@ Description: "Czech national profile defines the way the organization is represe
 
 * address only CZ_Address
 //* address ^definition = "An address for the organization.\r\n\r\nIt is RECOMMENDED to include this when available"
+
+* partOf only Reference(CZ_OrganizationCore)

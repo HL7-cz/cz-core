@@ -1,7 +1,7 @@
 Profile: CZ_DeviceObserver
 Parent: Device
 Id: cz-device-observer
-Title: "Device - performer, observer"
+Title: "Device:Performer/Observer (CZ)"
 Description: "Czech profile represents the constraints applied to the Device resource by the Czech national interoperability project.This profile describes a device that plays the role of observer or performer."
 //* ^status = #active
 * ^experimental = false
@@ -15,3 +15,6 @@ Description: "Czech profile represents the constraints applied to the Device res
 * manufacturer //MS
 * modelNumber //MS
 * patient only Reference(CZ_PatientCore)
+* owner only Reference(CZ_OrganizationCore)
+* location only Reference(CZ_LocationCore)
+* parent only Reference(CZ_DeviceObserver or CZ_MedicalDevice)
