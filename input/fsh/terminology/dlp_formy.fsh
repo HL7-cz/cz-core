@@ -17,6 +17,7 @@ Description:   "Codesystem of DLP formy. Identification form."
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #TBL_FLM "Potahovaná tableta"
+* #INJSOL "Injekční roztok"
 
 ValueSet:     DLPFormyCzVs
 Id:	        dlpformy-cz-vs

@@ -17,6 +17,7 @@ Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
+* #0226200 "Fludeoxythymidin"
 
 ValueSet:     DLPLecivePripravkyCzVs
 Id:	        dlplecivepripravky-cz-vs
