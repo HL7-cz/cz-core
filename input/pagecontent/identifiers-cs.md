@@ -236,7 +236,7 @@ Jmenný prostor identifikátoru je v tomto případě prezentován hodnotou: `ht
 | Pacient        | Číslo pasu                                                   | http://hl7.org/fhir/sid/passport-CZE |
 | Pacient        | Číslo občanského průkazu                                     | https://ncez.mzcr.cz/fhir/sid/op     |
 | Pacient        | Číslo pojištěnce                                             | https://ncez.mzcr.cz/fhir/sid/cpoj   |
-| **Organizace** | Kmenový registr poskytovatelů zdravotních služeb - KRZPS     | https://ncez.mzcr.cz/fhir/sid/krpzs  |
+| **Organizace** | Kmenový registr poskytovatelů zdravotních služeb - KRPZS     | https://ncez.mzcr.cz/fhir/sid/krpzs  |
 | Organizace     | Identifikační číslo osoby (právnické nebo živnostníka) - IČO | https://ncez.mzcr.cz/fhir/sid/ico    |
 | Organizace     | Kód pojišťovny - KP                                          | https://ncez.mzcr.cz/fhir/sid/kp     |
 | Organizace     | Identifikační číslo poskytovatele zdravotních služeb - IČZ   | https://ncez.mzcr.cz/fhir/sid/icz    |
