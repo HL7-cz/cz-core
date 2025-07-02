@@ -15,8 +15,7 @@ Description: "Czech national profile for a medication."
 * code from DLPLecivePripravkyCzVs (required)
 * form from DLPFormyCzVs (preferred)
 * ingredient ^definition = "Identifies a particular constituent in the product."
-* ingredient.item[x] 
-* ingredient.itemCodeableConcept from DLPLecivelatkyCzVs (required)
-* ingredient.itemReference only Reference(Substance or CZ_Medication)
-
+* ingredient
+  * itemReference only Reference(CZ_Medication)
+  * itemCodeableConcept from DLPLecivelatkyCzVs (preferred)
 * manufacturer only Reference(CZ_OrganizationCore)
