@@ -14,7 +14,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * . ^definition = "Czech national profile defines how to represent Specimens in HL7 FHIR."
 * . ^comment = ""
 
-* text.status = #empty
+//* text.status = #empty
 * identifier MS
 * identifier ^definition = "Business identifier for specimen is RECOMMENDED to include when available."
 * status MS

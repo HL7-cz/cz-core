@@ -20,15 +20,17 @@ Description: "Example of a specimen taken from environment."
 * collection.collectedDateTime = "2022-10-25T13:35:00+01:00"
 
 Instance: Location-Praha5
-InstanceOf: Location
+InstanceOf: CZ_LocationCore
 Usage: #example
 Description: "Example of a location."
 * status = #active
 * name = "Nádražní 1, Praha 5"
 * address
-  * type = #physical
-  * text = "Nádražní 1, Praha 5"
-  * line[0] = "Nádražní 1"
-  * city = "Praha"
-  * postalCode = "15000"
-  * country = "Czech Republic"
+* address.type = #physical
+* address.text = "Nádražní 1, Praha 5"
+* address.line[+] = "Nádražní 1"
+* address.line[=].extension[streetName].valueString = "Nádražní"
+* address.line[=].extension[houseNumber].valueString = "1"
+* address.city = "Praha"
+* address.postalCode = "15000"
+* address.country = "Czech Republic"
