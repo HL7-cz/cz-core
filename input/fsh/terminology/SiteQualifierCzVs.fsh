@@ -1,24 +1,15 @@
-ValueSet:      SiteQualifierCzVs
-Id:	       siteQualifier-cz
+ValueSet:      CZ_SiteQualifierVs
+Id:	       cz-sitequalifier-vs
 Title:	       "Body Structure Qualifier"
 Description:   "Body Structure site qualifier. It indicates the body site qualifier from which a specimen is collected. (based on SNOMED CT)"
 
-
-// * ^experimental = false
-// * ^publisher = "HL7 Cz"
-// * ^copyright = "HL7 Cz"
-
 * insert SNOMEDCopyrightForVS
-* insert SetFmmandStatusRule ( 2, trial-use)
 
-//* include codes from valueset $BodystructureLocationQualifierR5
-//* exclude codes from valueset LabLateralityEuVs
 * $sct#7771000 "Left"
 * $sct#24028007 "Right"
 * $sct#51440002 "Bilateral"
 * $sct#46053002 "Distal"
 * $sct#255554000 "Dorsal"
-//* $sct#264147007 "Plantar" inactive concept
 * $sct#261183002 "Upper"
 * $sct#261122009 "Lower"
 * $sct#255561001 "Medial"

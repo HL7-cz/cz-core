@@ -37,7 +37,7 @@ Description: "Czech national profile defines the way the organization is represe
 * identifier[ICP].assigner only Reference(CZ_OrganizationCore)
 * identifier[KP].system = "https://ncez.mzcr.cz/fhir/sid/kp" (exactly)
 * identifier[KP].value 1..
-* identifier[KP].value from HealthInsuranceCompanyCodeCzVs
+* identifier[KP].value from CZ_HealthInsuranceCompanyCodeVs
 * identifier[KP].assigner only Reference(CZ_OrganizationCore)
 
 * active ^definition = "Whether the organization's record is still in active use."

@@ -1,5 +1,5 @@
-CodeSystem:     DLPLecivePripravkyCzCs
-Id:	        dlplecivepripravky-cz-cs
+CodeSystem:     CZ_DLPLecivePripravkyCs
+Id:	        cz-dlplecivepripravky-cs
 Title:	       "Codesystem of DLP Lecive pripravky"
 Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 
@@ -13,14 +13,14 @@ Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 * ^publisher = "UZIS"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://hl7.cz/fhir/core/CodeSystem/dlplecivepripravky-cz-cs"
+* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-dlplecivepripravky-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
 * #0226200 "Fludeoxythymidin"
 
-ValueSet:     DLPLecivePripravkyCzVs
-Id:	        dlplecivepripravky-cz-vs
+ValueSet:     CZ_DLPLecivePripravkyVs
+Id:	        cz-dlplecivepripravky-vs
 Title:	       "Value set of DLP Lecive pripravky"
 Description:   "Value set of DLP Lecive pripravky. Identification medication."
 
@@ -32,7 +32,7 @@ Description:   "Value set of DLP Lecive pripravky. Identification medication."
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "UZIS"
-* ^url = "https://hl7.cz/fhir/core/ValueSet/dlplecivepripravky-cz-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-dlplecivepripravky-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
-* include codes from system DLPLecivePripravkyCzCs
+* include codes from system CZ_DLPLecivePripravkyCs

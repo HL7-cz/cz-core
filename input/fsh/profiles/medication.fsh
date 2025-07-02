@@ -12,10 +12,10 @@ Description: "Czech national profile for a medication."
 * . ^definition = "This profile is derived from the Medication in FHIR, which is a record of the medication."
 
 * identifier 1..
-* code from DLPLecivePripravkyCzVs (required)
-* form from DLPFormyCzVs (preferred)
+* code from CZ_DLPLecivePripravkyVs (required)
+* form from CZ_DLPFormyVs (preferred)
 * ingredient ^definition = "Identifies a particular constituent in the product."
 * ingredient
   * itemReference only Reference(CZ_Medication)
-  * itemCodeableConcept from DLPLecivelatkyCzVs (preferred)
+  * itemCodeableConcept from CZ_DLPLecivelatkyVs (preferred)
 * manufacturer only Reference(CZ_OrganizationCore)

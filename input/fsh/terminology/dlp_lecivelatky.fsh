@@ -1,5 +1,5 @@
-CodeSystem:     DLPLecivelatkyCzCs
-Id:	        dlplecivelatky-cz-cs
+CodeSystem:     CZ_DLPLecivelatkyCs
+Id:	        cz-dlplecivelatky-cs
 Title:	       "Codesystem of DLP Lecive latky"
 Description:   "Codesystem of DLP Lecive latky. Identification ingredient."
 
@@ -13,13 +13,13 @@ Description:   "Codesystem of DLP Lecive latky. Identification ingredient."
 * ^publisher = "UZIS"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://hl7.cz/fhir/core/CodeSystem/dlplecivelatky-cz-cs"
+* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-dlplecivelatky-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #10647 "SIMVASTATIN"
 
-ValueSet:     DLPLecivelatkyCzVs
-Id:	        dlplecivelatky-cz-vs
+ValueSet:     CZ_DLPLecivelatkyVs
+Id:	        cz-dlplecivelatky-vs
 Title:	       "Value set of DLP Lecive latky"
 Description:   "Value set of DLP Lecive latky (Substances)"
 
@@ -31,7 +31,7 @@ Description:   "Value set of DLP Lecive latky (Substances)"
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "UZIS"
-* ^url = "https://hl7.cz/fhir/core/ValueSet/dlplecivelatky-cz-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-dlplecivelatky-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
-* include codes from system DLPLecivelatkyCzCs
+* include codes from system CZ_DLPLecivelatkyCs

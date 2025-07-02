@@ -1,5 +1,5 @@
-ValueSet:      LateralityCzVs
-Id:	       laterality-cz-lab
+ValueSet:      CZ_LateralityVs
+Id:	       cz-laterality-lab
 Title:	       "Body Structure Laterality"
 Description:   "Body Structure site laterality qualifier. It indicates the body site laterality from which a specimen is collected. (based on SNOMED CT)"
 
