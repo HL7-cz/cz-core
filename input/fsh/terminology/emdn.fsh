@@ -1,5 +1,5 @@
-ValueSet:      EMDNCzVs
-Id:	       emdn-cz-vs
+ValueSet:      CZ_EMDNVs
+Id:	       cz-emdn-vs
 Title:	       "EMDN for specimen instrument"
 Description:   "EMDN for specimen instrument"
 
@@ -11,7 +11,7 @@ Description:   "EMDN for specimen instrument"
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "SMEMDN project"
-* ^url = "https://hl7.cz/fhir/core/ValueSet/emdn-cz-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-emdn-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 //ICD

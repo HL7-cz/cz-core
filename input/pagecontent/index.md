@@ -24,6 +24,14 @@ This guide is divided into several pages which are listed at the top of each pag
 - About:
   - [Downloads](downloads.html): This page provides links to downloadable artefacts.
 
+### References
+
+* Related Specifications:
+  * {{hl7XtEHR}}
+    * This specification inspired many of the design patterns defined in this IG.
+  * {{hl7Eu}}
+    * This specification is based on the design patterns defined in this IG.
+
 ### Dependencies
 
 {% include dependency-table.xhtml %}

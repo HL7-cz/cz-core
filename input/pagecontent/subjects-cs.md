@@ -12,7 +12,7 @@ Profil definuje reprezentaci zdravotnické role v českém zdravotnickém systé
 
 ###	Poskytovatel zdravotních služeb [(OrganizationEu)](https://build.fhir.org/ig/hl7-eu/base/StructureDefinition-organization-eu.html)
 
-Tento profil vymezuje způsob reprezentace organizace v kontextu českého národního projektu interoperability. Zákon `č. 372/2011 Sb.` explicitně upravuje identifikaci poskytovatelů zdravotních služeb prostřednictvím registrace, přiděleného IČO a dalších evidenčních údajů například ICZ, ICP. Tyto informace jsou vedeny v registru poskytovatelů zdravotních služeb KRZSP a zajišťují jednoznačnou identifikaci každého subjektu poskytujícího zdravotní péči v české republice. 
+Tento profil vymezuje způsob reprezentace organizace v kontextu českého národního projektu interoperability. Zákon `č. 372/2011 Sb.` explicitně upravuje identifikaci poskytovatelů zdravotních služeb prostřednictvím registrace, přiděleného IČO a dalších evidenčních údajů například ICZ, ICP. Tyto informace jsou vedeny v registru poskytovatelů zdravotních služeb KRPZS a zajišťují jednoznačnou identifikaci každého subjektu poskytujícího zdravotní péči v české republice. 
 
 ###	Související osoba [(RelatedPerson)](https://hl7.org/fhir/R4/relatedperson.html)
 

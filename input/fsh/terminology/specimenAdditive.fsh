@@ -1,5 +1,5 @@
-ValueSet:      SpecimenAdditiveCz
-Id:	       specimenAdditive-cz
+ValueSet:      CZ_SpecimenAdditiveVs
+Id:	       cz-specimenAdditive-vs
 Title:	       "Specimen Additive"
 Description:   "List of the specimen additives. Additives are commonly added to the vacutainer tubes to preserve the specimen for analysis"
 

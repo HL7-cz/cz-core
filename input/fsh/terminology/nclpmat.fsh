@@ -1,5 +1,5 @@
-CodeSystem:      NCLPMatCzCs
-Id:	       nclpmat-cz-cs
+CodeSystem:      CZ_NCLPMatCs
+Id:	       cz-nclpmat-cs
 Title:	       "NCLP MAT for specimen material"
 Description:   "NCLP MAT for specimen material"
 
@@ -13,7 +13,7 @@ Description:   "NCLP MAT for specimen material"
 * ^publisher = "MZČR"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://hl7.cz/fhir/core/CodeSystem/nclpmat-cz-cs"
+* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-nclpmat-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #ADRC "Kůra nadledvin"
@@ -37,8 +37,8 @@ Description:   "NCLP MAT for specimen material"
 * #BIOP "Tkáň(biopsie)"
 * #BM "Kostní dřeň"
 
-ValueSet:     NCLPMatCzVs
-Id:	        nclpmat-cz-vs
+ValueSet:     CZ_NCLPMatVs
+Id:	        cz-nclpmat-vs
 Title:	       "Value set of NCLP MAT"
 Description:   "Value set of NCLP MAT"
 
@@ -50,7 +50,7 @@ Description:   "Value set of NCLP MAT"
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "MZČR"
-* ^url = "https://hl7.cz/fhir/core/ValueSet/nclpmat-cz-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-nclpmat-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
-* include codes from system NCLPMatCzCs
+* include codes from system CZ_NCLPMatCs

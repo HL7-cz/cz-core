@@ -3,20 +3,20 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cz.core
-canonical: https://hl7.cz/fhir/core
-name: HL7CzCoreImplementationGuide
-title: HL7 Czech Base and Core Implementation Guide
-description: HL7 Czech Base and Core Resources Implementation Guide
+id: hl7.fhir.cz.img
+canonical: https://hl7.cz/fhir/img #!!change here!!
+name: HL7CzImagingReportImplementationGuide
+title: HL7 Czech Imaging Report IG
+description: Czech Imaging Report Implementation Guide
 status: draft # draft | active | retired | unknown
-version: 0.3.0-ballot
+version: 0.1.0-ballot
 language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2024+
-releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+copyrightYear: 2025+
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
-jurisdiction: urn:iso:std:iso:3166#CZ "Czechia"
+jurisdiction: urn:iso:std:iso:3166#CZ "Czechia" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 Czech Republic
   url: https://www.hl7.cz/
@@ -36,11 +36,13 @@ publisher:
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #     version: 1.0.0
 dependencies:
-  hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.cz.core: current
+  hl7.fhir.cz.img-order: current
   hl7.fhir.eu.base: 0.1.0-ballot
-  hl7.fhir.cz.terminology: current
+#  hl7.fhir.eu.imaging: current -- nelze je na R5
   hl7.fhir.extensions.r5: 4.0.1
-  # hl7.fhir.eu.laboratory: current
+  hl7.fhir.uv.extensions.r4: 5.2.0
+  hl7.fhir.eu.extensions: 0.1.1-ballot
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -68,28 +70,14 @@ pages:
     title: Home
   index-cs.md:
     title: Domovská stránka
-  elements-FHIR-en.md:
-    title: Basic FHIR elements in English
-  elements-FHIR-cs.md:
-    title: Basic FHIR elements in Czech
-  subjects-en.md:
-    title: Subjects in English
-  subjects-cs.md:
-    title: Subjects in Czech
-  objects-en.md:
-    title: Objects in English
-  objects-cs.md:
-    title: Objects in Czech
-  identifiers-en.md:
-    title: Identifiers in English
-  identifiers-cs.md:
-    title: Identifiers in Czech
-  artifacts.xml:
-    title: Summary artifacts
-  downloads.md:
-    title: Download
-  downloads-cs.md:
-    title: Download
+  scope-and-content.md:
+    title: Scope and content
+  scope-and-content-cs.md:
+    title: Rozsah použití a obsah
+  background.md:
+    title: Background
+  background-cs.md:
+    title: Background
   authors.md:
     title: Authors
   authors-cs.md:
@@ -102,6 +90,56 @@ pages:
     title: Dependencies
   dependencies-cs.md:
     title: Závislosti
+  examples.md:
+    title: Examples
+  examples-cs.md:
+    title: Příklady
+  logical-models.md:
+    title: Logical models
+  logical-models-cs.md:
+    title: Datová sada - logické modely
+  model-map.md:
+    title: Model maps
+  model-map-cs.md:
+    title: Mapování logického modelu
+  obligations.md:
+    title: Obligations
+  obligations-cs.md:
+    title: Obligations
+  terminology-considerations.md:
+    title: Terminology considerations
+  terminology-considerations-cs.md:
+    title: Terminologické aspekty  
+  use-cases.md:
+    title: Use cases
+  use-cases-cs.md:
+    title: Případy užití
+  workflow.md:
+    title: Workflow  
+  workflow-cs.md:
+    title: Workflow 
+  artifacts.xml:
+    title: Artifacts
+  downloads.md:
+    title: Download
+  downloads-cs.md:
+    title: Download
+# === MAP ====
+  Header-map.html:
+    title: Header Model map
+  Header-map-cs.html:
+    title: Mapování logického modelu hlavičky
+  Body-map.html:
+    title: Body Model map
+  Body-map-cs.html:
+    title: Mapování logického modelu těla
+  Attachment-map.html:
+    title: Presented Form and Attachment Model map
+  Attachment-map-cs.html:
+    title: Mapování logického modelu vizuální podoby dokumentu a příloh
+
+# TODO
+
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -111,22 +149,21 @@ pages:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #
 parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  special-url:
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-administrative-gender-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-contact-person-relation-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-drzar
-    - https://ncez.mzcr.cz/fhir/CodeSystem/nrzp-povolani
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/nrzp-povolani-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/PassportNS-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-tab-ta
-    - https://ncez.mzcr.cz/fhir/ValueSet/typ-registrujiciho-lekare-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/role-code-supplement
-    - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
-    - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
-  pin-canonicals: pin-multiples
-  path-expansion-params: '../../expansion-params.json'
+#  special-url:
+#    - https://ncez.mzcr.cz/fhir/ValueSet/cz-administrative-gender-vs
+#    - https://ncez.mzcr.cz/fhir/ValueSet/cz-contact-person-relation-vs
+#    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-drzar
+#    - https://ncez.mzcr.cz/fhir/CodeSystem/nrzp-povolani
+#    - https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
+#    - https://ncez.mzcr.cz/fhir/ValueSet/nrzp-povolani-vs
+#    - https://ncez.mzcr.cz/fhir/ValueSet/PassportNS-vs
+#    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-tab-ta
+#    - https://ncez.mzcr.cz/fhir/ValueSet/typ-registrujiciho-lekare-vs
+#    - https://ncez.mzcr.cz/fhir/CodeSystem/role-code-supplement
+#    - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
+#    - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
 #    - http://ncez.mzcr.cz/fhir/StructureDefinition/address-point-cz
+# path-expansion-params: '../../expansion-params.json' # for using SNOMED CT Czech Extension
 # path-resource:
 #    - input/resources
 #    - fsh-generated/resources
@@ -141,6 +178,8 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 #  generate-turtle:
 #  html-template:
 #  active-tables: false
+  pin-canonicals: pin-multiples
+  path-expansion-params: '../../expansion-params.json'
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
@@ -177,15 +216,26 @@ menu:
     Home (en): index.html
     Home (cs): index-cs.html
   Introduction:
-    Basic FHIR elements (en): elements-FHIR-en.html
-    Basic FHIR elements (cs): elements-FHIR-cs.html
-  Funtion view:
-    Subjects (en): subjects-en.html
-    Subjects (cs): subjects-cs.html
-    Objects (en): objects-en.html
-    Objects (cs): objects-cs.html
-    Identifiers (en): identifiers-en.html
-    Identifiers (cs): identifiers-cs.html
+    Scope and content (en): scope-and-content.html
+    Scope and content (cs): scope-and-content-cs.html
+    Background (en): background.html
+    Background (cs): background-cs.html
+  Functional:
+    Use cases (en): use-cases.html
+    Use cases (cs): use-cases-cs.html
+    Workflow (en): workflow.html
+    Workflow (cs): workflow-cs.html
+    Logical models (en): logical-models.html
+    Logical models (cs): logical-models-cs.html
+    Terminology considerations (en): terminology-considerations.html
+    Terminology considerations (cs): terminology-considerations-cs.html
+  Implementation:
+    Mapping to profiles (en): model-map.html
+    Mapping to profiles (cs): model-map-cs.html
+    Examples (en): examples.html
+    Examples (cs): examples-cs.html
+    Obligations (en): obligations.html
+    Obligations (cs): obligations-cs.html
   About:
     Authors (en): authors.html
     Authors (cs): authors-cs.html
@@ -196,7 +246,7 @@ menu:
     Copyright (en): copyright.html
     Copyright (cs): copyright-cs.html
   Artifacts: artifacts.html
-  IG Base EU: https://build.fhir.org/ig/hl7-eu/base/index.html
+  IG IMG EU: https://build.fhir.org/ig/hl7-eu/imaging/index.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -278,7 +328,19 @@ menu:
 #     resources:
 #     - StructureDefinition/bark-control
 #     - StructureDefinition/bee-sting
-#
+groups:
+  obligations:
+    name:  Actors and Obligations (Informative)
+    description: Actors and Obligations used to describe the Imaging Report functional requirements for the specified data elements. Informative for this version of the guide.
+    resources:
+      - ActorDefinition/actor-consumer-img
+      - ActorDefinition/actor-creator-img
+      - ActorDefinition/actor-repos-img
+      - StructureDefinition/cz-diagnosticReport-obl-img
+      - StructureDefinition/cz-observationResult-obl-img
+      - StructureDefinition/cz-patient-obl-img
+      - StructureDefinition/cz-serviceRequest-obl-img
+
 #
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -286,7 +348,7 @@ menu:
 # * date
 # * meta
 # * implicitRules
-# * language
+# * language = #cs
 # * text
 # * contained
 # * extension
@@ -316,9 +378,6 @@ menu:
 # The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
 # See the individual option definitions below for more detail.
 #
-instanceOptions:
-  manualSliceOrdering: true # true | false
-
 # instanceOptions:
 #   Determines for which types of Instances SUSHI will automatically set meta.profile
 #   if InstanceOf references a profile:

@@ -12,7 +12,7 @@ The profile defines the representation of a healthcare role in the Czech healthc
 
 ### Healthcare Provider Organization [(OrganizationEu)](https://build.fhir.org/ig/hl7-eu/base/StructureDefinition-organization-eu.html)
 
-This profile defines the way of representing an organization in the context of the Czech national interoperability project. Act `č. 372/2011 Sb.` explicitly regulates the identification of healthcare providers through registration, assigned IČO and other registration data, such as ICZ, ICP. This information is kept in the register of healthcare providers of the KRZSP and ensures the unambiguous identification of each entity providing healthcare in the Czech Republic.
+This profile defines the way of representing an organization in the context of the Czech national interoperability project. Act `č. 372/2011 Sb.` explicitly regulates the identification of healthcare providers through registration, assigned IČO and other registration data, such as ICZ, ICP. This information is kept in the register of healthcare providers of the KRPZS and ensures the unambiguous identification of each entity providing healthcare in the Czech Republic.
 
 ### Related Person [(RelatedPerson)](https://hl7.org/fhir/R4/relatedperson.html)
 

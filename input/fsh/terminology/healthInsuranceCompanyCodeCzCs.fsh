@@ -1,5 +1,5 @@
-CodeSystem:     HealthInsuranceCompanyCodeCzCs
-Id:	        healthInsuranceCompanyCode-cz-cs
+CodeSystem:     CZ_HealthInsuranceCompanyCodeCs
+Id:	        cz-healthInsuranceCompanyCode-cs
 Title:	       "Codesystem of Health Insurance Company Code"
 Description:   "Codesystem of Health Insurance Company Code. Identification number of a health insurance companies using the three-digit identification number of a company."
 
@@ -13,7 +13,7 @@ Description:   "Codesystem of Health Insurance Company Code. Identification numb
 * ^publisher = "UZIS"
 * ^caseSensitive = true
 * ^content = #complete
-* ^url = "https://hl7.cz/fhir/core/CodeSystem/healthInsuranceCompanyCode-cz-cs"
+* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-healthInsuranceCompanyCode-cs"
 //* ^url = "https://www.dastacr.cz/dasta/nclp_data/ds_UZIS/ZdravotniPojistovna.xml"
 * insert SetFmmandStatusRule(2, trial-use)
 
