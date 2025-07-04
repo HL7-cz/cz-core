@@ -16,7 +16,9 @@ Description: "Address of both types (physical and delivery)"
 * address.line[=].extension[houseNumber].valueString = "13a"
 * address.city = "Praha"
 * address.postalCode = "15000"
-* address.country = "CZ"
+* address.country = "Česká republika"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Czechia"
+
 
 // Příklad adresy s P.O.Boxem
 Instance: cz-patient-addr-example-2
