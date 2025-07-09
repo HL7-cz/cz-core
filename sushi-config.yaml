@@ -179,7 +179,7 @@ menu:
   Introduction:
     Basic FHIR elements (en): elements-FHIR-en.html
     Basic FHIR elements (cs): elements-FHIR-cs.html
-  Funtion view:
+  Function view:
     Subjects (en): subjects-en.html
     Subjects (cs): subjects-cs.html
     Objects (en): objects-en.html

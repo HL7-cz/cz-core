@@ -18,7 +18,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * identifier MS
 * identifier ^definition = "Business identifier for specimen is RECOMMENDED to include when available."
 * status MS
-* type MS
+* type from CZ_SpecimenTypeVs (preferred)
 * type ^definition = "The kind of material that forms the specimen. RECOMMENDED to include."
 //* type from CZ_MikrobiologickeVzorkyDASTAVS (preferred)
 * subject only Reference(Group or CZ_DeviceObserver or CZ_MedicalDevice or Substance or CZ_LocationCore or CZ_PatientCore)
