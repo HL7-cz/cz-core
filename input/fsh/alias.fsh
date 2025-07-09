@@ -50,6 +50,7 @@ Alias: $hl7CoverageType = http://hl7.org/fhir/ValueSet/coverage-type
 Alias: $hl7AllergyintoleranceClinical = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
 Alias: $hl7AllergyintoleranceType = http://hl7.org/fhir/ValueSet/allergy-intolerance-type
 Alias: $hl7AllergyintoleranceCategory = http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+Alias: $hl7AllergyintoleranceCode = http://hl7.org/fhir/ValueSet/allergyintolerance-code
 Alias: $hl7MedicationStatementStatus = http://hl7.org/fhir/ValueSet/medication-statement-status
 Alias: $SNOMEDCTMedicationCodes = http://hl7.org/fhir/ValueSet/medication-codes
 Alias: $hl7OrganizationType = http://hl7.org/fhir/ValueSet/organization-type

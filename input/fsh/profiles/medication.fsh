@@ -13,6 +13,15 @@ Description: "Czech national profile for a medication."
 
 * identifier 1..
 * code from CZ_DLPLecivePripravkyVs (required)
+* code ^binding.extension[0].extension[0].url = "key"
+* code ^binding.extension[=].extension[=].valueId = cz-dlpatc
+* code ^binding.extension[=].extension[+].url = "purpose"
+* code ^binding.extension[=].extension[=].valueCode = #candidate
+* code ^binding.extension[=].extension[+].url = "valueSet"
+* code ^binding.extension[=].extension[=].valueCanonical = "https://hl7.cz/fhir/core/ValueSet/cz-dlpatc-vs"
+* code ^binding.extension[=].extension[+].url = "documentation"
+* code ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a ATC value set."
+* code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * form from CZ_DLPFormyVs (preferred)
 * ingredient ^definition = "Identifies a particular constituent in the product."
 * ingredient
