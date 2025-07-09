@@ -2,7 +2,7 @@
 Profile:    CZ_AllergyIntolerance
 Parent:     AllergyIntolerance
 Id:         cz-allergyIntolerance
-Title:      "AllergyIntolerance (CZ)"
+Title:      "Allergy Intolerance (CZ)"
 Description: "Czech national profile for an Allergy Intolerance"
 //-------------------------------------------------------------------------------------------
 * ^experimental = false

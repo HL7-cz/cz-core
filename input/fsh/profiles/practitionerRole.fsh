@@ -2,7 +2,7 @@
 Profile:    CZ_PractitionerRoleBase
 Parent:     PractitionerRoleEu
 Id:         cz-practitionerrole-base
-Title:      "PractitionerRole (CZ base)"
+Title:      "Practitioner Role (CZ base)"
 Description: "Czech national profile for an practitioner role.It enables the identification of healthcare and non-healthcare workers, their expertise, workplaces and contact details."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false

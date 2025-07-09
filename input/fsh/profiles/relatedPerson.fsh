@@ -2,7 +2,7 @@
 Profile:    CZ_RelatedPersonBase
 Parent:     RelatedPerson
 Id:         cz-relatedPerson-base
-Title:      "RelatedPerson (CZ base)"
+Title:      "Related Person (CZ base)"
 Description: "Czech national profile for a related person. Contains an information about a person that is involved in the care for a patient,
 but who is not the target of healthcare, nor has a formal responsibility in the care process."
 //-------------------------------------------------------------------------------------------

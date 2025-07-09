@@ -4,7 +4,6 @@ Tato implementační příručka CZ Base and Core je založena na [FHIR verze R4
 
 V této implementační příručce naleznete pravidla pro vytváření národních profilů, používání identifikátorů a základních informačních komponent.
 
-### Scope
 ### Stručný rozsah
 Tato příručka je rozdělena na několik stránek, které jsou uvedeny v horní části každé stránky na liště nabídek.
 

@@ -79,6 +79,6 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 Profile: CZ_SpecimenAdditiveSubstance
 Parent: Substance
 Id: Substance-additive-cz
-Title: "Substance:SpecimenAdditiveSubstance (CZ)"
+Title: "Substance: Specimen Additive Substance (CZ)"
 Description: """This profile defines how to represent Specimen Additive Substances in HL7 FHIR for the purpose of this guide."""
 * code from CZ_SpecimenAdditiveVs (preferred)
