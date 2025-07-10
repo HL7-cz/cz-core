@@ -50,15 +50,15 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier[OP].value 1..1
 * identifier[OP].assigner only Reference(CZ_OrganizationCore)
 * identifier contains PAS 0..* //MS
-* identifier[PAS]
+* identifier[PAS] only CZ_Passport_Identifier
   * ^short = "Passport Number"
-  * ^definition = "An unique patient identifier (Passport Number)"
-* identifier[PAS].system from $PassportNSVS
+  * ^definition = "A temporary patient identifier (Passport Number)"
+* identifier[PAS].system from $PassportNSVS (required)
   * ^short = "Name space according to the passport issuer. FHIR records namespaces for passports in the format - http://hl7.org/fhir/sid/passport-XXX, where XXX is the three-letter country code according to ISO 3166"
-* identifier[PAS].use = #official
-* identifier[PAS].type = $v2-0203#PPN
-* identifier[PAS].value 1..1
-* identifier[PAS].assigner only Reference(CZ_OrganizationCore)
+//* identifier[PAS].use = #official
+//* identifier[PAS].type = $v2-0203#PPN
+//* identifier[PAS].value 1..1
+//* identifier[PAS].assigner only Reference(CZ_OrganizationCore)
 
 * name 1..* MS  // patient name element must be provided
 //* name only HumanNameEu // HumanNameEu is not anymore in hl7EU base profile
