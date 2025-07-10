@@ -7,14 +7,15 @@ Description: "Patient, contact information and practitioner"
 * identifier[RC] = rodnecislo_7161264528
 * identifier[RID][+].system = "https://ncez.mzcr.cz/fhir/sid/rid"
 * identifier[RID][=].value = "2066425387"
-* identifier[PAS][+].system = "http://hl7.org/fhir/sid/passport-CZE"
+* identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-CZE"
 * identifier[PAS][=].value = "23476533"
 * identifier[PAS][=].use = #official
 * identifier[PAS][=].type = $v2-0203#PPN
-* identifier[+].system = "http://hl7.org/fhir/sid/passport-SVK"
-* identifier[=].value = "88476522"
-* identifier[=].use = #official
-* identifier[=].type = $v2-0203#PPN
+* identifier[PAS][=].assigner.display = "Ministerstvo vnitra České republiky"
+* identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVK"
+* identifier[PAS][=].value = "88476522"
+* identifier[PAS][=].use = #official
+* identifier[PAS][=].type = $v2-0203#PPN
 
 * extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CZ
 * name.use = #usual
@@ -33,7 +34,8 @@ Description: "Patient, contact information and practitioner"
 * address[=].line[=].extension[houseNumber].valueString = "13a"
 * address[=].city = "Praha"
 * address[=].postalCode = "15000"
-* address[=].country = "CZ"
+* address[=].country = "Česká republika"
+  * extension[countryCode].valueCoding = #CZ "Česká republika"
 
 * contact[+].relationship.coding[+] = $v3-RoleCode#MTH "matka"
 * contact[=].relationship.coding[+] = $v2-0131#N "Příbuzný"
@@ -61,7 +63,8 @@ Description: "Patient, contact information and practitioner"
 * contact[=].address[=].line[=].extension[houseNumber].valueString = "18"
 * contact[=].address[=].city = "Trenčín"
 * contact[=].address[=].postalCode = "12345"
-* contact[=].address[=].country = "SK"
+* contact[=].address[=].country = "Slovensko"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#SK "Slovakia"
 
 * communication[+].language = urn:ietf:bcp:47#cs
 * communication[=].preferred = true
