@@ -17,7 +17,7 @@ Description: "Address of both types (physical and delivery)"
 * address.city = "Praha"
 * address.postalCode = "15000"
 * address.country = "Česká republika"
-  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Czechia"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Česká republika"
 
 
 // Příklad adresy s P.O.Boxem
@@ -39,7 +39,9 @@ Description: "Address with P.O.Box"
 * address[=].line[=].extension[postBox].valueString = "123"
 * address[=].city = "Praha"
 * address[=].postalCode = "15000"
-* address[=].country = "CZ"
+* address[=].country = "Česko"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Česká republika"
+
 
 Instance: cz-patient-addr-example-3
 InstanceOf: cz-patient-core
@@ -60,7 +62,8 @@ Description: "Permanent residence address"
 * address.line[=].extension[houseNumber].valueString = "13a"
 * address.city = "Praha"
 * address.postalCode = "15000"
-* address.country = "CZ"
+* address.country = "Česká republika"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Czechia"
 * address.extension[PermanentResidenceAddressCz].valueBoolean = true
 
 Instance: cz-patient-addr-example-4
@@ -81,9 +84,13 @@ Description: "Permanent residence address outside of the Czech Republic"
 * address.line[=].extension[streetName].valueString = "Malé námestie"
 * address.line[=].extension[houseNumber].valueString = "13a"
 * address.city = "Žilina"
-* address.country = "SK"
-* address.extension[PermanentResidenceAddressCz].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-* address.extension[PermanentResidenceAddressCz].valueCodeableConcept.coding.code = #SK
+* address.postalCode = "15000"
+* address.country = "Slovensko"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#SK "Slovensko"
+* address.extension[PermanentResidenceAddressCz].valueCodeableConcept = urn:iso:std:iso:3166#SK "Slovensko"
+
+//* address.extension[PermanentResidenceAddressCz].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+//* address.extension[PermanentResidenceAddressCz].valueCodeableConcept.coding.code = #SK
 
 Instance: cz-patient-addr-example-5
 InstanceOf: cz-patient-core
@@ -103,7 +110,8 @@ Description: "Address identified by RUIAN system"
 * address.line[=].extension[houseNumber].valueString = "13a"
 * address.city = "Praha"
 * address.postalCode = "15000"
-* address.country = "CZ"
+* address.country = "Česká republika"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Česká republika"
 * address.extension[addressPoint].valueIdentifier.system = "https://ncez.mzcr.cz/fhir/sid/ruian"
 * address.extension[addressPoint].valueIdentifier.value = "27318508"
 
