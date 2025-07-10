@@ -2,7 +2,7 @@
 Profile:    CZ_RelatedPersonCore
 Parent:     CZ_RelatedPersonBase
 Id:         cz-relatedPerson-core
-Title:      "RelatedPerson (CZ core)"
+Title:      "Related Person (CZ core)"
 Description: "Czech national profile for a related person.This profile sets minimum expectations for the Related Person resource common to most of the use cases."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false

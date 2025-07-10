@@ -1,7 +1,7 @@
 Profile: CZ_PatientAnimal
 Parent: Patient
 Id: cz-patient-animal
-Title:    "Patient:Animal (CZ)"
+Title:    "Patient: Animal (CZ)"
 Description: "This profile defines how to represent an Animal as subject of care in FHIR for the purpose of this guide.
 This is used to identify the species when a specimen is collected from an animal"
 * ^experimental = false

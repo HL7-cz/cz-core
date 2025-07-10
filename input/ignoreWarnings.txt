@@ -1,5 +1,22 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# A definition for CodeSystem 'url' could not be found
+A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated
+
+# URL does not resolve
+URL value 'https://hl7europe.org/example-identifier' does not resolve
+URL value 'https://ncez.mzcr.cz/fhir/sid/krzp' does not resolve
+URL value 'https://ncez.mzcr.cz/fhir/sid/cpoj' does not resolve
+URL value 'https://ncez.mzcr.cz/fhir/sid/rid' does not resolve
+URL value 'https://ncez.mzcr.cz/fhir/sid/rcis' does not resolve
+URL value 'https://ncez.mzcr.cz/fhir/sid/kp' does not resolve
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/ico'
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/kp'
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/rcis'
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/rid'
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/krzp'
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/ruian'
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/cpoj'
+
+#Ignore fragment definition
+HL7 Defined CodeSystems should ensure that every concept has a definition

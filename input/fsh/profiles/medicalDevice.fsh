@@ -1,7 +1,7 @@
 Profile: CZ_MedicalDevice
 Parent: Device
 Id: cz-medical-device
-Title: "MedicalDevice (CZ)"
+Title: "Medical Device (CZ)"
 Description: "Czech profile represents the constraints applied to the Device resource by the Czech national interoperability project.This profile constrains the representation of a medical device used by or implanted on the patient."
 //* ^status = #active
 * ^experimental = false
