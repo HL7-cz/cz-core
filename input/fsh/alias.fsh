@@ -41,7 +41,7 @@ Alias: $additional-data = https://hl7.cz/fhir/core/StructureDefinition/additiona
 
 
 // Valuesets:
-Alias: $CZ_AdministrativegenderVS = https://hl7.cz/fhir/ValueSet/administrative-gender-cz-vs
+Alias: $CZ_AdministrativegenderVS = https://hl7.cz/fhir/ValueSet/administrative-gender-cz
 Alias: $MedicalDevicesSnomedAbsentUnknownUvIps = http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-snomed-absent-unknown-uv-ips
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 Alias: $hl7vs-contact-and-relationship-cz = https://hl7.cz/fhir/ValueSet/hl7vs-contact-and-relationship-cz
