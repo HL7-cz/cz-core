@@ -13,6 +13,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * insert SetFmmandStatusRule ( 1, draft )
 
 //* language = urn:ietf:bcp:47#cs  -- todo EJAZYK
+* extension[birthPlace].valueAddress only CZ_Address
 
 * identifier //MS
 * identifier ^slicing.discriminator.type = #value
