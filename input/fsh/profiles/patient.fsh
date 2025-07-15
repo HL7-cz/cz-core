@@ -43,10 +43,10 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
   * ^example.valueString = "6309211234"
 * identifier[CPOJ].assigner only Reference(CZ_OrganizationCore)
 * identifier contains OP 0..* //MS
-* identifier[OP]
+* identifier[OP] 
   * ^short = "National Identity Card Number"
   * ^definition = "An unique patient identifier (National ID Card Number) issued by the ministry of interior"
-* identifier[OP].system = "https://ncez.mzcr.cz/fhir/sid/op" (exactly)
+* identifier[OP].system from OPNSVS (required)
 * identifier[OP].value 1..1
 * identifier[OP].assigner only Reference(CZ_OrganizationCore)
 * identifier contains PAS 0..* //MS
