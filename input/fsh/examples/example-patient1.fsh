@@ -35,7 +35,7 @@ Description: "Patient, contact information and practitioner"
 * address[=].city = "Praha"
 * address[=].postalCode = "15000"
 * address[=].country = "Česká republika"
-  * extension[countryCode].valueCoding = #CZ "Česká republika"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Česká republika"
 
 * contact[+].relationship.coding[+] = $v3-RoleCode#MTH "matka"
 * contact[=].relationship.coding[+] = $v2-0131#N "Příbuzný"
