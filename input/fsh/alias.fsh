@@ -38,6 +38,7 @@ Alias: $source-device = https://hl7.cz/fhir/core/StructureDefinition/source-devi
 Alias: $material = https://hl7.cz/fhir/core/StructureDefinition/material-cz
 Alias: $instrument = https://hl7.cz/fhir/core/StructureDefinition/instrument-cz
 Alias: $additional-data = https://hl7.cz/fhir/core/StructureDefinition/additional-data-cz
+Alias: $cz-organization-logo = http://hl7.org/fhir/StructureDefinition/organization-brand
 
 
 // Valuesets:
