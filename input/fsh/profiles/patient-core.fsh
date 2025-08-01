@@ -16,7 +16,6 @@ Description: "This profile sets minimum expectations for the Patient resource co
 //* language = urn:ietf:bcp:47#cs
 * extension contains
   $registering-provider named registeringProvider 0..
-
 * extension[registeringProvider]
   * ^short = "Registering primary outpatient healthcare provider"
   * ^definition = "A registering provider means an ambulatory care provider in the field of general practice medicine, in the field of practice medicine for children and adolescents, in the field of dentistry or in the field of gynecology and obstetrics, who accepted a patient for the purpose of providing primary ambulatory care."
@@ -28,6 +27,9 @@ Description: "This profile sets minimum expectations for the Patient resource co
 * name 1..* //MS  // patient name element must be provided
 * name obeys cz-pat-1
 * name.given ^min = 1
+* birthDate.extension contains $data-absent-reason named dob-absent-reason 0..1
+* birthDate.extension[dob-absent-reason] ^short = "Reason for not providing the Date of Birth."
+* birthDate.extension[dob-absent-reason] ^definition = "Reason for not providing the Date of Birth."
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
