@@ -14,6 +14,7 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 
 * practitioner only Reference(CZ_PractitionerCore)
 * organization only Reference(CZ_OrganizationCore)
+* location only Reference(CZ_LocationCore)
 //* organization MS
 /*
 //* code MS

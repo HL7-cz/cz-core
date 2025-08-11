@@ -47,4 +47,4 @@ Description: "Czech national profile for practitioner.Contains information about
 * communication ^comment = "The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.\r\n\r\nSpecial remarks for KMEHR users:\r\nThe 'usuallanguage' element in a KMEHR message only refers to the use of W3C language codes. As such, the language codes as proposed in the FHIR standard should not present any interoperability issue.\r\nNote the KMEHR element implies it is the language usally used by the practitioner. "
 */
 
-* qualification.issuer only Reference(CZ_OrganizationCore)
+* qualification.issuer only Reference(CZ_OrganizationBase)

@@ -50,7 +50,7 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
 
 * address only CZ_Address
 
-* patient only Reference(CZ_PatientCore)
+* patient only Reference(CZ_PatientBase)
 
 * gender from $CZ_AdministrativegenderVS (required)
 
