@@ -34,8 +34,8 @@ Description: "Patient, contact information and practitioner"
 * address[=].line[=].extension[houseNumber].valueString = "13a"
 * address[=].city = "Praha"
 * address[=].postalCode = "15000"
-* address[=].country = "Česká republika"
-  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Česká republika"
+* address[=].country = "CZ"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Czechia"
 
 * contact[+].relationship.coding[+] = $v3-RoleCode#MTH "matka"
 * contact[=].relationship.coding[+] = $v2-0131#N "Příbuzný"
@@ -76,9 +76,9 @@ Description: "Patient, contact information and practitioner"
 * generalPractitioner.display = "MUDr. Josef Švejk"
 
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
-* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#700232004 "Všeobecné lékařské služby"
+* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#700232004 "General medical service"
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
-* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#310060005 "Gynekologické a porodnické služby"
+* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#310060005 "Obstetrics and gynecology service"
 
 Instance: RegisteringProviderExample
 InstanceOf: CZ_OrganizationCore
