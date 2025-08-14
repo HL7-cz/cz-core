@@ -19,6 +19,10 @@ Description:   "Codesystem of DLP ATC. Identification form."
 // TODO: Correct when ATC will be awailable on Tx server
 * #J01CA "PENICILINY SE ŠIROKÝM SPEKTREM"
 * #C10AA01 "SIMVASTATIN"
+* #J07BN01 "COVID-19, RNA VAKCÍNA"
+* #M01AE01 "IBUPROFEN"
+* #N02BE01 "PARACETAMOL"
+* #H03AA01 "LEVOTHYROXINE SODIUM"
 
 ValueSet:     CZ_DLPATCVs
 Id:	        cz-dlpatc-vs

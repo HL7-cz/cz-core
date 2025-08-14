@@ -18,6 +18,10 @@ Description:   "Codesystem of DLP Lecive latky. Identification ingredient."
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #10647 "SIMVASTATIN"
+* #828 "LEVOTHYROXINUM NATRICUM"
+* #1593 "IBUPROFENUM"
+* #1064 "PARACETAMOLUM"
+* #23463 "SARS-COV-2 (OMICRON JN.1) SPIKE PROTEIN"
 
 ValueSet:     CZ_DLPLecivelatkyVs
 Id:	        cz-dlplecivelatky-vs

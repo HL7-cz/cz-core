@@ -19,6 +19,10 @@ Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 
 * #0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
 * #0226200 "Fludeoxythymidin"
+* #0271911 "COMIRNATY OMICRON XBB.1.5"
+* #0254294 "IBALGIN"
+* #0243131 "EUTHYROX"
+* #0253304 "PARACETAMOL ZENTIVA K.S."
 
 ValueSet:     CZ_DLPLecivePripravkyVs
 Id:	        cz-dlplecivepripravky-vs

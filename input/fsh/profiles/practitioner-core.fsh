@@ -37,5 +37,6 @@ Description: "Czech national profile for practitioner. Contains information abou
 //* telecom //MS
 * telecom ^definition = "A contact detail for the practitioner, e.g. a telephone number or an email address.\r\n\r\nIt is RECOMMENDED to at least add one phone or email address."
 
+* qualification.issuer only Reference(CZ_OrganizationCore)
 //* address MS
 //* address only cz-address

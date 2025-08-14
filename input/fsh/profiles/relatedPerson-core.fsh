@@ -18,6 +18,8 @@ Description: "Czech national profile for a related person.This profile sets mini
 * name obeys cz-relPer-1
 * name.given ^min = 1
 
+* patient only Reference(CZ_PatientCore)
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Invariant: cz-relPer-1
 Description: "RelatedPerson.name.given, RelatedPerson.name.family, RelatedPerson.name.text or data-absent-reason MUST be filled"
