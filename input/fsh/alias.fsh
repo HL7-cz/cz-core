@@ -37,8 +37,9 @@ Alias: $sampling-point = https://hl7.cz/fhir/core/StructureDefinition/sampling-p
 Alias: $source-device = https://hl7.cz/fhir/core/StructureDefinition/source-device-cz
 Alias: $material = https://hl7.cz/fhir/core/StructureDefinition/material-cz
 Alias: $instrument = https://hl7.cz/fhir/core/StructureDefinition/instrument-cz
-Alias: $additional-data = https://hl7.cz/fhir/core/StructureDefinition/additional-data-cz
-Alias: $cz-organization-brand = http://hl7.org/fhir/StructureDefinition/organization-brand
+//Alias: $additional-data = https://hl7.cz/fhir/core/StructureDefinition/additional-data-cz
+Alias: $organization-brand = http://hl7.org/fhir/StructureDefinition/organization-brand
+//Alias: $cz-organization-brand = https://hl7.cz/fhir/StructureDefinition/organization-logo
 
 
 // Valuesets:
