@@ -16,7 +16,7 @@ Description: """Czech national profile sets minimum expectations for the Organiz
 * identifier 0..*
 * obeys cz-org-1
 // Přidání rozšíření pro logo
-* extension contains $organization-brand named brand 0..1
+* extension contains $cz-organization-logo named logo 0..1
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
