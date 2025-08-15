@@ -3,7 +3,7 @@ Id:	        cz-dlpatc-cs
 Title:	       "Codesystem of DLP ATC"
 Description:   "Codesystem of DLP ATC. Identification form."
 
-* ^language = #cs
+* ^language = #cs-CZ
 * ^identifier.system = "urn:ietf:rfc:3986"
 //* ^identifier.value = "urn:oid:1.2.203.24341.11.2.10.2.1"
 * ^version = "1.0"
@@ -16,7 +16,7 @@ Description:   "Codesystem of DLP ATC. Identification form."
 * ^content = #fragment
 * ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-dlpatc-cs"
 * insert SetFmmandStatusRule(2, trial-use)
-
+// TODO: Correct when ATC will be awailable on Tx server
 * #J01CA "PENICILINY SE ŠIROKÝM SPEKTREM"
 * #C10AA01 "SIMVASTATIN"
 * #J07BN01 "COVID-19, RNA VAKCÍNA"

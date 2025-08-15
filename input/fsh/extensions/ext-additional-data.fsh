@@ -1,3 +1,4 @@
+/*
 Extension: AdditionalDataCz
 Id:   additional-data-cz
 Title:  "Additional data"
@@ -20,4 +21,4 @@ Description: "This extension presents additional formalised sample data"
 * extension[code].value[x] only CodeableConcept
 * extension[value] only Extension
 * extension[value].value[x] 1..1
-* extension[value].value[x] only Quantity
+* extension[value].value[x] only Quantity */

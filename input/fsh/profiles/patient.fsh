@@ -44,7 +44,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
   * ^example.valueString = "6309211234"
 * identifier[CPOJ].assigner only Reference(CZ_OrganizationCore)
 * identifier contains OP 0..* //MS
-* identifier[OP] 
+* identifier[OP]
   * ^short = "National Identity Card Number"
   * ^definition = "An unique patient identifier (National ID Card Number) issued by the ministry of interior"
 * identifier[OP].system from OPNSVS (required)
@@ -107,7 +107,6 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 //* address MS
 * address only CZ_Address
   * ^definition = "An address for the individual. \n\nIt is RECOMMENDED to include an address when available."
-  * obeys cnt-2-char
 
 * generalPractitioner // MS  // general practicioner must be supported
   * ^short = "A physician or provider nominated by the patient"
