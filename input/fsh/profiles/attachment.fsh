@@ -4,8 +4,9 @@ Id: cz-attachment
 Title: "Attachment (CZ)"
 Description: "Czech national profile for attachment. "
 
-* . ^short = "Imaging Order"  // TODO: Probrat s Pavlínou co to má být?
-* . ^definition = "Imaging Order composition."
+* . ^short = "Document reference attachment"
+* . ^definition = "Document reference attachment profile for Czech national interoperability standards."
+* . ^comment = "Attachment can contain base64 encoded data or reference to external URL. URL reference is preferred in case of attached documents."
 
 * insert SetFmmandStatusRule ( 0, draft )
 
