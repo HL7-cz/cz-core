@@ -4,7 +4,7 @@ Id: cz-attachment
 Title: "Attachment (CZ)"
 Description: "Czech national profile for attachment. "
 
-* . ^short = "Imaging Order"
+* . ^short = "Imaging Order"  // TODO: Probrat s Pavlínou co to má být?
 * . ^definition = "Imaging Order composition."
 
 * insert SetFmmandStatusRule ( 0, draft )
