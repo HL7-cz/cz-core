@@ -27,4 +27,4 @@ Description: "Czech national profile for a coverage."
 * subscriberId 
   * ^short = "Identifier of the subcriber (patient or relatedPerson), in case of payment by insurance company, fill in the insured person's number (a.k.a Číslo pojištěnce)"
 * costToBeneficiary 
-  * ^short = "Information about the coverage made by patient (a.k.a Samoplátce)"
+  * ^short = "Information about the coverage of additional costs by the payer (a.k.a Samoplátce)"
