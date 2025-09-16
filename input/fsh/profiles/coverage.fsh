@@ -9,7 +9,7 @@ Description: "Czech national profile for a coverage."
 
 * . ^comment = ""
 * . ^short = "Czech coverage"
-* . ^definition = "This profile represents the requirements for the Coverage resource within the Czech national interoperability project. It is made for fill in information about insurance company, payor of cure and additional payments."
+* . ^definition = "This profile presents the requirements for the Coverage resource within the Czech national interoperability project. Coverage is intended to provide identifiers for information that would appear on an insured person's card, which can be used for partial or full reimbursement for the provision of healthcare products and services. At the same time, this resource can also be used to register \"self-payers,\" where the individual or organization are different from the insurer and assumes responsibility for paying some or all of the health care costs."
 
 * insert SetFmmandStatusRule ( 0, draft )
 
@@ -17,14 +17,14 @@ Description: "Czech national profile for a coverage."
 * type.coding from $hl7CoverageType
 
 * identifier 0..* 
-  * ^short = "Business Identifier of the Coverage, in case of payment by insurance company, fill in the number of insurance assigment (a.k.a Číslo pojistné smlouvy)"
+  * ^short = "Business identifier of the coverage. In the event of payment by an insurance company, enter the insurance assignment number (also known as Číslo pojistné smlouvy)."
 
 * beneficiary only Reference(CZ_PatientCore)
 * payor only Reference(CZ_PatientCore or CZ_OrganizationCore or CZ_RelatedPersonCore)
-  * ^short = "Information about the payor of a cure. It could be an insurance company, a patient, a related person of patient or an another organisation."
+  * ^short = "Information about the payor of the treatment. This  could be an insurance company, a patient, a related person of patient or an another organisation."
 * policyHolder only Reference(CZ_PatientCore or CZ_RelatedPersonCore or CZ_OrganizationCore)
 * subscriber only Reference(CZ_PatientCore or CZ_RelatedPersonCore)
 * subscriberId 
-  * ^short = "Identifier of the subcriber (patient or relatedPerson), in case of payment by insurance company, fill in the insured person's number (a.k.a Číslo pojištěnce)"
+  * ^short = "Identifier of the subscriber (patient or related person). In the event of payment by an insurance company, enter the insured person's number (also known as Číslo pojištěnce)."
 * costToBeneficiary 
-  * ^short = "Information about the coverage of additional costs by the payer (a.k.a Samoplátce)"
+  * ^short = "Information about the extra costs that are paid for by the payor (also known as Samoplátce)."
