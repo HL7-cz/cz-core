@@ -265,7 +265,17 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-# groups:
+groups:
+  actors:
+    name:  Actors
+    description: Actors used to describe the Document functional requirements for the specified data elements.
+    resources:
+      - ActorDefinition/actor-creator-L1
+      - ActorDefinition/actor-creator-L2
+      - ActorDefinition/actor-creator-L3
+      - ActorDefinition/actor-consumer-L1
+      - ActorDefinition/actor-consumer-L2
+      - ActorDefinition/actor-consumer-L3
 #   GroupA:
 #     name: Group A
 #     description: The Alpha Group
