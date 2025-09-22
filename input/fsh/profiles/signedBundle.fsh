@@ -37,7 +37,7 @@ Description: "Czech national profile for signed bundle. Contains a bundle and an
 
 * entry contains
     bundle 1..1 and
-    provenance 1..1
+    provenance 1..*
 
 * entry[bundle].resource only Bundle
 * entry[provenance].resource only CZ_Provenance
