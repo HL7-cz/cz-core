@@ -14,7 +14,7 @@ Description:   "Drug forms code system managed by Státní ústav kontroly léč
 * ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-dlpformy-cs"
+* ^url = "https://fhir.hl7cr.eu/core/CodeSystem/cz-dlpformy-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #TBL_FLM "Potahovaná tableta"
@@ -33,7 +33,7 @@ Description:   "Value set of DLP formy. Identification form."
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "UZIS"
-* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-dlpformy-vs"
+* ^url = "https://fhir.hl7cr.eu/core/ValueSet/cz-dlpformy-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * include codes from system CZ_DLPFormyCs

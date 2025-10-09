@@ -1,7 +1,7 @@
 Profile: CZ_Logo
 Parent: DocumentReference
 Id: cz-logo
-Title: "DocumentReference containing logo"
+Title: "DocumentReference containing logo (CZ)"
 Description: "Czech national profile for document reference containing logo."
 
 * . ^short = "Logo"

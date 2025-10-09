@@ -1,5 +1,5 @@
 CodeSystem:     CZ_DLPLecivePripravkyCs
-Id:	        cz-dlplecivepripravky-cs
+Id:	            dlp-lecive-pripravky-cs
 Title:	       "Codesystem of DLP Lecive pripravky"
 Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 
@@ -14,7 +14,7 @@ Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 * ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-dlplecivepripravky-cs"
+* ^url = $dlp-lecive-pripravky-cs  //"https://fhir.hl7cr.eu/core/CodeSystem/cz-dlplecivepripravky-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
@@ -25,7 +25,7 @@ Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 * #0253304 "PARACETAMOL ZENTIVA K.S."
 
 ValueSet:     CZ_DLPLecivePripravkyVs
-Id:	        cz-dlplecivepripravky-vs
+Id:	          dlplecive-pripravky-vs
 Title:	       "Value set of DLP Lecive pripravky"
 Description:   "Value set of DLP Lecive pripravky. Identification medication."
 
@@ -37,7 +37,7 @@ Description:   "Value set of DLP Lecive pripravky. Identification medication."
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "UZIS"
-* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-dlplecivepripravky-vs"
+* ^url = $dlp-lecive-pripravky-vs
 * insert SetFmmandStatusRule(2, trial-use)
 
 * include codes from system CZ_DLPLecivePripravkyCs

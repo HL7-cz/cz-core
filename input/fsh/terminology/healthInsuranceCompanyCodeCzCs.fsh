@@ -14,7 +14,7 @@ Description:   "Codesystem of Health Insurance Company Code. Identification numb
 * ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #complete
-* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-healthInsuranceCompanyCode-cs"
+* ^url = "https://fhir.hl7cr.eu/core/CodeSystem/cz-healthInsuranceCompanyCode-cs"
 //* ^url = "https://www.dastacr.cz/dasta/nclp_data/ds_UZIS/ZdravotniPojistovna.xml"
 * insert SetFmmandStatusRule(2, trial-use)
 

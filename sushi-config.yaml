@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cz.core
-canonical: https://hl7.cz/fhir/core
+canonical: https://fhir.hl7cr.eu/core
 name: HL7CzCoreImplementationGuide
 title: HL7 Czech Base and Core Implementation Guide
 description: HL7 Czech Base and Core Resources Implementation Guide

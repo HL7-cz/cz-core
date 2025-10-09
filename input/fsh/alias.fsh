@@ -15,6 +15,7 @@ Alias: $standardterms = http://standardterms.edqm.eu
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $allergyintolerance-certainty = http://terminology.hl7.org/CodeSystem/reaction-event-certainty
+Alias: $dlp-lecive-pripravky-cs = https://ncez.mzcr.cz/fhir/CodeSystem/dlp-lecive-pripravky-cs
 
 // Extensions:
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
@@ -29,22 +30,22 @@ Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-bir
 Alias: $sex-for-clinical-use = http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse
 Alias: $recordedSexOrGender = http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender
 Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
-Alias: $registering-provider = https://hl7.cz/fhir/core/StructureDefinition/registering-provider-cz
+Alias: $registering-provider = https://fhir.hl7cr.eu/core/StructureDefinition/registering-provider-cz
 Alias: $bodyStructure-laterality-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality
 Alias: $bodySite-reference = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $specimen-container-device-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device
-Alias: $sampling-point = https://hl7.cz/fhir/core/StructureDefinition/sampling-point-cz
-Alias: $source-device = https://hl7.cz/fhir/core/StructureDefinition/source-device-cz
-Alias: $material = https://hl7.cz/fhir/core/StructureDefinition/material-cz
-Alias: $instrument = https://hl7.cz/fhir/core/StructureDefinition/instrument-cz
-Alias: $cz-organization-logo = https://hl7.cz/fhir/core/StructureDefinition/cz-organization-logo
+Alias: $sampling-point = https://fhir.hl7cr.eu/core/StructureDefinition/sampling-point-cz
+Alias: $source-device = https://fhir.hl7cr.eu/core/StructureDefinition/source-device-cz
+Alias: $material = https://fhir.hl7cr.eu/core/StructureDefinition/material-cz
+Alias: $instrument = https://fhir.hl7cr.eu/core/StructureDefinition/instrument-cz
+Alias: $cz-organization-logo = https://fhir.hl7cr.eu/core/StructureDefinition/cz-organization-logo
 
 
 // Valuesets:
-Alias: $CZ_AdministrativegenderVS = https://hl7.cz/fhir/ValueSet/administrative-gender-cz
+Alias: $CZ_AdministrativegenderVS = https://terminology.hl7cr.eu/ValueSet/administrative-gender-cz
 Alias: $MedicalDevicesSnomedAbsentUnknownUvIps = http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-snomed-absent-unknown-uv-ips
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
-Alias: $hl7vs-contact-and-relationship-cz = https://hl7.cz/fhir/ValueSet/hl7vs-contact-and-relationship-cz
+Alias: $hl7vs-contact-and-relationship-cz = https://terminology.hl7cr.eu/ValueSet/hl7vs-contact-and-relationship-cz
 Alias: $RegisteringProviderServiceTypeCz = https://ncez.mzcr.cz/fhir/ValueSet/registering-provider-service-type-cz
 Alias: $hl7CoverageType = http://hl7.org/fhir/ValueSet/coverage-type
 Alias: $hl7AllergyintoleranceClinical = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
@@ -57,6 +58,8 @@ Alias: $hl7OrganizationType = http://hl7.org/fhir/ValueSet/organization-type
 Alias: $PassportNSVS = https://ncez.mzcr.cz/fhir/ValueSet/PassportNS-vs
 Alias: $hl7BodySite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $hl7BodyStructure = http://hl7.org/fhir/ValueSet/bodystructure-code
+Alias: $dlp-lecive-pripravky-vs = https://ncez.mzcr.cz/fhir/ValueSet/dlp-lecive-pripravky-vs
+Alias: $drzar-vs = https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
 
 
 // Profiles:
