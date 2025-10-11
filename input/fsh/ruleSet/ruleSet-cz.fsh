@@ -40,3 +40,10 @@ RuleSet: ImposeProfile ( profile, index )
 
 RuleSet: ValueSetSupplementRule (codeSystem)
 * ^extension[http://hl7.org/fhir/StructureDefinition/valueset-supplement].valueCanonical = {codeSystem}
+
+RuleSet: setOID ( oid )
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:{oid}"
+
+RuleSet: setUrl ( resourceId )
+* ^url = "https://terminology.hl7cr.eu/ValueSet/{resourceId}"

@@ -1,8 +1,10 @@
 Instance: AllergyToPenicilin
-InstanceOf: AllergyIntolerance
+InstanceOf: CZ_AllergyIntolerance
 Usage: #example
 Title: "Allergy to penicilin"
 Description: "Example for AllergyIntolerance"
+* identifier[+].system = "urn:ietf:rfc:3986"
+* identifier[=].value = "urn:uuid:d8f41e59-56fe-4440-9467-3a0f8601b91e"
 * clinicalStatus = $allergyintolerance-clinical#active "Active"
 * verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
 * type = #allergy

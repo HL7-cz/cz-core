@@ -7,7 +7,6 @@ Description: "Example of a specimen taken from animal."
 * type = $sct#119297000	"Blood specimen"
 * subject = Reference(Patient/Kocka) "Kočka"
 * collection.collectedDateTime = "2022-10-25T13:35:00+01:00"
-//* extension[material].valueCodeableConcept = https://fhir.hl7cr.eu/core/CodeSystem/nclpmat-cz-cs#B(C) "B(kap.)"
 
 Instance: Specimen-example-environment
 InstanceOf: CZ_Specimen

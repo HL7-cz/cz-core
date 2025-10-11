@@ -8,8 +8,8 @@ Description: "Valueset of national identity card's namespaces"
 * ^experimental = false
 * ^date = "2023-01-01"
 * ^publisher = "HL7 Czech Republic"
-* ^language = #cs-CZ
-* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
+* ^language = #cs
+//* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * insert SetFmmandStatusRule(1, draft)
 
 * $uri#http://terminology.hl7.org/NamingSystem/opNumNS-AFG "Pas: Afghanistan"

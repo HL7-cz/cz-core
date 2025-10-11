@@ -13,10 +13,10 @@ Description: "Czech national profile for a coverage."
 
 * insert SetFmmandStatusRule ( 0, draft )
 
-* type MS
-* type.coding from $hl7CoverageType
-
-* identifier 0..* 
+//* type MS
+//* type.coding from $hl7CoverageType
+* type.coding from CZ_CoverageTypeVS
+* identifier 0..*
   * ^short = "Business identifier of the coverage. In the event of payment by an insurance company, enter the insurance assignment number (also known as Číslo pojistné smlouvy)."
 
 * beneficiary only Reference(CZ_PatientCore)
@@ -24,7 +24,7 @@ Description: "Czech national profile for a coverage."
   * ^short = "Information about the payor of the treatment. This  could be an insurance company, a patient, a related person of patient or an another organisation."
 * policyHolder only Reference(CZ_PatientCore or CZ_RelatedPersonCore or CZ_OrganizationCore)
 * subscriber only Reference(CZ_PatientCore or CZ_RelatedPersonCore)
-* subscriberId 
+* subscriberId
   * ^short = "Identifier of the subscriber (patient or related person). In the event of payment by an insurance company, enter the insured person's number (also known as Číslo pojištěnce)."
-* costToBeneficiary 
+* costToBeneficiary
   * ^short = "Information about the extra costs that are paid for by the payor (also known as Samoplátce)."

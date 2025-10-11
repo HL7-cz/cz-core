@@ -78,7 +78,7 @@ Description: "Patient, contact information and practitioner"
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
 * extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#700232004 "General medical service"
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
-* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#310060005 "Obstetrics and gynecology service"
+* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#310061009 "Gynecology service"
 
 Instance: RegisteringProviderExample
 InstanceOf: CZ_OrganizationCore

@@ -1,7 +1,7 @@
 == Suppressed Messages ==
 
 # A definition for CodeSystem 'url' could not be found
-A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated
+# A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated
 
 # URL does not resolve
 URL value 'https://hl7europe.org/example-identifier' does not resolve
@@ -20,3 +20,6 @@ No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/cpoj'
 
 #Ignore fragment definition
 HL7 Defined CodeSystems should ensure that every concept has a definition
+
+# Deprecated value sets
+Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0

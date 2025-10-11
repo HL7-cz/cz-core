@@ -3,7 +3,7 @@ Id:	        cz-dlpatc-cs
 Title:	       "Codesystem of DLP ATC"
 Description:   "Codesystem of DLP ATC. Identification form."
 
-* ^language = #cs-CZ
+* ^language = #cs
 * ^identifier.system = "urn:ietf:rfc:3986"
 //* ^identifier.value = "urn:oid:1.2.203.24341.11.2.10.2.1"
 * ^version = "1.0"
@@ -11,7 +11,7 @@ Description:   "Codesystem of DLP ATC. Identification form."
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "UZIS"
-* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
+//* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #fragment
 * ^url = "https://fhir.hl7cr.eu/core/CodeSystem/cz-dlpatc-cs"
@@ -25,19 +25,19 @@ Description:   "Codesystem of DLP ATC. Identification form."
 * #H03AA01 "LEVOTHYROXINE SODIUM"
 
 ValueSet:     CZ_DLPATCVs
-Id:	        cz-dlpatc-vs
+Id:	          cz-dlpatc-vs
 Title:	       "Value set of DLP ATC"
-Description:   "Value set of DLP ATC. Identification form."
+Description:   "Value set of DLP ATC"
 
-* ^language = #cs-CZ
-* ^identifier.system = "urn:ietf:rfc:3986"
+* ^language = #cs
+//* ^identifier.system = "urn:ietf:rfc:3986"
 //* ^identifier.value = "urn:oid:1.2.203.24341.11.2.10.2.1"
 * ^version = "1.0"
 * ^status = #active
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "UZIS"
-* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
+//* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^url = "https://fhir.hl7cr.eu/core/ValueSet/cz-dlpatc-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 

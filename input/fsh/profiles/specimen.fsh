@@ -44,35 +44,6 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * condition MS
 * note MS
 
-/*
-* extension contains
-  $material named material 0..1 and
-  $instrument named instrument 0..1 and
-  $source-device named sourceDevice 0..1 and
-  $sampling-point named samplingPoint 0..1 and
-  $additional-data named additionalData 0..1
-
-* extension[material]
-  * ^short = "Material"
-  * ^definition = "Specimen material from NCLPMAT"
-* extension[material].value[x] from NCLPMatCzVs
-* extension[instrument]
-  * ^short = "Instrument"
-  * ^definition = "Device, instrument, physical object (drain, electrode, catheter, etc.). from SNOMED CT"
-* extension[instrument].value[x] from InstrumentCzVs
-* extension[sourceDevice]
-  * ^short = "Source Device"
-  * ^definition = "if the specimen is not collected directly from the patient but comes from a patient-related object, e.g. a catheter from EMDN"
-* extension[sourceDevice].value[x] from EMDNCzVs
-* extension[samplingPoint]
-  * ^short = "Sampling Point"
-  * ^definition = "The area where the material was collected; refers to the environment, not the patient."
-* extension[samplingPoint].value[x] from SpecimenSamplingPointCzVs
-* extension[additionalData]
-  * ^short = "Additional Data"
-  * ^definition = "Additional formalised sample data"
-*/
-
 
 // ----------------------------------------
 

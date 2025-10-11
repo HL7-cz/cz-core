@@ -41,7 +41,11 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
 * identifier[PAS].type = $v2-0203#PPN
 * identifier[PAS].value 1..1
 * identifier[PAS].assigner only Reference(CZ_OrganizationCore)
-
+* identifier contains RID 0..1
+* identifier[RID]
+  * ^short = "National Health Sector Identifier"
+  * ^definition = "An unique patient identifier (resortní identifikátor RID) or temporary patient identifier (DRID) according to the National Patient Register (KRP)"
+* identifier[RID] only CZ_RID_Identifier
 * relationship 0..* //MS
 //* relationship contains $PersonalRelationshipCzVS
 
