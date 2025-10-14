@@ -11,6 +11,6 @@ Description: "This extension provides a link to the order [(Reference(ServiceReq
 * value[x] 1..1
 * value[x] only boolean or CodeableConcept
 //* value[x] from $iso3166-1-2 (preferred)
-* valueCodeableConcept from $iso3166-1-2 (preferred)
+* valueCodeableConcept from $iso3166-1-2 (required)
   * ^short = "Code of the country in which the address is an official address similar to the address of permanent residence"
 * valueBoolean ^short = "Permanent residence address flag"
