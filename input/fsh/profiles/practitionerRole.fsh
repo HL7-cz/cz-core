@@ -11,7 +11,9 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 * . ^short = "Czech Practitioner Role (base)"
 * . ^definition = "The profile defines the representation of a healthcare role in the Czech healthcare system based on the FHIR PractitionerRole."
 
+* practitioner 1..1 
 * practitioner only Reference(CZ_PractitionerBase)
+* organization 1..1
 * organization only Reference(CZ_OrganizationBase)
 //* organization
 

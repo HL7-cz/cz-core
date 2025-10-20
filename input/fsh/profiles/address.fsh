@@ -12,6 +12,10 @@ It is always RECOMMENDED to give these elements separately. The national specifi
 * . ^definition = "Address according to Czech postal conventions. The address can be used both for delivering mail and for locating locations that do not have a valid mailing address. The use of extensions is not mandatory."
 * insert SetFmmandStatusRule ( 1, draft )
 
+* country
+  * ^short = "Country (e.g. can be ISO 3166 2 letter code)"
+  * extension[countryCode].value[x] from $iso3166-1-2 (required)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
