@@ -14,7 +14,7 @@ Description:   "Codesystem of DLP ATC. Identification form."
 //* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://fhir.hl7cr.eu/core/CodeSystem/cz-dlpatc-cs"
+* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-dlpatc-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 // TODO: Correct when ATC will be awailable on Tx server
 * #J01CA "PENICILINY SE ŠIROKÝM SPEKTREM"
@@ -38,7 +38,7 @@ Description:   "Value set of DLP ATC"
 * ^experimental = false
 * ^publisher = "UZIS"
 //* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
-* ^url = "https://fhir.hl7cr.eu/core/ValueSet/cz-dlpatc-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-dlpatc-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * include codes from system CZ_DLPATCCs

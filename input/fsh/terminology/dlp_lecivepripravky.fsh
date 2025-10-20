@@ -14,7 +14,7 @@ Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 //* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = $dlp-lecive-pripravky-cs  //"https://fhir.hl7cr.eu/core/CodeSystem/cz-dlplecivepripravky-cs"
+* ^url = $dlp-lecive-pripravky-cs  //"https://hl7.cz/fhir/core/CodeSystem/cz-dlplecivepripravky-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"

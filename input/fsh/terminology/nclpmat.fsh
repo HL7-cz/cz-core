@@ -14,7 +14,7 @@ Description:   "NCLP MAT for specimen material"
 //* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://fhir.hl7cr.eu/core/CodeSystem/cz-nclpmat-cs"
+* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-nclpmat-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #ADRC "Kůra nadledvin"
@@ -51,7 +51,7 @@ Description:   "Value set of NCLP MAT"
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "MZČR"
-* ^url = "https://fhir.hl7cr.eu/core/ValueSet/cz-nclpmat-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-nclpmat-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * include codes from system CZ_NCLPMatCs

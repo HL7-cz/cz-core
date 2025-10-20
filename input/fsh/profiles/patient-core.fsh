@@ -46,7 +46,7 @@ Expression: "family.exists() or given.exists() or text.exists() or extension('ht
 Invariant: cz-pat-2
 Description: "A patient can have only one registering physician of a given type"
 Severity: #error
-Expression: "extension('https://fhir.hl7cr.eu/core/StructureDefinition/registering-provider-cz').extension('category').isDistinct()"
+Expression: "extension('https://hl7.cz/fhir/core/StructureDefinition/registering-provider-cz').extension('category').isDistinct()"
 
 Invariant: cz-pat-3
 Description: "Patient.identifier[OP] MUST has only one with use=official"

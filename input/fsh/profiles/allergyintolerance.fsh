@@ -36,7 +36,7 @@ Description: "Czech national profile for an Allergy Intolerance"
 * code ^binding.extension[=].extension[+].url = "purpose"
 * code ^binding.extension[=].extension[=].valueCode = #candidate
 * code ^binding.extension[=].extension[+].url = "valueSet"
-* code ^binding.extension[=].extension[=].valueCanonical = "https://fhir.hl7cr.eu/core/ValueSet/cz-dlpatc-vs"
+* code ^binding.extension[=].extension[=].valueCanonical = "https://hl7.cz/fhir/core/ValueSet/cz-dlpatc-vs"
 * code ^binding.extension[=].extension[+].url = "documentation"
 * code ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a ATC value set."
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"

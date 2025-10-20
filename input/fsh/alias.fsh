@@ -33,11 +33,11 @@ Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-bir
 Alias: $sex-for-clinical-use = http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse
 Alias: $recordedSexOrGender = http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender
 Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
-Alias: $registering-provider = https://fhir.hl7cr.eu/core/StructureDefinition/registering-provider-cz
+Alias: $registering-provider = https://hl7.cz/fhir/core/StructureDefinition/registering-provider-cz
 Alias: $bodyStructure-laterality-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality
 Alias: $bodySite-reference = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $specimen-container-device-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device
-Alias: $cz-organization-logo = https://fhir.hl7cr.eu/core/StructureDefinition/cz-organization-logo
+Alias: $cz-organization-logo = https://hl7.cz/fhir/core/StructureDefinition/cz-organization-logo
 
 
 // Valuesets:

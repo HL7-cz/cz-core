@@ -10,7 +10,7 @@ Description:   "ValueSet of Health Insurance Company Code. Identification number
 * ^date = "2024-01-01"
 * ^publisher = "NCEZ"
 * ^experimental = false
-* ^url = "https://fhir.hl7cr.eu/core/ValueSet/cz-healthInsuranceCompanyCode-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-healthInsuranceCompanyCode-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * include codes from system CZ_HealthInsuranceCompanyCodeCs

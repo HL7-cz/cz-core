@@ -14,7 +14,7 @@ Description:   "Codesystem of DLP Lecive latky. Identification ingredient."
 //* ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
 * ^caseSensitive = true
 * ^content = #fragment
-* ^url = "https://fhir.hl7cr.eu/core/CodeSystem/cz-dlplecivelatky-cs"
+* ^url = "https://hl7.cz/fhir/core/CodeSystem/cz-dlplecivelatky-cs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * #10647 "SIMVASTATIN"
@@ -36,7 +36,7 @@ Description:   "Value set of DLP Lecive latky (Substances)"
 * ^date = "2025-01-17"
 * ^experimental = false
 * ^publisher = "UZIS"
-* ^url = "https://fhir.hl7cr.eu/core/ValueSet/cz-dlplecivelatky-vs"
+* ^url = "https://hl7.cz/fhir/core/ValueSet/cz-dlplecivelatky-vs"
 * insert SetFmmandStatusRule(2, trial-use)
 
 * include codes from system CZ_DLPLecivelatkyCs
