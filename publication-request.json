@@ -1,0 +1,14 @@
+{
+  "package-id": "hl7.fhir.cz.core",
+  "version": "0.1.0",
+  "path": "https://hl7.cz/fhir/core/0.1.0",
+  "mode": "milestone",
+  "status": "release",
+  "sequence": "Release 1",
+  "first": true,
+  "ci-build": "https://build.fhir.org/ig/HL7-cz/cz-core",
+  "category": "National Base",
+  "desc": "This is a first release of the Czech National FHIR Core and Base package.",
+  "introduction": "This package contains the FHIR R4 Core and Base resources to support the use of FHIR in the Czech healthcare system.",
+  "title": "Czech National FHIR R4 Core and Base Implementation Guide"
+}
