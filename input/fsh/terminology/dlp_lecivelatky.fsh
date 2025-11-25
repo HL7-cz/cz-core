@@ -22,6 +22,7 @@ Description:   "Codesystem of DLP Lecive latky. Identification ingredient."
 * #1593 "IBUPROFENUM"
 * #1064 "PARACETAMOLUM"
 * #23463 "SARS-COV-2 (OMICRON JN.1) SPIKE PROTEIN"
+* #4634 "METOPROLOLI TARTRAS"
 
 ValueSet:     CZ_DLPLecivelatkyVs
 Id:	        cz-dlplecivelatky-vs

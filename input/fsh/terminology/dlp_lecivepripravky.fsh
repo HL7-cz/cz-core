@@ -23,6 +23,8 @@ Description:   "Codesystem of DLP Lecive pripravky. Identification medication."
 * #0254294 "IBALGIN"
 * #0243131 "EUTHYROX"
 * #0253304 "PARACETAMOL ZENTIVA K.S."
+* #98872 "FYZIOLOGICKÝ ROZTOK VIAFLO"
+* #231703 "BETALOC"
 
 ValueSet:     CZ_DLPLecivePripravkyVs
 Id:	          dlplecive-pripravky-vs
