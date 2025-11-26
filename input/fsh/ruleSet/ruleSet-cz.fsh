@@ -45,5 +45,5 @@ RuleSet: setOID ( oid )
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:{oid}"
 
-RuleSet: setUrl ( resourceId )
-* ^url = "https://terminology.hl7cr.eu/ValueSet/{resourceId}"
+// RuleSet: setUrl ( resourceId )
+// * ^url = "https://hl7.cz/fhir/terminology/ValueSet/{resourceId}"
