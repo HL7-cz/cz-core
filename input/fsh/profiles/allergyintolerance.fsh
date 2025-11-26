@@ -21,7 +21,7 @@ Description: "Czech national profile for an Allergy Intolerance"
 * category from $hl7AllergyintoleranceCategory
 
 * code from $hl7AllergyintoleranceCode (preferred)
-* code from AllergenWithExceptions (preferred)
+* code from $AllergenWithExceptions (preferred)
 /* * code ^binding.extension[0].extension[0].url = "key"
 * code ^binding.extension[=].extension[=].valueId = dlp-lecivepripravky-vs
 * code ^binding.extension[=].extension[+].url = "purpose"
