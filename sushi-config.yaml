@@ -40,7 +40,7 @@ publisher:
 dependencies:
   hl7.fhir.uv.ips: 2.0.0  #1.1.0
   hl7.fhir.eu.base: 0.1.0-ballot
-  hl7.fhir.cz.terminology: current
+  hl7.fhir.cz.terminology: 0.1.0
   hl7.fhir.extensions.r5: 4.0.1
   # hl7.fhir.eu.laboratory: current
 #
@@ -130,11 +130,11 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - https://ncez.mzcr.cz/fhir/ValueSet/dlp-lecive-pripravky-vs
     - https://ncez.mzcr.cz/fhir/ValueSet/medical-device-with-exceptions
     - https://ncez-mzcr.cz/ValueSet/cz-coverage-type
-    - https://terminology.hl7cr.eu/ValueSet/eHDSIAbsentOrUnknownAllergy
-    - https://terminology.hl7cr.eu/ValueSet/eHDSIAbsentOrUnknownDevice
-    - https://terminology.hl7cr.eu/ValueSet/eHDSIAllergenNoDrug
-    - https://terminology.hl7cr.eu/ValueSet/eHDSIExceptionalValue
-    - https://terminology.hl7cr.eu/ValueSet/medical-device
+    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownAllergy
+    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownDevice
+    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAllergenNoDrug
+    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIExceptionalValue
+    - https://hl7.cz/fhir/terminology/ValueSet/medical-device
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'
 #    - http://ncez.mzcr.cz/fhir/StructureDefinition/address-point-cz
