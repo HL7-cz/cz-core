@@ -59,7 +59,8 @@ Alias: $hl7BodySite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $hl7BodyStructure = http://hl7.org/fhir/ValueSet/bodystructure-code
 Alias: $dlp-lecive-pripravky-vs = https://ncez.mzcr.cz/fhir/ValueSet/dlp-lecive-pripravky-vs
 Alias: $drzar-vs = https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
-
+Alias: $AllergenWithExceptions = https://ncez.mzcr.cz/terminology/ValueSet/AllergenWithExceptions
+Alias: $CZ_LateralityVs = https://ncez.mzcr.cz/terminology/ValueSet/cz-laterality-lab
 
 // Profiles:
 Alias: $Organization-eu-core = http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core
