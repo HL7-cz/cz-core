@@ -15,7 +15,7 @@ Description: "Czech national profile for a coverage."
 
 //* type MS
 //* type.coding from $hl7CoverageType
-* type.coding from CZ_CoverageTypeVS
+* type.coding from $CZ_CoverageTypeVS
 * identifier 0..*
   * ^short = "Business identifier of the coverage. In the event of payment by an insurance company, enter the insurance assignment number (also known as Číslo pojistné smlouvy)."
 
