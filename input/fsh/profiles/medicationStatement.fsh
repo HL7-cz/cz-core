@@ -16,8 +16,8 @@ Description: "Czech national profile for a medication statement."
 * status from $hl7MedicationStatementStatus
 * medication[x]
 * medication[x] only Reference(CZ_Medication) or CodeableConcept
-* medicationCodeableConcept from CZ_DLPLecivePripravkyVs (required)
-* dosage 
+* medicationCodeableConcept from $DLPLecivePripravkyVs (required)
+* dosage
 * dosage only Dosage
 * subject only Reference(CZ_PatientCore or Group)
 * informationSource only Reference(CZ_PatientCore or CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_RelatedPersonCore or CZ_OrganizationCore)
