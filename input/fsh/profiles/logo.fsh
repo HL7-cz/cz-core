@@ -18,7 +18,7 @@ Description: "Czech national profile for document reference containing logo."
 * context 0..0
 
 * content.attachment.contentType 1..1
-* content.attachment.contentType from CZ_LogoMimeTypesVs
+* content.attachment.contentType from $CZ_LogoMimeTypesVs
   * ^short = "MIME type of the logo image"
   * ^definition = "MIME type of the logo image, such as image/png or image/jpeg."
 * content.attachment.language 0..0
