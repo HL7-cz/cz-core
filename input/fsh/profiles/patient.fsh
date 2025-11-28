@@ -44,22 +44,21 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
   * ^example.valueString = "6309211234"
 * identifier[CPOJ].assigner only Reference(CZ_OrganizationCore)
 * identifier contains OP 0..* //MS
-* identifier[OP]
+* identifier[OP] only Id_Card_Identifier
+//* identifier[OP]
   * ^short = "National Identity Card Number"
-  * ^definition = "An unique patient identifier (National ID Card Number) issued by the ministry of interior"
+  * ^definition = "An unique person identifier (National ID Card Number) issued by the ministry of interior"
 * identifier[OP].system from $OPNSVS (required)
-* identifier[OP].value 1..1
-* identifier[OP].assigner only Reference(CZ_OrganizationCore)
+  * ^short = "Name space according to the National ID card issuer. FHIR records namespaces for ID cards in the format - https://ncez.mzcr.cz/fhir/sid/IdCardNumNS-XXX, where XXX is the three-letter country code according to ISO 3166"
+
+//* identifier[OP].value 1..1
+//* identifier[OP].assigner only Reference(CZ_OrganizationCore)
 * identifier contains PAS 0..* //MS
 * identifier[PAS] only CZ_Passport_Identifier
   * ^short = "Passport Number"
   * ^definition = "A temporary patient identifier (Passport Number)"
 * identifier[PAS].system from $PassportNSVS (required)
   * ^short = "Name space according to the passport issuer. FHIR records namespaces for passports in the format - http://hl7.org/fhir/sid/passport-XXX, where XXX is the three-letter country code according to ISO 3166"
-//* identifier[PAS].use = #official
-//* identifier[PAS].type = $v2-0203#PPN
-//* identifier[PAS].value 1..1
-//* identifier[PAS].assigner only Reference(CZ_OrganizationCore)
 
 * name 1..* MS  // patient name element must be provided
 //* name only HumanNameEu // HumanNameEu is not anymore in hl7EU base profile

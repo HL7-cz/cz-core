@@ -35,8 +35,8 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
 * identifier[PAS]
   * ^short = "Passport Number"
   * ^definition = "An unique patient identifier (Passport Number)"
-* identifier[PAS].system from PassportNSVS
-  * ^short = "Name space according to the passport issuer. FHIR records namespaces for passports in the format - http://hl7.org/fhir/sid/passport-XXX, where XXX is the three-letter country code according to ISO 3166"
+* identifier[PAS].system from $PassportNSVS
+  * ^short = "Name space according to the passport issuer. FHIR records namespaces for passports in the format - https://ncez.mzcr.cz/fhir/sid/IdCardNumNS-XXX, where XXX is the three-letter country code according to ISO 3166"
 * identifier[PAS].use = #official
 * identifier[PAS].type = $v2-0203#PPN
 * identifier[PAS].value 1..1
@@ -46,6 +46,14 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
   * ^short = "National Health Sector Identifier"
   * ^definition = "An unique patient identifier (resortní identifikátor RID) or temporary patient identifier (DRID) according to the National Patient Register (KRP)"
 * identifier[RID] only CZ_RID_Identifier
+* identifier contains OP 0..* //MS
+* identifier[OP]
+  * ^short = "National Identity Card Number"
+  * ^definition = "An unique person identifier (National ID Card Number) issued by the ministry of interior"
+* identifier[OP].system from $OPNSVS (required)
+* identifier[OP].value 1..1
+* identifier[OP].assigner only Reference(CZ_OrganizationCore)
+
 * relationship 0..* //MS
 //* relationship contains $PersonalRelationshipCzVS
 
