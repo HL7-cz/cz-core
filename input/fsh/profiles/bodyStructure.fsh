@@ -15,7 +15,7 @@ Description: """This profile represents the Body Structure resource by the Czech
 * extension[laterality].valueCodeableConcept from $CZ_LateralityVs (preferred)
 * morphology from $hl7BodyStructure (preferred)
 * location from $hl7BodySite (preferred)
-* locationQualifier from CZ_SiteQualifierVs (preferred)
+* locationQualifier from $CZ_SiteQualifierVs (preferred)
 * image 0..0
 
 * patient only Reference(CZ_PatientCore)
