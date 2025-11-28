@@ -1,24 +1,24 @@
 ### Definice profilu
 
-Tento profil představuje požadavky na resource Coverage (dále Úhrada) v rámci českého národního projektu interoperability. Úhrada je určena k poskytování identifikátorů informací, které by se objevily na kartě pojištěnce, kterou lze použít k částečné nebo úplné úhradě za poskytování produktů a služeb zdravotní péče. Zároveň tento zdroj lze také použít k registraci „Samoplátce“, kde jednotlivec nebo organizace jsou jiní než pojistitel a přebírají odpovědnost za platbu části či celých nákladů na zdravotní péči.
+Tento profil specifikuje zdroj Coverage (dále Úhrada) v rámci českého národního projektu interoperability. Úhrada je určena k uložení informací souvisejících úhradou za poskytování produktů a služeb zdravotní péče. Zdroj lze použít, kromě záznamu informací o zdravotním pojitění také v případě samoplátců, tedy v případech kdy jednotlivec nebo organizace jsou jiní než pojistitel a přebírají odpovědnost za platbu části či celých nákladů na zdravotní péči.
 
 ### Důležité atributy
 
 Následuje popis důležitých prvků profilu a jejich použití.
 
-**Identifikátor platby**
+**Identifier (Identifikátor platby)**
 
 Bussiness identifikátor v rámci pojistného krytí, v případě platby pojišťovnou vyplňte číslo pojistné smlouvy.
 
-**Plátce**
+**Payor (Plátce)**
 
 Informace o plátci léčby. Může se jednat o pojišťovnu, pacienta, osobu blízkou pacientovi nebo jinou organizaci.
 
-**Číslo předplatitele (pojištěnce)**
+**SubscriberID (Identifikátor předplatitele/pojištěnce)**
 
 Identifikátor předplatitele (pacienta nebo příbuzné osoby), v případě platby pojišťovnou vyplňte číslo pojištěnce.
 
-**Náklady pro plátce**
+**CostToBeneficiary (Náklady plátce)**
 
 Informace o krytí dodatečných nákladů plátcem (tzv. Samoplátce).
 
