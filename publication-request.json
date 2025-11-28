@@ -1,9 +1,9 @@
 {
   "package-id": "hl7.fhir.cz.core",
-  "version": "0.1.0",
+  "version": "0.3.0-ballot",
   "path": "https://hl7.cz/fhir/core/0.3.0-ballot",
   "mode": "milestone",
-  "status": "release",
+  "status": "ballot",
   "sequence": "Release 1",
   "first": true,
   "ci-build": "https://build.fhir.org/ig/HL7-cz/cz-core",
