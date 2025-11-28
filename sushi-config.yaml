@@ -113,28 +113,27 @@ pages:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #
 parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  special-url:
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-administrative-gender-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-contact-person-relation-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-drzar
-    - https://ncez.mzcr.cz/fhir/CodeSystem/nrzp-povolani
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/nrzp-povolani-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/PassportNS-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-tab-ta
-    - https://ncez.mzcr.cz/fhir/ValueSet/typ-registrujiciho-lekare-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/role-code-supplement
-    - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
-    - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
-    - https://ncez.mzcr.cz/fhir/CodeSystem/dlp-lecive-pripravky-cs
-    - https://ncez.mzcr.cz/fhir/ValueSet/dlp-lecive-pripravky-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/medical-device-with-exceptions
-    - https://ncez-mzcr.cz/ValueSet/cz-coverage-type
-    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownAllergy
-    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownDevice
-    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAllergenNoDrug
-    - https://hl7.cz/fhir/terminology/ValueSet/eHDSIExceptionalValue
-    - https://hl7.cz/fhir/terminology/ValueSet/medical-device
+  #special-url:
+    # - https://ncez.mzcr.cz/fhir/ValueSet/cz-administrative-gender-vs
+    # - https://ncez.mzcr.cz/fhir/ValueSet/cz-contact-person-relation-vs
+    # - https://ncez.mzcr.cz/fhir/CodeSystem/cz-drzar
+    # - https://ncez.mzcr.cz/fhir/CodeSystem/nrzp-povolani
+    # - https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
+    # - https://ncez.mzcr.cz/fhir/ValueSet/nrzp-povolani-vs
+    # - https://ncez.mzcr.cz/fhir/CodeSystem/cz-tab-ta
+    # - https://ncez.mzcr.cz/fhir/ValueSet/typ-registrujiciho-lekare-vs
+    # - https://ncez.mzcr.cz/fhir/CodeSystem/role-code-supplement
+    # - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
+    # - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
+    # - https://ncez.mzcr.cz/fhir/CodeSystem/dlp-lecive-pripravky-cs
+    # - https://ncez.mzcr.cz/fhir/ValueSet/dlp-lecive-pripravky-vs
+    # - https://ncez.mzcr.cz/fhir/ValueSet/medical-device-with-exceptions
+    # - https://ncez-mzcr.cz/ValueSet/cz-coverage-type
+    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownAllergy
+    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownDevice
+    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAllergenNoDrug
+    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIExceptionalValue
+    # - https://hl7.cz/fhir/terminology/ValueSet/medical-device
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'
 #    - http://ncez.mzcr.cz/fhir/StructureDefinition/address-point-cz
