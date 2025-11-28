@@ -18,7 +18,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 * identifier MS
 * identifier ^definition = "Business identifier for specimen is RECOMMENDED to include when available."
 * status MS
-* type from CZ_SpecimenTypeVs (preferred)
+* type from $CZ_SpecimenTypeVs (preferred)
 * type ^definition = "The kind of material that forms the specimen. RECOMMENDED to include."
 //* type from CZ_MikrobiologickeVzorkyDASTAVS (preferred)
 * subject only Reference(Group or CZ_DeviceObserver or CZ_MedicalDevice or Substance or CZ_LocationCore or CZ_PatientCore)
@@ -36,7 +36,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
   * collector only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore)
 * processing.additive only Reference(Substance or CZ_SpecimenAdditiveSubstance)
 * container
-  * type from CZ_SpecimenContainerVs (preferred)
+  * type from $CZ_SpecimenContainerVs (preferred)
   * additive[x] 0..0
   * extension contains $specimen-container-device-r5 named device 0..1
   * extension[device].valueReference only Reference(CZ_MedicalDevice)
@@ -52,4 +52,4 @@ Parent: Substance
 Id: Substance-additive-cz
 Title: "Substance: Specimen Additive Substance (CZ)"
 Description: """This profile defines how to represent Specimen Additive Substances in HL7 FHIR for the purpose of this guide."""
-* code from CZ_SpecimenAdditiveVs (preferred)
+* code from $CZ_SpecimenAdditiveVs (preferred)
