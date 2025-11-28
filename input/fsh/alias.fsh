@@ -12,7 +12,6 @@ Alias: $sct-supplement-service-type = https://ncez.mzcr.cz/terminology/CodeSyste
 Alias: $nrzp_povolani = https://ncez.mzcr.cz/terminology/CodeSystem/nrzp-povolani
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $oid = urn:ietf:rfc:1155
-//Alias: $atc = https://ncez.mzcr.cz/terminology/CodeSystem/atc-cz
 Alias: $standardterms = http://standardterms.edqm.eu
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
