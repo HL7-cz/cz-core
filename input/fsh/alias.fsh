@@ -43,7 +43,6 @@ Alias: $bodySite-reference = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $specimen-container-device-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.container.device
 Alias: $cz-organization-logo = https://hl7.cz/fhir/core/StructureDefinition/cz-organization-logo
 
-
 // Valuesets:
 Alias: $CZ_AdministrativegenderVS = https://hl7.cz/terminology/ValueSet/administrative-gender-cz
 Alias: $MedicalDevicesSnomedAbsentUnknownUvIps = http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-snomed-absent-unknown-uv-ips
@@ -78,6 +77,7 @@ Alias: $CZ_SpecimenContainerVs = https://ncez.mzcr.cz/terminology/ValueSet/cz-sp
 Alias: $CZ_HealthInsuranceCompanyCodeVs = https://ncez.mzcr.cz/terminology/ValueSet/healthInsuranceCompanyCode
 Alias: $OPNSVS = https://hl7.cz/terminology/ValueSet/OP-NS
 Alias: $dlp-atc-vs = https://sukl.cz/terminology/ValueSet/dlp-atc
+Alias: $NRZP_PovolaniVS = https://ncez.mzcr.cz/terminology/ValueSet/nrzp-povolani-vs
 
 // Profiles:
 Alias: $Organization-eu-core = http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core
