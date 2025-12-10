@@ -5,7 +5,7 @@ Title: "National ID card identifier"
 Description: "This structure specifies the national personal ID card identifier."
 * insert SetFmmandStatusRule(1, draft)
 * use = #official (exactly)
-* type = $v2-0203#PPN
+* type = $v2-0203#CZ  // National ID card number
 * system 1..1
 * system from $OPNSVS
   * ^short = "Name space according to the national ID card issuer. FHIR records namespaces for passports in the format - https://ncez.mzcr.cz/fhir/sid/IdCardNumNS-XXX, where XXX is the three-letter country code according to ISO 3166"
