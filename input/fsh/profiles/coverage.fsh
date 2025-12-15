@@ -13,6 +13,9 @@ Description: "Czech national profile for a coverage."
 
 * insert SetFmmandStatusRule ( 0, draft )
 
+* extension contains CZ_RefundIndicatorCode named kodNahrady 0..1
+* extension[kodNahrady].valueCodeableConcept ^short = "Refund code (VZP – Náhrady za zdravotní péči)"
+
 //* type MS
 //* type.coding from $hl7CoverageType
 * type.coding from $CZ_CoverageTypeVS
