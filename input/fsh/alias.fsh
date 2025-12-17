@@ -78,6 +78,7 @@ Alias: $CZ_HealthInsuranceCompanyCodeVs = https://ncez.mzcr.cz/terminology/Value
 Alias: $OPNSVS = https://hl7.cz/terminology/ValueSet/OP-NS
 Alias: $dlp-atc-vs = https://sukl.cz/terminology/ValueSet/dlp-atc
 Alias: $NRZP_PovolaniVS = https://ncez.mzcr.cz/terminology/ValueSet/nrzp-povolani-vs
+Alias: $VZPNahradyVS = https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
 
 // Profiles:
 Alias: $Organization-eu-core = http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core
