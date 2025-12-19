@@ -16,6 +16,6 @@ Description: "Example for AllergyIntolerance"
 * reaction.extension[=].valueCodeableConcept = $allergyintolerance-certainty#confirmed "Confirmed"
 * reaction.extension[+].url = "http://hl7.org/fhir/StructureDefinition/openEHR-exposureDescription"
 * reaction.extension[=].valueString = "Animal shelter"
-* reaction.substance = $sct#260152009 "Cat dander (substance)"
-* reaction.manifestation[0] = $sct#271807003 "Eruption of skin (disorder)"
+* reaction.substance = $sctCZ#260152009 "Cat dander (substance)"
+* reaction.manifestation[0] = $sctCZ#271807003 "Eruption of skin (disorder)"
 * reaction.severity = #mild

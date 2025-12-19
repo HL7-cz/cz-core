@@ -2,4 +2,4 @@ Instance: Kocka
 InstanceOf: CZ_PatientAnimal
 Usage: #example
 Description: "Pacient animal - Domestic cat"
-* extension[$patient-animal].extension[species].valueCodeableConcept = $sct#448169003 "Domestic cat"
+* extension[$patient-animal].extension[species].valueCodeableConcept = $sctCZ#448169003 "Domestic cat"

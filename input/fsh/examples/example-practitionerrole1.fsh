@@ -13,7 +13,7 @@ Description: "General practitioner's office"
 * organization = Reference(Organization/Organization-2) "Ordinace praktického lékaře, MUDr. Hana Doktorová"
 * code[NRZP_POVOLANI] = $nrzp_povolani#L00 "Lékař"
 
-* specialty = $sct#419772000 "Family practice"
+* specialty = $sctCZ#419772000 "Family practice"
 * availableTime[0].daysOfWeek[0] = #mon
 * availableTime[=].daysOfWeek[+] = #wed
 * availableTime[=].availableStartTime = "12:30:00"
