@@ -6,14 +6,20 @@ Description: "Czech national core profile for location resource.This profile imp
 * name = "Laboratoř Praha, Jankovcova 2"
 * status = #active
 * type.text = "Laboratory"
-* managingOrganization = Reference(Organization/Synlab) "Synlab"
+* managingOrganization = Reference(Synlab) "Synlab"
+* address.line[0] = "Jankovcova 2"
+* address.line[1] = "Praha 7"
+* address.city = "Praha"
+* address.postalCode = "17000"
+* address.country = "Česká republika"
 
-Instance: Synlab
-InstanceOf: CZ_OrganizationCore
-Title: "Organization of laboratory"
+
+Instance: location-base-example
+InstanceOf: CZ_LocationBase
+Title: "Location base example"
 Usage: #example
-Description: "Czech national core profile for organization resource. This example represents separate professional laboratory"
-* identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/ico"
-* identifier[=].value = "49688804"
-* type[DRZAR] = $drzar#361 "Samostatná odborná laboratoř"
-* name = "Synlab czech s.r.o."
+Description: "Example of Czech national base profile for location resource. This profile implies use of the Czech standard address in the location resource."
+
+* name = "A location example name"
+* status = #active
+* managingOrganization.display = "An organization managing the location example name"
