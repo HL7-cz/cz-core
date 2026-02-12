@@ -1,4 +1,4 @@
-Instance: logoFNMotol
+Instance: logoNemocniceOblackov
 InstanceOf: CZ_Logo
 Usage: #example
 Description: "Example of logo as document reference for Nemocnice Obláčkov."
