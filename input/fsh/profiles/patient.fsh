@@ -45,14 +45,10 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier[CPOJ].assigner only Reference(CZ_OrganizationCore)
 * identifier contains OP 0..* //MS
 * identifier[OP] only Id_Card_Identifier
-//* identifier[OP]
   * ^short = "National Identity Card Number"
   * ^definition = "An unique person identifier (National ID Card Number) issued by the ministry of interior"
 * identifier[OP].system from $OPNSVS (required)
   * ^short = "Name space according to the National ID card issuer. FHIR records namespaces for ID cards in the format - https://ncez.mzcr.cz/fhir/sid/IdCardNumNS-XXX, where XXX is the three-letter country code according to ISO 3166"
-
-//* identifier[OP].value 1..1
-//* identifier[OP].assigner only Reference(CZ_OrganizationCore)
 * identifier contains PAS 0..* //MS
 * identifier[PAS] only CZ_Passport_Identifier
   * ^short = "Passport Number"
