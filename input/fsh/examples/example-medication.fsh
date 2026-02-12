@@ -8,7 +8,7 @@ Usage: #example
 * contained[+] = med-1
 * status = #active
 * medicationReference = Reference(Medication/med-1) "simvastatin"
-* subject = Reference(Patient/Mracena) "Mračena Mraková"
+* subject = Reference(Mracena) "Mračena Mraková"
 * effectivePeriod.start = "2014"
 * dosage.text = "40 mg/day"
 * dosage.timing.repeat.frequency = 1
@@ -26,7 +26,7 @@ Usage: #example
 * code.coding[0] = $CZ_DLPLecivePripravkyCs#0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
 * code.coding[+] = $CZ_DLPATCCs#C10AA01 "simvastatin"
 * code.text = "Simvastatin 40 MG TBL FLM 20"
-* form.coding[0] = $CZ_DLPFormyCs#TBL_FLM "Potahovaná tableta"
+* form.coding[0] = $CZ_DLPFormyCs#"TBL FLM" "Potahovaná tableta"
 * form.coding[+] = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $CZ_DLPLecivelatkyCs#10647 "Simvastatin"
 * ingredient.strength.numerator = 40 'mg' "mcg"
