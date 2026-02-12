@@ -9,6 +9,6 @@ Usage: #example
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed
 * code = $absent-unknown-uv-ips#no-known-allergies "žádné známé alergie"
-* patient = Reference(Patient/Mracena) "Mračena"
+* patient = Reference(Mracena) "Mračena"
 * onsetDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * onsetDateTime.extension.valueCode = #unknown
