@@ -1,5 +1,7 @@
 == Suppressed Messages ==
-
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 # A definition for CodeSystem 'url' could not be found
 # A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated
 
@@ -23,3 +25,51 @@ HL7 Defined CodeSystems should ensure that every concept has a definition
 
 # Deprecated value sets
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+
+# Context will be fixed
+The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (this element is [BodyStructure]; allowed for this version = e:BodyStructure.includedStructure; this is a warning since contexts may be renamed between FHIR versions)
+
+# Known issue with BodyStructure extensions (see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Issue.20with.20the.20bodySite.20extension)
+The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (allowed = e:BodyStructure.includedStructure; this element is [[BodyStructure]; this is a warning since contexts may be renamed between FHIR versions)
+
+# Errors caused by missing terminology on tx.fhir.org
+%A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the value set cannot be expanded%
+
+# Warnings caused by missing terminology on tx.fhir.org
+%A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/11000279109' could not be found, so the code cannot be validated%
+%A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky' could not be found, so the code cannot be validated%
+%A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecivelatky' could not be found, so the code cannot be validated%
+%A definition for CodeSystem 'https://ncez.mzcr.cz/terminology/CodeSystem/drzar' could not be found, so the code cannot be validated%
+ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky' not found
+ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky' not found
+ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/drzar' not found
+ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/cz-specimen-type-vs' not found
+
+# Warnings caused by fragment terminology in terminology IG
+%Unknown Code 'C10AA01' in the CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-atc' version '0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment%
+
+# Errors caused by missing code system supplement on tx.fhir.org
+Wrong Display Name 'matka' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'mother'
+Wrong Display Name 'příbuzný' for http://terminology.hl7.org/CodeSystem/v2-0131#N. Valid display is 'Next-of-Kin' (for the language(s) 'cs-CZ')
+Wrong Display Name 'přítel/přítelkyně' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#FRND. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'unrelated friend'
+Wrong Display Name 'emergentní kontakt' for http://terminology.hl7.org/CodeSystem/v2-0131#C. Valid display is 'Emergency Contact' (for the language(s) 'cs-CZ')
+Wrong Display Name 'žádné známé alergie' for http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies. Valid display is 'No known allergies' (for the language(s) 'cs-CZ')
+
+# Tooling Errors
+No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+
+# This reference is intentional
+The ImplementationGuide uses package hl7.fhir.uv.ips#1.1.0 released on 2022-11-22, but the most recent appropriate version is 2.0.0. This reference is getting old and the more recent version should be considered
+
+# Non-match the slice is expected
+%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core|0.1.0%
+
+# No examples for these profiles are necessary.
+The Implementation Guide contains no examples for this profile
+
+# This should be corrected when terminology IG will be published on cannonical URL (https://hl7.cz./terminology)
+A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky'
+A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky'
+A definition could not be found for Canonical URL 'https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci'
+A definition could not be found for Canonical URL 'https://ncez.mzcr.cz/terminology/ValueSet/PassportNS-vs'
