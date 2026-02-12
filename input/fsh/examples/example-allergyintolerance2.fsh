@@ -10,8 +10,8 @@ Description: "Example for AllergyIntolerance"
 * type = #allergy
 * category = #biologic
 * criticality = #low
-* code = $sctCZ#232346004 "Allergy to cat dander (finding)"
-* patient = Reference(Patient/Mracena) "Mračena"
+* code = $sctCZ#260152009 "kočičí lupy a srst"
+* patient = Reference(Mracena) "Mračena"
 * reaction.extension[0].url = "http://hl7.org/fhir/StructureDefinition/allergyintolerance-certainty"
 * reaction.extension[=].valueCodeableConcept = $allergyintolerance-certainty#confirmed "Confirmed"
 * reaction.extension[+].url = "http://hl7.org/fhir/StructureDefinition/openEHR-exposureDescription"
