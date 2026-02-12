@@ -9,7 +9,7 @@ name: HL7CzCoreImplementationGuide
 title: HL7 Czech Base and Core Implementation Guide
 description: HL7 Czech Base and Core Resources Implementation Guide
 status: draft # draft | active | retired | unknown
-version: 0.3.0-ballot
+version: 0.3.0
 #language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
@@ -39,7 +39,7 @@ publisher:
 #     version: 1.0.0
 dependencies:
   hl7.fhir.uv.ips: 1.1.0
-  hl7.fhir.eu.base: 0.1.0-ballot
+  hl7.fhir.eu.base: 0.1.0
   hl7.fhir.cz.terminology: 0.2.0
   hl7.fhir.extensions.r5: 4.0.1
   # hl7.fhir.eu.laboratory: current
@@ -113,27 +113,10 @@ pages:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #
 parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  #special-url:
-    # - https://ncez.mzcr.cz/fhir/ValueSet/cz-administrative-gender-vs
-    # - https://ncez.mzcr.cz/fhir/ValueSet/cz-contact-person-relation-vs
-    # - https://ncez.mzcr.cz/fhir/CodeSystem/cz-drzar
-    # - https://ncez.mzcr.cz/fhir/CodeSystem/nrzp-povolani
-    # - https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
-    # - https://ncez.mzcr.cz/fhir/ValueSet/nrzp-povolani-vs
-    # - https://ncez.mzcr.cz/fhir/CodeSystem/cz-tab-ta
-    # - https://ncez.mzcr.cz/fhir/ValueSet/typ-registrujiciho-lekare-vs
-    # - https://ncez.mzcr.cz/fhir/CodeSystem/role-code-supplement
-    # - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
-    # - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
-    # - https://ncez.mzcr.cz/fhir/CodeSystem/dlp-lecive-pripravky-cs
-    # - https://ncez.mzcr.cz/fhir/ValueSet/dlp-lecive-pripravky-vs
-    # - https://ncez.mzcr.cz/fhir/ValueSet/medical-device-with-exceptions
-    # - https://ncez-mzcr.cz/ValueSet/cz-coverage-type
-    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownAllergy
-    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAbsentOrUnknownDevice
-    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIAllergenNoDrug
-    # - https://hl7.cz/fhir/terminology/ValueSet/eHDSIExceptionalValue
-    # - https://hl7.cz/fhir/terminology/ValueSet/medical-device
+  special-url:
+    - https://uzis.cz/terminology/CodeSystem/nzis-NahradyZaZdravotniPeci
+    - https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
+
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'
 #    - http://ncez.mzcr.cz/fhir/StructureDefinition/address-point-cz
