@@ -3,19 +3,21 @@ InstanceOf: CZ_PatientCore
 Usage: #example
 Description: "Patient, contact information and practitioner"
 
-* contained[+] = RegisteringProviderExample
+//* contained[+] = RegisteringProviderExample
 * identifier[RC] = rodnecislo_7161264528
-* identifier[RID][+].system = "https://ncez.mzcr.cz/fhir/sid/rid"
-* identifier[RID][=].value = "2066425387"
-* identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-CZE"
-* identifier[PAS][=].value = "23476533"
-* identifier[PAS][=].use = #official
-* identifier[PAS][=].type = $v2-0203#PPN
-* identifier[PAS][=].assigner.display = "Ministerstvo vnitra České republiky"
-* identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVK"
-* identifier[PAS][=].value = "88476522"
-* identifier[PAS][=].use = #official
-* identifier[PAS][=].type = $v2-0203#PPN
+* identifier[RID] = rid_2066425387
+* identifier[PAS] = CZ_PassportExample
+* identifier[PAS] = SK_PassportExample
+* identifier[OP] = CZ_exampleIdCard
+// * identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-CZE"
+// * identifier[PAS][=].value = "23476533"
+// * identifier[PAS][=].use = #official
+// * identifier[PAS][=].type = $v2-0203#PPN
+// * identifier[PAS][=].assigner.display = "Ministerstvo vnitra České republiky"
+// * identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVK"
+// * identifier[PAS][=].value = "88476522"
+// * identifier[PAS][=].use = #official
+// * identifier[PAS][=].type = $v2-0203#PPN
 
 * extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CZ
 * name.use = #usual
@@ -38,7 +40,7 @@ Description: "Patient, contact information and practitioner"
   * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Czechia"
 
 * contact[+].relationship.coding[+] = $v3-RoleCode#MTH "matka"
-* contact[=].relationship.coding[+] = $v2-0131#N "Příbuzný"
+* contact[=].relationship.coding[+] = $v2-0131#N "příbuzný"
 * contact[=].name.use = #usual
 * contact[=].name.family = "Mrakomorová"
 * contact[=].name.given[+] = "Biologická"
@@ -48,7 +50,7 @@ Description: "Patient, contact information and practitioner"
 * contact[=].telecom[=].value = "+420 604 123 456"
 
 * contact[+].relationship.coding[+] = $v3-RoleCode#FRND "přítel/přítelkyně"
-* contact[=].relationship.coding[+] = $v2-0131#C "Emergentní kontakt"
+* contact[=].relationship.coding[+] = $v2-0131#C "emergentní kontakt"
 * contact[=].name.use = #usual
 * contact[=].name.family = "Dlouhá"
 * contact[=].name.given[0] = "Alena"
