@@ -58,5 +58,3 @@ Description: "Czech national profile defines the way the organization is represe
 
 * address only CZ_Address
 //* address ^definition = "An address for the organization.\r\n\r\nIt is RECOMMENDED to include this when available"
-
-* partOf only Reference(CZ_OrganizationCore)
