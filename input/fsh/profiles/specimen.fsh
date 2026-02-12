@@ -53,3 +53,10 @@ Id: Substance-additive-cz
 Title: "Substance: Specimen Additive Substance (CZ)"
 Description: """This profile defines how to represent Specimen Additive Substances in HL7 FHIR for the purpose of this guide."""
 * code from $CZ_SpecimenAdditiveVs (preferred)
+
+Instance: Substance-additive-example
+InstanceOf: Substance-additive-cz
+Usage: #example
+Description: "Specimen additive substance example"
+
+* code = $sct#27763000 "Hydrochloric acid"
