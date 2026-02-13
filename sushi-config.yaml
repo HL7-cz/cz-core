@@ -116,6 +116,8 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   special-url:
     - https://uzis.cz/terminology/CodeSystem/nzis-NahradyZaZdravotniPeci
     - https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
+    - https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky
+    - https://sukl.cz/terminology/CodeSystem/dlp-atc
 
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'
