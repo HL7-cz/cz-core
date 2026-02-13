@@ -5,9 +5,9 @@ Description: "Czech national profile for a medication statement."
 Usage: #example
 * identifier[+].system = "http://example.org/exampleSystem" //vydavatel identifikatoru nemocnice vs. NIS
 * identifier[=].value = "medstat-1"
-* contained[+] = med-1
+//* contained[+] = med-1
 * status = #active
-* medicationReference = Reference(Medication/med-1) "simvastatin"
+* medicationReference = Reference(med-1) "simvastatin"
 * subject = Reference(Mracena) "Mračena Mraková"
 * effectivePeriod.start = "2014"
 * dosage.text = "40 mg/day"
