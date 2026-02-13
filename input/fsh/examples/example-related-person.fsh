@@ -17,8 +17,8 @@ Description: "A person that is related to a patient, but who is not a direct tar
 * identifier[=].use = #official
 * identifier[=].type = $v2-0203#PPN
 
-* relationship.coding[+] = $v3-RoleCode#MTH "matka"
-* relationship.coding[+] = $v2-0131#N "příbuzný"
+* relationship.coding[+] = $v3-RoleCode#MTH //"matka"
+* relationship.coding[+] = $v2-0131#N //"příbuzný"
 
 * name.use = #usual
 * name.family = "Mrakomorová"
