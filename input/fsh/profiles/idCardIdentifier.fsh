@@ -1,14 +1,15 @@
 Profile: Id_Card_Identifier
 Parent: Identifier
 Id: id-card-identifier
-Title: "National ID card identifier"
-Description: "This structure specifies the national personal ID card identifier."
+Title: "Personal ID card identifier"
+Description: "Identifier for personal ID card number using FHIR SID and v2-0203#CZ."
 * insert SetFmmandStatusRule(1, draft)
 * use = #official (exactly)
-* type = $v2-0203#CZ  // National ID card number
+* type = $v2-0203#CZ (exactly) // National ID card number
 * system 1..1
-* system from $OPNSVS
-  * ^short = "Name space according to the national ID card issuer. FHIR records namespaces for personal ID cards in the format - https://ncez.mzcr.cz/fhir/sid/IdCardNumNS-XXX, where XXX is the three-letter country code according to ISO 3166"
+* system from $idcard-uri (required)
+  * ^short = "Name space according to the national ID card issuer. FHIR records namespaces for personal ID cards in the format - https://hl7.cz/fhir/sid/idcard-XXX, where XXX is the three-letter country code according to ISO 3166"
+  * obeys idcard-system-iso3
 * value 1..1
 //  * obeys passport-rule
 //  * ^maxLength = 9
@@ -21,9 +22,7 @@ Description: "This structure specifies the national personal ID card identifier.
 * assigner only Reference(CZ_OrganizationCore)
 
 
-/* Invariant: passport-rule
-Description: "General passport number rule"
+Invariant: idcard-system-iso3
+Description: "Identifier.system SHALL be https://hl7.cz/fhir/sid/idcard-XXX where XXX is ISO 3166-1 alpha-3."
 Severity: #error
-Expression: "matches('[0-9A-Z]{6,9}')"
-* requirements = "Passport number rules."
- */
+Expression: "matches('^https://hl7.cz/fhir/sid/idcard-[A-Z]{3}$')"

@@ -1,4 +1,4 @@
-ValueSet: NahradyZaZdravotniPeci
+ValueSet: NahradyZaZdravotniPeciVS
 Id: nzis-nahradyzazdravotnipeci
 Title: "NahradyZaZdravotniPeci"
 Description: "Číselník obsahující koncepty z kódového systému NahradyZaZdravotniPeci. Číselník použitý v NRHOSP"

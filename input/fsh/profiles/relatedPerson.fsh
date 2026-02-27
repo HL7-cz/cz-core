@@ -32,27 +32,23 @@ but who is not the target of healthcare, nor has a formal responsibility in the 
 * identifier[CPOJ].value 1..1
 * identifier[CPOJ].assigner only Reference(CZ_OrganizationCore)
 * identifier contains PAS 0..* //MS
-* identifier[PAS]
+* identifier[PAS] only CZ_Passport_Identifier
   * ^short = "Passport Number"
-  * ^definition = "An unique patient identifier (Passport Number)"
-* identifier[PAS].system from $PassportNSVS
-  * ^short = "Name space according to the passport issuer. FHIR records namespaces for passports in the format - https://ncez.mzcr.cz/fhir/sid/IdCardNumNS-XXX, where XXX is the three-letter country code according to ISO 3166"
-* identifier[PAS].use = #official
-* identifier[PAS].type = $v2-0203#PPN
-* identifier[PAS].value 1..1
-* identifier[PAS].assigner only Reference(CZ_OrganizationCore)
+  * ^definition = "Passport number including issuing country code."
+  * ^comment = "Passport number can be used as a temporary person identifier for a foreign citizen in situations where national health sector identifier (RID/DRID) has not been assigned yet."
+* identifier[PAS].system from $passport-uri (required)
+  * ^short = "Name space according to the passport issuer. FHIR records namespaces for passports in the format - http://hl7.org/fhir/sid/passport-XXX, where XXX is the three-letter country code according to ISO 3166"
 * identifier contains RID 0..1
 * identifier[RID]
   * ^short = "National Health Sector Identifier"
   * ^definition = "An unique patient identifier (resortní identifikátor RID) or temporary patient identifier (DRID) according to the National Patient Register (KRP)"
 * identifier[RID] only CZ_RID_Identifier
 * identifier contains OP 0..* //MS
-* identifier[OP]
+* identifier[OP] only Id_Card_Identifier
   * ^short = "National Identity Card Number"
-  * ^definition = "An unique person identifier (National ID Card Number) issued by the ministry of interior"
-* identifier[OP].system from $OPNSVS (required)
-* identifier[OP].value 1..1
-* identifier[OP].assigner only Reference(CZ_OrganizationCore)
+  * ^definition = "Personal Id card number including the country code of the issuer."
+  * ^comment = "National Identity Card number can be used as a temporary person identifier for a foreign citizen in situations where national health sector identifier (RID/DRID) has not been assigned yet."
+* identifier[OP].system from $idcard-uri (required)
 
 * relationship 0..* //MS
 //* relationship contains $PersonalRelationshipCzVS

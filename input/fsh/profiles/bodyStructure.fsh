@@ -1,5 +1,5 @@
 Profile: BodyStructureCz
-Parent: BodyStructure
+Parent: BodyStructureEuCore
 Id: BodyStructure-cz
 Title: "Body Structure (CZ)"
 Description: """This profile represents the Body Structure resource by the Czech national interoperability project."""
@@ -8,13 +8,13 @@ Description: """This profile represents the Body Structure resource by the Czech
 * ^version = "0.3.0"
 * ^experimental = false
 * . ^comment = ""
-* . ^short = "Czech Body Structure"
-* . ^definition = "This profile represents the Body Structure resource by the Czech national interoperability project.The BodyStructure resource contains details about the anatomical location of a specimen or body part, including patient information, identifiers, as well as text descriptions and images. It provides for the addition of qualifiers such as laterality and directionality to the anatomic location for those use cases where precoordination of codes is not possible."
+* . ^short = "Czech National profile Body Structure"
+* . ^definition = "The BodyStructure resource contains details about the anatomical location of a specimen or body part. This profile specifies how the HL7 FHIR BodyStructure resource should be used for conveying commonly used concepts in the Czech context."
 
-* extension contains $bodyStructure-laterality-r5 named laterality 0..1
+//* extension contains $bodyStructure-laterality-r5 named laterality 0..1
 * extension[laterality].valueCodeableConcept from $CZ_LateralityVs (preferred)
 * morphology from $hl7BodyStructure (preferred)
-* location from $hl7BodySite (preferred)
+//* location from $hl7BodySite (preferred)
 * locationQualifier from $CZ_SiteQualifierVs (preferred)
 * image 0..0
 

@@ -46,14 +46,16 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * identifier contains OP 0..* //MS
 * identifier[OP] only Id_Card_Identifier
   * ^short = "National Identity Card Number"
-  * ^definition = "An unique person identifier (National ID Card Number) issued by the ministry of interior"
-* identifier[OP].system from $OPNSVS (required)
+  * ^definition = "Personal Id card number including the country code of the issuer."
+  * ^comment = "National Identity Card number can be used as a temporary person identifier for a foreign citizen in situations where national health sector identifier (RID/DRID) has not been assigned yet."
+* identifier[OP].system from $idcard-uri (required)
   * ^short = "Name space according to the National ID card issuer. FHIR records namespaces for ID cards in the format - https://ncez.mzcr.cz/fhir/sid/IdCardNumNS-XXX, where XXX is the three-letter country code according to ISO 3166"
 * identifier contains PAS 0..* //MS
 * identifier[PAS] only CZ_Passport_Identifier
   * ^short = "Passport Number"
-  * ^definition = "A temporary patient identifier (Passport Number)"
-* identifier[PAS].system from $PassportNSVS (required)
+  * ^definition = "Passport number including issuing country code."
+  * ^comment = "Passport number can be used as a temporary person identifier for a foreign citizen in situations where national health sector identifier (RID/DRID) has not been assigned yet."
+* identifier[PAS].system from $passport-uri (required)
   * ^short = "Name space according to the passport issuer. FHIR records namespaces for passports in the format - http://hl7.org/fhir/sid/passport-XXX, where XXX is the three-letter country code according to ISO 3166"
 
 * name 1..* MS  // patient name element must be provided

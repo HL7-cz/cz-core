@@ -118,6 +118,8 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
     - https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky
     - https://sukl.cz/terminology/CodeSystem/dlp-atc
+    - https://hl7.cz/terminology/ValueSet/idcard-uri
+    - https://hl7.cz/terminology/ValueSet/passport-uri
 
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'

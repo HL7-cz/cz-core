@@ -47,3 +47,16 @@ RuleSet: setOID ( oid )
 
 // RuleSet: setUrl ( resourceId )
 // * ^url = "https://hl7.cz/fhir/terminology/ValueSet/{resourceId}"
+
+RuleSet: SliceElement( type, path )
+* ^slicing.discriminator.type = {type}
+* ^slicing.discriminator.path = "{path}"
+* ^slicing.rules = #open
+* ^slicing.ordered = false
+
+RuleSet: SliceElementWithDescription( type, path, description )
+* ^slicing.discriminator.type = {type}
+* ^slicing.discriminator.path = "{path}"
+* ^slicing.rules = #open
+* ^slicing.description = "{description}"
+* ^slicing.ordered = false

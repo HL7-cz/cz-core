@@ -27,7 +27,7 @@ urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}
 
 #### OID
 
-The OID (Object Identifier), which is used for unique identification in IT, is standardized by ISO/IEC standards. It is a unique identifier used in information technology for unambiguously distinguishing objects, attributes and data structures within organizations, systems and standards. An OID is a hierarchical identifier in the form of numbers separated by dots that represent the path to a given object in a hierarchy defined by a given organizational or standardization system, such as ISO. 
+The OID (Object Identifier), which is used for unique identification in IT, is standardized by ISO/IEC standards. It is a unique identifier used in information technology for unambiguously distinguishing objects, attributes and data structures within organizations, systems and standards. An OID is a hierarchical identifier in the form of numbers separated by dots that represent the path to a given object in a hierarchy defined by a given organizational or standardization system, such as ISO.
 
 OID enables unambiguous identification and addressing of data elements and entities within different systems and facilitates interoperability and resource management.
 
@@ -108,15 +108,30 @@ It is subject to a clear definition of its format (according to `č. 133/2000 Sb
 
 ##### Passport Number
 
-Passport Number is a unique ID number that confirms that a person is a citizen of a given country.
+Passport number is a unique identification code assigned to a specific travel passport at the time of its issuance. It consists of a combination of letters and digits, and its format varies depending on the country that issued the passport.
+~~~
+[0-9A-Z]{6,9}
+~~~
+For identifiers of this type, it is mandatory to specify the namespace according to the issuing authority of the document. The use of standard namespaces for travel passports is required.
+~~~
+http://hl7.org/fhir/sid/passport-XXX
+~~~
+where XXX is the three-letter country code according to ISO 3166.
 
-Name space according to the passport issuer. Standard Passport Namespaces are required to be used. FHIR registers namespaces for passports in the format http://hl7.org/fhir/sid/passport-XXX, where XXX is the ISO 3166 three-letter country code. For example: `http://hl7.org/fhir/sid/passport-CZE`.
+For example:
+`http://hl7.org/fhir/sid/passport-CZE`.
 
 ##### Identity Card Number
 
-Identity Card Number is is assigned when the identity card is created.
+The identity card number is assigned when the document is issued.
 
-The identifier namespace in this case is presented by the value from this: `https://ncez.mzcr.cz/fhir/sid/op`.
+Similarly to passports, FHIR uses dynamic namespaces for individual countries issuing identity cards (or their equivalents) in the following format:
+~~~
+http://hl7.org/fhir/sid/idcard-XXX
+~~~
+
+In the case of the Czech identifier, the namespace is represented by the value:
+`https://ncez.mzcr.cz/fhir/sid/idcard-CZE`.
 
 ##### Health Insurance Number
 
@@ -183,7 +198,7 @@ The identifier namespace in this case is presented by the value: `https://ncez.m
 There are two other possible types of identifier according to:
 - **IČZ** with namespace: `https://ncez.mzcr.cz/fhir/sid/icz`
 - **IČP** with namespace: `https://ncez.mzcr.cz/fhir/sid/icp`
-  
+
 **IČZ** is the identification number of a healthcare service provider. **IČP** is the identification number of a specific facility (or physician) operating under a single IČZ.
 
 IČZ and IČP are assigned exclusively by VZP ČR (Všeobecná zdravotní pojišťovna České republiky - General Health Insurance Company of the Czech Republic) for the purposes of all health insurance companies in the Czech Republic. Therefore, the application for the assignment of IČZ and IČP is always submitted to VZP ČR, regardless of which health insurance company the provided urgent care will be billed to.

@@ -25,6 +25,9 @@ Alias: $CZ_DLPATCCs = https://sukl.cz/terminology/CodeSystem/dlp-atc
 
 
 // Extensions:
+Alias: $allergyintolerance-abatement = http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement
+Alias: $annotation-type = http://hl7.org/fhir/StructureDefinition/annotationType
+Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $iso21090-ADXP-streetName = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
@@ -79,6 +82,8 @@ Alias: $OPNSVS = https://hl7.cz/terminology/ValueSet/OP-NS
 Alias: $dlp-atc-vs = https://sukl.cz/terminology/ValueSet/dlp-atc
 Alias: $NRZP_PovolaniVS = https://ncez.mzcr.cz/terminology/ValueSet/nrzp-povolani-vs
 Alias: $VZPNahradyVS = https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
+Alias: $passport-uri = https://hl7.cz/terminology/ValueSet/passport-uri
+Alias: $idcard-uri = https://hl7.cz/terminology/ValueSet/idcard-uri
 
 // Profiles:
 Alias: $Organization-eu-core = http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core
@@ -86,6 +91,7 @@ Alias: $Patient-eu-core = http://hl7.eu/fhir/base/StructureDefinition/patient-eu
 Alias: $Practitioner-eu-core = http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core
 Alias: $PractitionerRole-eu-core = http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu-core
 Alias: $RelatedPerson = http://hl7.org/fhir/StructureDefinition/RelatedPerson
+Alias: $BodyStructure-eu-core = http://hl7.eu/fhir/base/StructureDefinition/bodyStructure-eu-core
 //Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
 //Alias: $flag-detail = http://hl7.org/fhir/StructureDefinition/flag-detail
 //Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority

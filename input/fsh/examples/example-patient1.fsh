@@ -9,15 +9,6 @@ Description: "Patient, contact information and practitioner"
 * identifier[PAS] = CZ_PassportExample
 * identifier[PAS] = SK_PassportExample
 * identifier[OP] = CZ_exampleIdCard
-// * identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-CZE"
-// * identifier[PAS][=].value = "23476533"
-// * identifier[PAS][=].use = #official
-// * identifier[PAS][=].type = $v2-0203#PPN
-// * identifier[PAS][=].assigner.display = "Ministerstvo vnitra České republiky"
-// * identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVK"
-// * identifier[PAS][=].value = "88476522"
-// * identifier[PAS][=].use = #official
-// * identifier[PAS][=].type = $v2-0203#PPN
 
 * extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CZ
 * name.use = #usual
@@ -86,7 +77,7 @@ Instance: RegisteringProviderExample
 InstanceOf: CZ_OrganizationCore
 Title: "Organization: Registering healthcare provider example"
 Description: "Example of registering healthcare provider"
-Usage: #example //#inline
+Usage: #example
 
 * identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/ico"
 * identifier[=].value = "456789655"
