@@ -3,7 +3,7 @@ Parent: Identifier
 Id: id-card-identifier
 Title: "Personal ID card identifier"
 Description: "Identifier for personal ID card number using FHIR SID and v2-0203#CZ."
-* insert SetFmmandStatusRule(1, draft)
+* insert SetFmmandStatusRule( 2, trial-use )
 * use = #official (exactly)
 * type = $v2-0203#CZ (exactly) // National ID card number
 * system 1..1

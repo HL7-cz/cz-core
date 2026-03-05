@@ -11,7 +11,7 @@ Description: "Czech national core profile for location resource.This profile imp
 * . ^comment = ""
 * . ^short = "Czech location"
 * . ^definition = "Czech national core profile for location resource."
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule ( 2, trial-use )
 * managingOrganization only Reference(CZ_OrganizationCore)
 
 
@@ -26,7 +26,7 @@ Description: "Czech national base profile for location resource. This profile im
 * . ^comment = ""
 * . ^short = "Czech location"
 * . ^definition = "Czech national base profile for location resource."
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 //* physicalType ^short = "Location type"
 //* name ^short = "Location name"

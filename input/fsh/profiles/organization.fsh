@@ -6,7 +6,7 @@ Title:      "Organization (CZ base)"
 Description: "Czech national profile defines the way the organization is represented in the context of the Czech national interoperability project."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * . ^comment = ""
 * . ^short = "Czech Organization (base)"
 * . ^definition = "Czech national profile defines how to represent an organization in HL7 FHIR."

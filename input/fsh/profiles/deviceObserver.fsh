@@ -9,7 +9,7 @@ Description: "Czech profile represents the constraints applied to the Device res
 * . ^short = "Czech device"
 * . ^definition = "Profile represents the Device resource that plays the role of observer or performer."
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * identifier //MS
 * manufacturer //MS

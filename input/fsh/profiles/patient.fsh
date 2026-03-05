@@ -10,7 +10,7 @@ Description: """This profile specifies how the HL7 FHIR Patient resource should 
 * . ^comment = ""
 * . ^short = "Czech Patient (base)"
 * . ^definition = "This profile defines how to represent Patient in FHIR for the purpose of the Czech national interoperability standards."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 //* language = urn:ietf:bcp:47#cs  -- todo EJAZYK
 * extension[birthPlace].valueAddress only CZ_Address

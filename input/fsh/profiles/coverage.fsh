@@ -11,7 +11,7 @@ Description: "Czech national profile for a coverage."
 * . ^short = "Czech coverage"
 * . ^definition = "This profile presents the requirements for the Coverage resource within the Czech national interoperability project. Coverage is intended to provide identifiers for information that would appear on an insured person's card, which can be used for partial or full reimbursement for the provision of healthcare products and services. At the same time, this resource can also be used to register \"self-payers,\" where the individual or organization are different from the insurer and assumes responsibility for paying some or all of the health care costs."
 
-* insert SetFmmandStatusRule ( 0, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * extension contains CZ_RefundIndicatorCode named kodNahrady 0..1
 * extension[kodNahrady].valueCodeableConcept from $VZPNahradyVS

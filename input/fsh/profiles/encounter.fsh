@@ -4,7 +4,7 @@ Id: cz-encounter
 Title: "Encounter (CZ)"
 Description: "Czech base profile for encounter. "
 
-* insert SetFmmandStatusRule ( 0, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 //* identifier 1..
 * status
@@ -19,7 +19,7 @@ Id: cz-encounter-core
 Title: "Encounter (CZ)"
 Description: "Czech base profile for encounter. "
 
-* insert SetFmmandStatusRule ( 0, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 //* identifier 1..
 * status

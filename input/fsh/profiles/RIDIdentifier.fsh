@@ -3,7 +3,7 @@ Parent: Identifier
 Id: cz-rid-identifier
 Title: "National health sector identifier (CZ)"
 Description: "This structure contains the Czech identifier of a person (personal identification number) in healthcare sector"
-* insert SetFmmandStatusRule(1, draft)
+* insert SetFmmandStatusRule( 2, trial-use )
 * use = #official (exactly)
 * system 1..1
 * system = "https://ncez.mzcr.cz/fhir/sid/rid" (exactly)

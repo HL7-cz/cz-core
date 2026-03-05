@@ -3,7 +3,7 @@ Parent: Identifier
 Id: cz-passport-identifier
 Title: "Passport identifier"
 Description: "This structure specifies the passport identifier."
-* insert SetFmmandStatusRule(1, draft)
+* insert SetFmmandStatusRule( 2, trial-use )
 * use 1..1
 * use = #official (exactly)
 * type 1..1

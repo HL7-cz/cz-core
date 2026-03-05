@@ -9,7 +9,7 @@ Description: "Czech national profile for practitioner.Contains information about
 * . ^comment = ""
 * . ^short = "Czech Practitioner (base)"
 * . ^definition = "Czech national profile defines how to represent a practitioner in HL7 FHIR."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 //* identifier MS
 * identifier ^slicing.discriminator.type = #value

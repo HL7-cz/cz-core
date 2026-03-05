@@ -7,7 +7,7 @@ Description: "Czech national profile for document reference containing logo."
 * . ^short = "Logo"
 * . ^definition = "Base64 encoded logo"
 
-* insert SetFmmandStatusRule ( 0, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * status = #current
 * docStatus 0..0

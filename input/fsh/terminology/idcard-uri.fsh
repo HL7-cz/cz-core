@@ -12,7 +12,7 @@ Description: "A country specific URI for personal Id card numbers"
 * ^publisher = "HL7 Czech Republic"
 * ^language = #cs
 * ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
-* insert SetFmmandStatusRule(2, trial-use)
+* insert SetFmmandStatusRule( 2, trial-use )
 
 * $uri#https://hl7.cz/fhir/sid/idcard-AFG "Afghánistán"
 * $uri#https://hl7.cz/fhir/sid/idcard-ALB "Albánie"

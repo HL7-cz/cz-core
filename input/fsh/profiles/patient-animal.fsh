@@ -9,7 +9,7 @@ This is used to identify the species when a specimen is collected from an animal
 * . ^short = "Czech Animal Patient"
 * . ^definition = "This profile defines how to represent Animal Patient in FHIR for the purpose of the Czech national interoperability standards."
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * extension contains $patient-animal named patient-animal 1..1
 * extension[patient-animal].extension[species]
 * extension contains $recordedSexOrGender named recordedSexOrGender 0..1

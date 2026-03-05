@@ -9,7 +9,7 @@ Description: """Czech national profile sets minimum expectations for the Organiz
 * . ^comment = ""
 * . ^short = "Czech Organization (core)"
 * . ^definition = "Czech national profile sets minimum expectations for represention of organization in HL7 FHIR."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * insert ImposeProfile($Organization-eu-core, 0)
 
 * name 0..1

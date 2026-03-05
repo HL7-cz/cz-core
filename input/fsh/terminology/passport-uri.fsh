@@ -12,7 +12,7 @@ Description: "A country specific URI for passport numbers"
 * ^publisher = "HL7 Czech Republic"
 * ^language = #cs
 * ^jurisdiction = urn:iso:std:iso:3166#CZ "Czechia"
-* insert SetFmmandStatusRule(2, trial-use)
+* insert SetFmmandStatusRule( 2, trial-use )
 
 * $uri#http://hl7.org/fhir/sid/passport-AFG "Afghánistán"
 * $uri#http://hl7.org/fhir/sid/passport-ALB "Albánie"

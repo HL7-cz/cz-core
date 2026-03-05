@@ -9,7 +9,7 @@ Description: "Czech national profile on Signature holds an electronic representa
 * . ^comment = ""
 * . ^short = "Signature according to Czech conventions"
 * . ^definition = "Signature according to Czech conventions. The type determines whether it is a signature or a timestamp."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * type MS
 * type ^definition = "The kind of signature that determines whether it is a signature or a timestamp. RECOMMENDED to include."

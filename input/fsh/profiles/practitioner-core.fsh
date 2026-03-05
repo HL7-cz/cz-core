@@ -9,7 +9,7 @@ Description: "Czech national profile for practitioner. Contains information abou
 * . ^comment = ""
 * . ^short = "Czech Practitioner (core)"
 * . ^definition = "Czech national profile sets minimum expectations for represention of practitioner in HL7 FHIR."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * insert ImposeProfile($Practitioner-eu-core, 0)
 /*
 * identifier MS

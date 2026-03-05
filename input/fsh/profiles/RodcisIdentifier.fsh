@@ -14,7 +14,7 @@ Description: "This structure contains the Czech identifier of a person (personal
 * . ^short = "Czech national birth number"
 * . ^definition = "Czech national identifier defines how to representNational birth number in HL7 FHIR."
 
-* insert SetFmmandStatusRule(1, draft)
+* insert SetFmmandStatusRule( 2, trial-use )
 * use = #official (exactly)
 * system 1..1
 * system = "https://ncez.mzcr.cz/fhir/sid/rcis" (exactly)

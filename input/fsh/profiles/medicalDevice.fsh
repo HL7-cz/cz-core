@@ -8,7 +8,7 @@ Description: "Czech profile represents the constraints applied to the Device res
 * . ^comment = "This profile applies the rules defined by NCEZ for representing the UDI in the FHIR standard, by the document \"HL7 IG: UDI Pattern R2\""
 * . ^short = "Czech medical devices"
 * . ^definition = "Profile represents the Device resource by the Czech national interoperability project."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * type 0..1
 * type from $MedicalDeviceVS (preferred)
