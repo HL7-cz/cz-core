@@ -10,7 +10,7 @@ It is always RECOMMENDED to give these elements separately. The national specifi
 * . ^comment = "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource)."
 * . ^short = "Address according to Czech postal conventions"
 * . ^definition = "Address according to Czech postal conventions. The address can be used both for delivering mail and for locating locations that do not have a valid mailing address. The use of extensions is not mandatory."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * country
   * ^short = "Country (e.g. can be ISO 3166 2 letter code)"

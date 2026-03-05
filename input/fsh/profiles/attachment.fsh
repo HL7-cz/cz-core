@@ -10,7 +10,7 @@ Description: "Czech national profile for attachment. "
 * . ^definition = "Document reference attachment profile for Czech national interoperability standards."
 * . ^comment = "Attachment can contain base64 encoded data or reference to external URL. URL reference is preferred in case of attached documents."
 
-* insert SetFmmandStatusRule ( 0, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * content.attachment
 * content.attachment.contentType MS

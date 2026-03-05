@@ -14,7 +14,7 @@ Description: """This profile represents the Body Structure resource by the Czech
 //* extension contains $bodyStructure-laterality-r5 named laterality 0..1
 * extension[laterality].valueCodeableConcept from $CZ_LateralityVs (preferred)
 * morphology from $hl7BodyStructure (preferred)
-//* location from $hl7BodySite (preferred)
+* location from $hl7BodySite (preferred)
 * locationQualifier from $CZ_SiteQualifierVs (preferred)
 * image 0..0
 

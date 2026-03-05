@@ -4,7 +4,7 @@ Title:  "Registering provider"
 Description: "This extension allows the registration of the registering healthcare provider and its category/specialty (general practitioner for children and youth, general practitioner for adults, dentist, gynecologist)."
 // publisher, contact, and other metadata here using caret (^) syntax (omitted)
 * insert ExtensionContext(Patient)
-* insert SetFmmandStatusRule(1, draft)
+* insert SetFmmandStatusRule( 2, trial-use )
 * . ^short = "Registering healthcare provider"
 * . ^definition = "This extension allows the entry of information on the registering provider and their category/specialty of care (general practice, paediatric and adolescent practice, dentistry or gynaecology and obstetrics) who has admitted the patient for primary outpatient care."
 
