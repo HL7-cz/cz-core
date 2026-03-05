@@ -9,6 +9,7 @@ template
 backup/
 _*.*
 *.bak
+*.future
 ig-template/includes/.index.json
 ig-template/includes/.index.db
 ig-template/package/.index.db
