@@ -1,7 +1,7 @@
 Alias: $sct = http://snomed.info/sct
 
 ValueSet: eHDSIReactionAllergy
-Id: eHDSIReactionAllergy--0.0.1
+Id: eHDSIReactionAllergy
 Title: "eHDSI Reaction Allergy"
 Description: "Value Set is used to encode clinical manifestation of the allergic reaction."
 
