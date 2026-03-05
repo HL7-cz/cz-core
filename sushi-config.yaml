@@ -8,7 +8,7 @@ canonical: https://hl7.cz/fhir/core
 name: HL7CzCoreImplementationGuide
 title: HL7 Czech Base and Core Implementation Guide
 description: HL7 Czech Base and Core Resources Implementation Guide
-status: draft # draft | active | retired | unknown
+status: active # draft | active | retired | unknown
 version: 0.3.0
 #language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -120,6 +120,7 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - https://sukl.cz/terminology/CodeSystem/dlp-atc
     - https://hl7.cz/terminology/ValueSet/idcard-uri
     - https://hl7.cz/terminology/ValueSet/passport-uri
+    - http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy
 
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'
