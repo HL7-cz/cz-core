@@ -3,8 +3,8 @@ Profile:    CZ_Address
 Parent:     AddressEu
 Id:         cz-address
 Title:      "Address (CZ)"
-Description: "Czech national profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box.
-It is always RECOMMENDED to give these elements separately. The national specification also includes the option of entering the address location according to the RUIAN register and marking the address as the permanent residence address."
+Description: """This profile is derived from EU address profile and extends the Address data type for supporting streetname, housenumber and postal box.
+It is always RECOMMENDED to provide these elements separately. This profile also allows for using RUIAN codes and marking the address as the permanent residence address."""
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * . ^comment = "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource)."
