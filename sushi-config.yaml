@@ -6,7 +6,7 @@
 id: hl7.fhir.cz.core
 canonical: https://hl7.cz/fhir/core
 name: HL7CzCoreImplementationGuide
-title: HL7 Czech Base and Core Implementation Guide
+title: HL7 Czech Base and Core FHIR IG
 description: HL7 Czech Base and Core Resources Implementation Guide
 status: active # draft | active | retired | unknown
 version: 0.3.0
@@ -194,7 +194,7 @@ menu:
     Copyright (en): copyright.html
     Copyright (cs): copyright-cs.html
   Artifacts: artifacts.html
-  IG Base EU: https://build.fhir.org/ig/hl7-eu/base/index.html
+  IG Base EU: https://hl7.eu/fhir/base/0.1.0/  # TODO: update to correct URL when available
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
