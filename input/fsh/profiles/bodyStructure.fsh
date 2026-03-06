@@ -1,7 +1,7 @@
 Profile: BodyStructureCz
 Parent: BodyStructureEuCore
 Id: BodyStructure-cz
-Title: "Body Structure (CZ)"
+Title: "Body Structure (CZ core)"
 Description: """This profile represents the Body Structure resource by the Czech national interoperability project."""
 
 * ^publisher = "HL7 CZ"
