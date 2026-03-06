@@ -2,7 +2,7 @@
 Profile:    CZ_Medication
 Parent:     Medication
 Id:         cz-Medication
-Title:      "Medication (CZ)"
+Title:      "Medication (CZ core)"
 Description: "Czech national profile for a medication."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false

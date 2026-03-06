@@ -3,16 +3,17 @@ Profile:    CZ_LocationCore
 Parent:     CZ_LocationBase
 Id:         cz-location-core
 Title:      "Location (CZ core)"
-Description: "Czech national core profile for location resource.This profile implies use of the Czech standard organization in the managingOrganization element."
+Description: "Czech national profile for location resource.This profile implies use of the Czech standard organization in the managingOrganization element."
 //-------------------------------------------------------------------------------------------
 * ^publisher = "HL7 CZ"
 * ^version = "0.3.0"
 * ^experimental = false
 * . ^comment = ""
 * . ^short = "Czech location"
-* . ^definition = "Czech national core profile for location resource."
+* . ^definition = "Czech national profile for location resource."
 * insert SetFmmandStatusRule ( 2, trial-use )
 * managingOrganization only Reference(CZ_OrganizationCore)
+* partOf only Reference(CZ_LocationCore)
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -32,5 +33,5 @@ Description: "Czech national base profile for location resource. This profile im
 //* name ^short = "Location name"
 //* telecom ^short = "Location telecom"
 * managingOrganization only Reference(CZ_OrganizationBase)
-* partOf only Reference(CZ_LocationCore)
+* partOf only Reference(CZ_LocationBase)
 * address only CZ_Address

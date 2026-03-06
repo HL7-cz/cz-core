@@ -2,7 +2,7 @@
 Profile:    CZ_Provenance
 Parent:     Provenance
 Id:         cz-provenance
-Title:      "Provenance (CZ)"
+Title:      "Provenance (CZ core)"
 Description: "Czech national profile on Provenance tracks information about the activity that created, revised, deleted, or signed a version of a resource, describing the entities and agents involved."
 //-------------------------------------------------------------------------------------------
 * agent MS

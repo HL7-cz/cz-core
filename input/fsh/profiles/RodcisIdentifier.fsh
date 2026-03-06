@@ -1,7 +1,7 @@
 Profile: CZ_Rodcis_Identifier
 Parent: Identifier
 Id: cz-rodcis-identifier
-Title: "National birth number (CZ)"
+Title: "National birth number"
 Description: "This structure contains the Czech identifier of a person (personal identification number)"
 * ^experimental = false
 * . ^comment = ""

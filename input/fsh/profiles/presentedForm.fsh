@@ -1,7 +1,7 @@
 Profile: CZ_Presented_Form
 Parent: DocumentReference
 Id: cz-presented-form
-Title: "Presented Form (CZ)"
+Title: "Presented Form (CZ Core)"
 Description: "Czech national profile for presented form. "
 
 * insert SetFmmandStatusRule ( 2, trial-use )

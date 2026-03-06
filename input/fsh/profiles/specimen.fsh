@@ -2,7 +2,7 @@
 Profile:    CZ_Specimen
 Parent:     Specimen
 Id:         cz-specimen
-Title:      "Specimen (CZ)"
+Title:      "Specimen (CZ Core)"
 Description: "Czech national profile defines how to represent Specimens in HL7 FHIR for the purpose of this guide."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
@@ -50,7 +50,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
 Profile: CZ_SpecimenAdditiveSubstance
 Parent: Substance
 Id: Substance-additive-cz
-Title: "Substance: Specimen Additive Substance (CZ)"
+Title: "Substance: Specimen Additive Substance (CZ core)"
 Description: """This profile defines how to represent Specimen Additive Substances in HL7 FHIR for the purpose of this guide."""
 * code from $CZ_SpecimenAdditiveVs (preferred)
 

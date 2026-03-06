@@ -2,7 +2,7 @@
 Profile:    CZ_Signature
 Parent:     Signature
 Id:         cz-signature
-Title:      "Signature (CZ)"
+Title:      "Signature (CZ core)"
 Description: "Czech national profile on Signature holds an electronic representation of a signature or timestamp and its supporting context in a FHIR accessible form."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false

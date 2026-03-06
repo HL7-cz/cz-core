@@ -1,7 +1,7 @@
 Profile: CZ_RID_Identifier
 Parent: Identifier
 Id: cz-rid-identifier
-Title: "National health sector identifier (CZ)"
+Title: "National health sector identifier"
 Description: "This structure contains the Czech identifier of a person (personal identification number) in healthcare sector"
 * insert SetFmmandStatusRule( 2, trial-use )
 * use = #official (exactly)

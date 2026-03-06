@@ -3,7 +3,7 @@ Profile:    CZ_OrganizationBase
 Parent:     OrganizationEu
 Id:         cz-organization-base
 Title:      "Organization (CZ base)"
-Description: "Czech national profile defines the way the organization is represented in the context of the Czech national interoperability project."
+Description: "Czech national base profile defines the way the organization is represented in the context of the Czech national interoperability project."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * insert SetFmmandStatusRule ( 2, trial-use )

@@ -2,7 +2,7 @@
 Profile:    CZ_MedicationStatement
 Parent:     MedicationStatement
 Id:         cz-MedicationStatement
-Title:      "Medication Statement (CZ)"
+Title:      "Medication Statement (CZ core)"
 Description: "Czech national profile for a medication statement."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
