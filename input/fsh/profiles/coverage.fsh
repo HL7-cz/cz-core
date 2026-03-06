@@ -2,8 +2,8 @@
 Profile:    CZ_Coverage
 Parent:     Coverage
 Id:         cz-coverage
-Title:      "Coverage (CZ)"
-Description: "Czech national profile for a coverage."
+Title:      "Coverage (CZ core)"
+Description: "Czech national profile for coverage resource."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 
