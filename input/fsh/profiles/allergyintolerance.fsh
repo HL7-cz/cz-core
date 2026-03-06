@@ -1,8 +1,8 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:    CZ_AllergyIntolerance
-Parent:     AllergyIntolerance  // would need to update to AllergyIntoleranceEuCore when it is ready
+Parent:     AllergyIntolerance  // TODO: would need to update to AllergyIntoleranceEuCore when it is ready
 Id:         cz-allergyIntolerance
-Title:      "Allergy Intolerance (CZ)"
+Title:      "Allergy Intolerance (CZ core)"
 Description: "Czech national profile for an Allergy Intolerance"
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
