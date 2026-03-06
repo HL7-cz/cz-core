@@ -3,7 +3,7 @@
 Profile: CZ_Attachment
 Parent: DocumentReference
 Id: cz-attachment
-Title: "Attachment (CZ)"
+Title: "Attachment (CZ core)"
 Description: "Czech national profile for attachment. "
 
 * . ^short = "Document reference attachment"
