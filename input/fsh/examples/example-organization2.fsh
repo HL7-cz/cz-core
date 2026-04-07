@@ -2,7 +2,7 @@ Instance: Organization-2
 InstanceOf: cz-organization-core
 Usage: #example
 Description: "An example of the organization with logo extension"
-* contained[+] = attachment-logo-FN-Motol  // Příklad přílohy s logem
+* contained[+] = attachment-logo-NemocniceOblackov  // Příklad přílohy s logem
 * identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/ico"
 * identifier[=].value = "456789655"
 * type[+] = $drzar#320 "Samost. ordinace všeob. prakt. lékaře"
@@ -25,5 +25,5 @@ Description: "An example of the organization with logo extension"
 * address[=].country = "CZ"
 // Rozšíření organization-logo aliasované jako cz-organization-logo
 * extension[logo].url = $cz-organization-logo
-* extension[logo].valueReference.reference = "#attachment-logo-FN-Motol"
+* extension[logo].valueReference.reference = "#attachment-logo-NemocniceOblackov"
 
