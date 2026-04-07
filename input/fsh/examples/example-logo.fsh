@@ -3,7 +3,7 @@ InstanceOf: CZ_Logo
 Usage: #example
 Description: "Example of logo as document reference for Nemocnice Obláčkov."
 
-* id = "attachment-logo-FN-Motol"
+* id = "attachment-logo-NemocniceOblackov"
 * status = #current
 * content.attachment
   * contentType = #image/svg+xml
