@@ -9,7 +9,7 @@ name: HL7CzCoreImplementationGuide
 title: HL7 Czech Base and Core FHIR IG
 description: HL7 Czech Base and Core Resources Implementation Guide
 status: active # draft | active | retired | unknown
-version: 0.3.0
+version: 0.4.0
 #language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
