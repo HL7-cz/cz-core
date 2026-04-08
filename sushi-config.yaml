@@ -104,6 +104,10 @@ pages:
     title: Dependencies
   dependencies-cs.md:
     title: Závislosti
+  changes.md:
+    title: Change log
+  changes-cs.md:
+    title: Záznam změn
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -185,12 +189,14 @@ menu:
     Identifiers (en): identifiers-en.html
     Identifiers (cs): identifiers-cs.html
   About:
-    Authors (en): authors.html
-    Authors (cs): authors-cs.html
+    Changes (en): changes.html
+    Changes (cs): changes-cs.html
     Downloads (en): downloads.html
     Downloads (cs): downloads-cs.html
     Dependencies (en): dependencies.html
     Dependencies (cs): dependencies-cs.html
+    Authors (en): authors.html
+    Authors (cs): authors-cs.html
     Copyright (en): copyright.html
     Copyright (cs): copyright-cs.html
   Artifacts: artifacts.html
