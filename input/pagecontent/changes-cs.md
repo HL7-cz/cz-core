@@ -1,4 +1,4 @@
-This page summarizes the main changes applied to this version of the guide.
+Seznam hlavních provedených změn ve verzích tohoto IG.
 
 ### od 0.3.0 do 0.4.0
 
