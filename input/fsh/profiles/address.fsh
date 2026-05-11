@@ -13,7 +13,7 @@ It is always RECOMMENDED to provide these elements separately. This profile also
 * insert SetFmmandStatusRule ( 2, trial-use )
 
 * country
-  * ^short = "Country (e.g. can be ISO 3166 2 letter code)"
+  * ^short = "Country (use of ISO 3166 2 letter code is RECOMMENDED)"
   * extension[countryCode].value[x] from $iso3166-1-2 (required)
 
 * extension ^slicing.discriminator.type = #value

@@ -1,5 +1,5 @@
 Profile: CZ_ConditionCore
-Parent: Condition
+Parent: Condition  // TODO: update to ConditionEuCore
 Id: cz-condition-core
 Title: "Condition (CZ core)"
 Description: """This profile introduces essential constraints and extensions for the Condition resource that apply across multiple use cases."""

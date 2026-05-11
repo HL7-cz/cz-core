@@ -38,10 +38,11 @@ publisher:
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #     version: 1.0.0
 dependencies:
-  hl7.fhir.uv.ips: 1.1.0
-  hl7.fhir.eu.base: 0.1.0
-  hl7.fhir.cz.terminology: 0.2.0
-  hl7.fhir.extensions.r5: 4.0.1
+  # hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.eu.base: 2.0.0
+  hl7.fhir.cz.terminology: current
+  # hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
   # hl7.fhir.eu.laboratory: current
 #
 #
@@ -74,6 +75,10 @@ pages:
     title: Basic FHIR elements in English
   elements-FHIR-cs.md:
     title: Basic FHIR elements in Czech
+  # missing-data-en.md:
+  #   title: Handling Missing Data
+  missing-data-cs.md:
+    title: Zpracování chybějících dat
   subjects-en.md:
     title: Subjects in English
   subjects-cs.md:
@@ -118,13 +123,13 @@ pages:
 #
 parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   special-url:
-    - https://uzis.cz/terminology/CodeSystem/nzis-NahradyZaZdravotniPeci
-    - https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
-    - https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky
-    - https://sukl.cz/terminology/CodeSystem/dlp-atc
-    - https://hl7.cz/terminology/ValueSet/idcard-uri
-    - https://hl7.cz/terminology/ValueSet/passport-uri
-    - http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy
+#    - https://uzis.cz/terminology/CodeSystem/nzis-NahradyZaZdravotniPeci
+#    - https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
+#    - https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky
+#    - https://sukl.cz/terminology/CodeSystem/dlp-atc
+#    - https://hl7.cz/terminology/ValueSet/idcard-uri
+#    - https://hl7.cz/terminology/ValueSet/passport-uri
+#    - http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy
 
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'
@@ -149,6 +154,7 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   apply-version: true
   show-inherited-invariants: true
   usage-stats-opt-out: true
+  ips-comparison: 2.0.0  # compare to IPS version 2.0.0
   # excludexml: false
   # excludejson: false
   # excludettl: true
@@ -181,6 +187,8 @@ menu:
   Introduction:
     Basic FHIR elements (en): elements-FHIR-en.html
     Basic FHIR elements (cs): elements-FHIR-cs.html
+    Handling Missing Data (en): https://hl7.eu/fhir/base/2.0.0/missing-data.html
+    Handling Missing Data (cs): missing-data-cs.html
   Function view:
     Subjects (en): subjects-en.html
     Subjects (cs): subjects-cs.html
@@ -200,7 +208,7 @@ menu:
     Copyright (en): copyright.html
     Copyright (cs): copyright-cs.html
   Artifacts: artifacts.html
-  IG Base EU: https://hl7.eu/fhir/base/0.1.0/  # TODO: update to correct URL when available
+  IG Base EU: https://hl7.eu/fhir/base/2.0.0/  # TODO: update to correct URL when available
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

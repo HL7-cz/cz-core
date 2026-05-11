@@ -1,5 +1,6 @@
 // Valuesets:
 Alias: $AllergenWithExceptions = https://ncez.mzcr.cz/terminology/ValueSet/AllergenWithExceptions
+Alias: $eHDSIReactionAllergy = https://ncez.mzcr.cz/terminology/ValueSet/eHDSI-reaction-allergy
 Alias: $condition-cz = https://ncez.mzcr.cz/terminology/ValueSet/condition-cz
 Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $CZ_AdministrativegenderVS = https://hl7.cz/terminology/ValueSet/administrative-gender-cz

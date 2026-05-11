@@ -1,6 +1,6 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:    CZ_LocationCore
-Parent:     CZ_LocationBase
+Parent:     LocationEuCore
 Id:         cz-location-core
 Title:      "Location (CZ core)"
 Description: "Czech national profile for location resource.This profile implies use of the Czech standard organization in the managingOrganization element."
@@ -14,8 +14,10 @@ Description: "Czech national profile for location resource.This profile implies 
 * insert SetFmmandStatusRule ( 2, trial-use )
 * managingOrganization only Reference(CZ_OrganizationCore)
 * partOf only Reference(CZ_LocationCore)
+* address only CZ_Address
 
 
+/*
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:    CZ_LocationBase
 Parent:     Location
@@ -35,3 +37,4 @@ Description: "Czech national base profile for location resource. This profile im
 * managingOrganization only Reference(CZ_OrganizationBase)
 * partOf only Reference(CZ_LocationBase)
 * address only CZ_Address
+*/

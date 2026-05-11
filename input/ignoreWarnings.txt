@@ -39,10 +39,10 @@ INFORMATION: StructureDefinition/BodyStructure-cz: StructureDefinition.snapshot.
 %The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated%
 
 # Context will be fixed
-The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (this element is [BodyStructure]; allowed for this version = e:BodyStructure.includedStructure; this is a warning since contexts may be renamed between FHIR versions)
+# The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (this element is [BodyStructure]; allowed for this version = e:BodyStructure.includedStructure; this is a warning since contexts may be renamed between FHIR versions)
 
 # Known issue with BodyStructure extensions (see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Issue.20with.20the.20bodySite.20extension)
-The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (allowed = e:BodyStructure.includedStructure; this element is [[BodyStructure]; this is a warning since contexts may be renamed between FHIR versions)
+# The extension http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality from FHIR version 5.0 is not allowed to be used at this point (allowed = e:BodyStructure.includedStructure; this element is [[BodyStructure]; this is a warning since contexts may be renamed between FHIR versions)
 
 # Errors caused by missing terminology on tx.fhir.org
 %A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the value set cannot be expanded%
@@ -59,6 +59,12 @@ ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky' not found
 ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/drzar' not found
 ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/cz-specimen-type-vs' not found
 
+# Information messages caused by missing Czech translation of the code CodeSystems on terminology servers
+INFORMATION: AllergyIntolerance/AllergyToCatDander: AllergyIntolerance.code: None of the codings provided are in the value set 'eHDSI Agent or Allergen With Exceptions' (https://ncez.mzcr.cz/terminology/ValueSet/AllergenWithExceptions|0.2.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#260152009)
+INFORMATION: AllergyIntolerance/allergy-1: AllergyIntolerance.code: None of the codings provided are in the value set 'eHDSI Allergen No Drug' (http://terminology.ehdsi.eu/ValueSet/eHDSIAllergenNoDrug|0.2.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies)
+AllergyIntolerance.code: None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|1.1.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies)
+INFORMATION: Device/Pacemaker: Device.type: None of the codings provided are in the value set 'Medical Device with exceptions' (https://ncez.mzcr.cz/terminology/ValueSet/MedicalDeviceWithExceptions|0.2.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#14106009)
+
 
 # Warnings caused by fragment terminology in terminology IG
 %Unknown Code 'C10AA01' in the CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-atc' version '0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment%
@@ -71,11 +77,11 @@ Wrong Display Name 'emergentní kontakt' for http://terminology.hl7.org/CodeSyst
 %There are no valid display names found for the code http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP for language(s) 'cs-CZ'. The display is 'health insurance plan policy' which is the default language display%
 
 # Tooling Errors
-ERROR: ImplementationGuide/hl7.fhir.cz.core: ImplementationGuide.definition.extension[35].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+# ERROR: ImplementationGuide/hl7.fhir.cz.core: ImplementationGuide.definition.extension[35].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
 
 # This reference is intentional
-The ImplementationGuide uses package hl7.fhir.uv.ips#1.1.0 released on 2022-11-22, but the most recent appropriate version is 2.0.0. This reference is getting old and the more recent version should be considered
+# The ImplementationGuide uses package hl7.fhir.uv.ips#1.1.0 released on 2022-11-22, but the most recent appropriate version is 2.0.0. This reference is getting old and the more recent version should be considered
 
 # Non-match the slice is expected
 %This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core|0.1.0%
@@ -92,7 +98,7 @@ A definition could not be found for Canonical URL 'https://sukl.cz/terminology/V
 A definition could not be found for Canonical URL 'https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci'
 A definition could not be found for Canonical URL 'https://ncez.mzcr.cz/terminology/ValueSet/PassportNS-vs'
 
-# Property definion URI is not necessary in the IG
+# Property definition URI is not necessary in the IG
 %This property has only a code%
 
 # Ignore Information on missing Czech translations for SNOMED CT
@@ -228,3 +234,9 @@ INFORMATION: ValueSet/eHDSIReactionAllergy: ValueSet.compose.include[0].concept[
 
 # suppress warning on eHDSI valueSet names
 WARNING: ValueSet/eHDSIReactionAllergy: ValueSet: Constraint failed: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+
+# Known issue with hl7.fhir.uv.xver-r5.r4 version 0.1.0 (see https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154)
+The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1
+
+# Additional Bindings with no key
+%Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.%

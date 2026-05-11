@@ -10,7 +10,7 @@ Description: "Example for AllergyIntolerance"
 * type = #allergy
 * category = #biologic
 * criticality = #low
-* code = $sctCZ#260152009 "kočičí lupy a srst"
+* code = $sctCZ#260152009 //"kočičí lupy a srst"
 * patient = Reference(Mracena) "Mračena"
 * reaction.extension[0].url = "http://hl7.org/fhir/StructureDefinition/allergyintolerance-certainty"
 * reaction.extension[=].valueCodeableConcept = $allergyintolerance-certainty#confirmed "Confirmed"

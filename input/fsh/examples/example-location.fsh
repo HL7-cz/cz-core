@@ -14,7 +14,7 @@ Description: "Czech national core profile for location resource example. This pr
 * address.country = "Česká republika"
 
 
-Instance: location-base-example
+/* Instance: location-base-example
 InstanceOf: CZ_LocationBase
 Title: "Location base example"
 Usage: #example
@@ -23,3 +23,4 @@ Description: "Example of Czech national base profile for location resource. This
 * name = "A location example name"
 * status = #active
 * managingOrganization.display = "An organization managing the location example name"
+ */

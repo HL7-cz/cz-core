@@ -1,29 +1,29 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:    CZ_AllergyIntolerance
-Parent:     AllergyIntolerance  // TODO: would need to update to AllergyIntoleranceEuCore when it is ready
-Id:         cz-allergyIntolerance
+Parent:     AllergyIntoleranceEuCore  // DONE: updated to AllergyIntoleranceEuCore
+Id:         allergyIntolerance-cz-core
 Title:      "Allergy Intolerance (CZ core)"
 Description: "Czech national profile for an Allergy Intolerance"
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * . ^comment = ""
-* . ^short = "Czech Allergy Intolerance"
+* . ^short = "Czech Allergy Intolerance profile"
 * . ^definition = "The profile presents the requirements for AllergyIntolerance within the Czech national interoperability project. It represents a record of a clinical assessment of an allergy or intolerance; a propensity, or a potential risk to an individual, to have an adverse reaction on future exposure to the specified substance, or class of substance."
 
-* extension contains $allergyintolerance-abatement named abatement 0..1
-* extension[abatement].valueDateTime ^short = "End date"
+//* extension contains $allergyintolerance-abatement named abatement 0..1
+//* extension[abatement].valueDateTime ^short = "End date"
 * identifier 1..
-* patient
+//* patient
 * patient only Reference(CZ_PatientCore)
-* clinicalStatus 1..
-* clinicalStatus from $hl7AllergyintoleranceClinical
+//* clinicalStatus 1..  // Relaxed to 0..1 to allow for cases where the clinical status is not known or not specified, which can be common in allergy intolerance records.
+//* clinicalStatus from $hl7AllergyintoleranceClinical
 //* type MS
-* type from $hl7AllergyintoleranceType
+//* type from $hl7AllergyintoleranceType
 //* category MS
-* category from $hl7AllergyintoleranceCategory
+//* category from $hl7AllergyintoleranceCategory
 
 //* code from $hl7AllergyintoleranceCode (preferred)
-* code 1..1
+//* code 1..1
 * code from $AllergenWithExceptions (preferred)
 /* * code ^binding.extension[0].extension[0].url = "key"
 * code ^binding.extension[=].extension[=].valueId = dlp-lecivepripravky-vs
@@ -48,7 +48,7 @@ Description: "Czech national profile for an Allergy Intolerance"
 // Need review of the following elements to determine if they are needed in the profile or if they can be left as is from the base resource:
 // ------------------------------------------------------------
 //* reaction.substance from $eHDSIAllergenNoDrug (example)
-* reaction.manifestation from eHDSIReactionAllergy (preferred)
+* reaction.manifestation from $eHDSIReactionAllergy (preferred)
 /*   * ^binding.extension[+].extension[+].url = "purpose"
   * ^binding.extension[=].extension[=].valueCode = #candidate
 //   * ^binding.extension[+].extension[+].url = "key"
@@ -60,8 +60,8 @@ Description: "Czech national profile for an Allergy Intolerance"
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "Type of allergy or intolerance reaction expected to be used in MyHealth@EU"
  */
-* reaction.severity ^short = "Reaction severity"
-* reaction.onset ^short = "Reaction onset"
+//* reaction.severity ^short = "Reaction severity"
+//* reaction.onset ^short = "Reaction onset"
 // ------------------------------------------------------------
 
 //* note MS
