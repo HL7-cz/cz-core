@@ -22,7 +22,7 @@ Description: "Medication - Simvastatin 40 MG Disintegrating Oral Tablet"
 Usage: #example
 * identifier[+].system = "http://example.org/exampleSystem" //vydavatel identifikatoru nemocnice vs. NIS
 * identifier[=].value = "med-1"
-* code.coding[0] = $CZ_DLPLecivePripravkyCs#0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
+* code.coding[0] = $dlp-lecive-pripravky-cs#0013831 "SIMVASTATIN RATIOPHARM 40MG TBL FLM 20"
 * code.coding[+] = $CZ_DLPATCCs#C10AA01 "simvastatin"
 * code.text = "Simvastatin 40 MG TBL FLM 20"
 * form.coding[0] = $CZ_DLPFormyCs#"TBL FLM" "Potahovaná tableta"
