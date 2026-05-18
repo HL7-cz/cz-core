@@ -7,7 +7,6 @@ Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/
 Alias: $CZ_DLPATCCs = https://sukl.cz/terminology/CodeSystem/dlp-atc
 Alias: $CZ_DLPFormyCs = https://sukl.cz/terminology/CodeSystem/dlp-formy
 Alias: $CZ_DLPLecivelatkyCs = https://sukl.cz/terminology/CodeSystem/dlp-lecivelatky
-Alias: $CZ_DLPLecivePripravkyCs = https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky
 Alias: $dlp-lecive-pripravky-cs = https://sukl.cz/terminology/CodeSystem/dlp-lecivepripravky
 Alias: $drzar = https://ncez.mzcr.cz/terminology/CodeSystem/drzar
 Alias: $nrzp_povolani = https://ncez.mzcr.cz/terminology/CodeSystem/nrzp-povolani
