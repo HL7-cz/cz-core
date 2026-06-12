@@ -12,9 +12,9 @@ Description: "Czech profile represents the constraints applied to the Device res
 
 * type 0..1
 * type from $MedicalDeviceVS (preferred)
-* patient 1..
+//* patient 1..
 * patient only Reference(CZ_PatientCore)
-* patient.reference 1..
+//* patient.reference 1..
 * owner only Reference(CZ_OrganizationCore)
 * location only Reference(CZ_LocationCore)
 * parent only Reference(CZ_MedicalDevice or CZ_DeviceObserver)
