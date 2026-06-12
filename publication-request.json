@@ -1,14 +1,14 @@
 {
   "package-id": "hl7.fhir.cz.core",
-  "version": "0.4.0",
-  "path": "https://hl7.cz/fhir/core/0.4.0",
+  "version": "1.0.0",
+  "path": "https://hl7.cz/fhir/core/1.0.0",
   "mode": "milestone",
   "status": "trial-use",
   "sequence": "STU 1",
-  "first": true,
+  "first": false,
   "ci-build": "https://build.fhir.org/ig/HL7-cz/cz-core",
   "category": "National Base",
-  "desc": "This is a second STU release of the Czech National FHIR Core and Base package.",
+  "desc": "This is a second extended STU release of the Czech National FHIR Core and Base package based on EU Base R4 v 2.0.0",
   "introduction": "This package contains the FHIR R4 Core and Base resources to support the use of FHIR in the Czech healthcare system.",
   "title": "Czech National FHIR R4 Core and Base Implementation Guide STU 1"
 }
