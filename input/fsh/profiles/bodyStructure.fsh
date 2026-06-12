@@ -1,6 +1,6 @@
-Profile: BodyStructureCz
+Profile: BodyStructureCzCore
 Parent: BodyStructureEuCore
-Id: BodyStructure-cz
+Id: BodyStructure-cz-core
 Title: "Body Structure (CZ core)"
 Description: """This profile represents the Body Structure resource by the Czech national interoperability project."""
 
