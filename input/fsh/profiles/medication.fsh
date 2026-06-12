@@ -12,7 +12,7 @@ Description: "Czech national profile for a medication."
 * . ^definition = "This profile is derived from the Medication EU core profile, which is a record of the medication."
 
 * identifier 1..
-* code from $DLPLecivePripravkyVs (required)
+* code from $dlp-lecive-pripravky-vs (required)
 // * code ^binding.extension[0].extension[0].url = "key"
 // * code ^binding.extension[=].extension[=].valueId = dlp-atc
 // * code ^binding.extension[=].extension[+].url = "purpose"
@@ -23,9 +23,9 @@ Description: "Czech national profile for a medication."
 // * code ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a ATC value set."
 // * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * extension[classification].valueCodeableConcept from $dlp-atc-vs (preferred)
-* form from $DLPFormyVs (preferred)
+* form from $dlp-formy-vs (preferred)
 * ingredient ^definition = "Identifies a particular constituent in the product."
 * ingredient
   * itemReference only Reference(CZ_Medication)
-  * itemCodeableConcept from $DLPLecivelatkyVs (preferred)
+  * itemCodeableConcept from $dlp-lecive-latky-vs (preferred)
 * manufacturer only Reference(CZ_OrganizationCore)
