@@ -32,7 +32,7 @@ Description: "Czech national profile defines how to represent Specimens in HL7 F
   * bodySite from $hl7BodySite (preferred)
     * ^comment = "If the specimen.type conveys information about the site the specimen has been collected from, then, if the bodySite is present, it shall be coherent with the type"
   * extension contains $bodySite-reference named bodySite 0..1
-  * extension[bodySite].valueReference only Reference(BodyStructureCz)
+  * extension[bodySite].valueReference only Reference(BodyStructureCzCore)
   * collector only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore)
 * processing.additive only Reference(Substance or CZ_SpecimenAdditiveSubstance)
 * container
