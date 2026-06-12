@@ -3,7 +3,7 @@ Parent: DiagnosticReportEuCore
 Id: diagnosticReport-cz-core
 Title:    "DiagnosticReport (CZ core)"
 Description: """This profile introduces essential constraints and extensions for the DiagnosticReport resource that apply across multiple use cases."""
-* insert SetFmmandStatusRule (1, draft)
+* insert SetFmmandStatusRule ( 2, trial-use )
 * . ^short = "Diagnostic Report CZ core"
 * . ^definition = "Diagnostic Report CZ core profile"
 // * effectivePeriod ^short = "Effective period of the report"
