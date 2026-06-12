@@ -14,7 +14,7 @@ Description: "Czech base profile for encounter. "
 
 Profile: CZ_EncounterCore
 Parent: CZ_Encounter
-Id: cz-encounter-core
+Id: encounter-cz-core
 Title: "Encounter (CZ core)"
 Description: "Czech base profile for encounter. "
 
