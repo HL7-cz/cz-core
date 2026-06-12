@@ -9,6 +9,8 @@ Alias: $CZ_DLPFormyCs = https://sukl.cz/terminology/CodeSystem/dlp-formy
 Alias: $CZ_DLPLecivelatkyCs = https://sukl.cz/terminology/CodeSystem/dlp-lecivelatky
 Alias: $dlp-lecive-pripravky-cs = https://sukl.cz/terminology/CodeSystem/dlp-lecivepripravky
 Alias: $drzar = https://ncez.mzcr.cz/terminology/CodeSystem/drzar
+Alias: $loinc = http://loinc.org
+Alias: $nclp = https://ncez.mzcr.cz/nclp/CodeSystem/nclppol
 Alias: $nrzp_povolani = https://ncez.mzcr.cz/terminology/CodeSystem/nrzp-povolani
 Alias: $oid = urn:ietf:rfc:1155
 Alias: $sct =  http://snomed.info/sct
@@ -20,6 +22,7 @@ Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $uri = urn:ietf:rfc:3986
+Alias: $Mkn10 = https://uzis.cz/terminology/CodeSystem/mkn-10
 
 
 //=========================
