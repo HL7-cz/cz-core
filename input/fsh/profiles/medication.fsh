@@ -1,5 +1,5 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:    CZ_Medication
+Profile:    CZ_MedicationCore
 Parent:     MedicationEuCore
 Id:         medication-cz-core
 Title:      "Medication (CZ core)"
@@ -11,7 +11,8 @@ Description: "Czech national profile for a medication."
 * . ^short = "Czech Medication"
 * . ^definition = "This profile is derived from the Medication EU core profile, which is a record of the medication."
 
-* identifier 1..
+* insert SetFmmandStatusRule (2, trial-use)
+//* identifier 1..
 * code from $dlp-lecive-pripravky-vs (required)
 // * code ^binding.extension[0].extension[0].url = "key"
 // * code ^binding.extension[=].extension[=].valueId = dlp-atc
@@ -23,9 +24,11 @@ Description: "Czech national profile for a medication."
 // * code ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a ATC value set."
 // * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * extension[classification].valueCodeableConcept from $dlp-atc-vs (preferred)
-* form from $dlp-formy-vs (preferred)
+// * form from $dlp-formy-vs (preferred)
+* form from $eHDSIDoseForms (preferred)
+
 * ingredient ^definition = "Identifies a particular constituent in the product."
 * ingredient
-  * itemReference only Reference(CZ_Medication)
+  * itemReference only Reference(CZ_MedicationCore)
   * itemCodeableConcept from $dlp-lecive-latky-vs (preferred)
 * manufacturer only Reference(CZ_OrganizationCore)
