@@ -1,5 +1,5 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:    CZ_MedicationStatement
+Profile:    CZ_MedicationStatementCore
 Parent:     MedicationStatementEuCore
 Id:         medicationStatement-cz-core
 Title:      "Medication Statement (CZ core)"
@@ -11,11 +11,11 @@ Description: "Czech national profile for a medication statement."
 * . ^short = "Czech Medication Statement"
 * . ^definition = "This profile is derived from the Medication Statement EU core profile, which is a record of the medication the patient is taking."
 
-* identifier 1..
+// * identifier 1..
 //* status MS
 //* status from $hl7MedicationStatementStatus
 //* medication[x]
-* medication[x] only Reference(CZ_Medication) or CodeableConcept
+* medication[x] only Reference(CZ_MedicationCore) or CodeableConcept
 * medicationCodeableConcept from $dlp-lecive-pripravky-vs (required)
 //* dosage
 //* dosage only Dosage
