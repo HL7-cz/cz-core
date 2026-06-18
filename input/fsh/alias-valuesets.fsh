@@ -1,6 +1,7 @@
 // Valuesets:
 Alias: $AllergenWithExceptions = https://ncez.mzcr.cz/terminology/ValueSet/AllergenWithExceptions
-Alias: $eHDSIReactionAllergy = https://ncez.mzcr.cz/terminology/ValueSet/eHDSIReactionAllergy
+Alias: $eHDSIReactionAllergy = http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy
+Alias: $eHDSIRouteOfAdministration = http://terminology.ehdsi.eu/ValueSet/eHDSIRouteofAdministration
 Alias: $condition-cz = https://ncez.mzcr.cz/terminology/ValueSet/condition-cz
 Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $CZ_AdministrativegenderVS = https://hl7.cz/terminology/ValueSet/administrative-gender-cz
@@ -42,3 +43,4 @@ Alias: $PassportNSVS = https://hl7.cz/terminology/ValueSet/passport-NS
 Alias: $RegisteringProviderServiceTypeCz = https://ncez.mzcr.cz/terminology/ValueSet/registering-provider-service-type-cz
 Alias: $SNOMEDCTMedicationCodes = http://hl7.org/fhir/ValueSet/medication-codes
 Alias: $VZPNahradyVS = https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
+Alias: $eHDSIDoseForms = http://terminology.ehdsi.eu/ValueSet/eHDSIDoseForm
