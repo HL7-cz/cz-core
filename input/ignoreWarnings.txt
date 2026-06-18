@@ -146,7 +146,7 @@ INFORMATION: StructureDefinition.snapshot.element[14].binding.valueSet: Pinned t
 INFORMATION: StructureDefinition.snapshot.element[20].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
 INFORMATION: StructureDefinition.differential.element[9].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
 
-# Suppress pinned information 
+# Suppress pinned information
 %Pinned the version of http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement%
 
 # Suppres warning on over-constraining
@@ -160,3 +160,6 @@ The slice definition for BodyStructure.extension:includedStructure.extension:bod
 
 # Additional Bindings with no key
 %Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.%
+
+# Additional binding code missing in examples
+%specified in an additional binding, and a coding is recommended to come from this value set%
