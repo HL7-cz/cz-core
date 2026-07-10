@@ -27,3 +27,15 @@ Description: "General practitioner's office"
 * notAvailable.during.start = "2023-08-01T00:00:00.000Z"
 * notAvailable.during.end = "2023-08-20T00:00:00.000Z"
 * availabilityExceptions = "Státní svátky"
+
+Instance: practitionerroleLab
+InstanceOf: CZ_PractitionerRoleCore
+Usage: #example
+Description: "Laboratory professional role example"
+* identifier.system = "http://www.acme.org/practitioners"
+* identifier.value = "148"
+* active = true
+* practitioner = Reference(Practitioner-lab) "Laboratorní Chemik"
+* organization = Reference(Synlab) "Biochemická laboratoř"
+* code[NRZP_POVOLANI] = $nrzp_povolani#L00 "Lékař"
+//* specialty = $sctCZ#419772000 "Family practice"
