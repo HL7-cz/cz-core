@@ -25,6 +25,10 @@ Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $ucum =  http://unitsofmeasure.org
 Alias: $uri = urn:ietf:rfc:3986
 Alias: $Mkn10 = https://uzis.cz/terminology/CodeSystem/mkn-10
+Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $referencerange-meaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
+Alias: $composition-attestation-mode = http://hl7.org/fhir/composition-attestation-mode
+
 
 
 //=========================
