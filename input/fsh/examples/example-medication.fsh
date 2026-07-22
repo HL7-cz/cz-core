@@ -45,13 +45,13 @@ It is a prescription/request with one medication and changing dosaging. Uses 'ac
 * authoredOn = "2024-12-06"
 * requester.display = "The Best Doctor"
 * medicationReference = Reference(01A-Cefuroxime1500GenericExplicit)
-* reasonCode = $sct#10625071000119104 "Bronchopneumonia caused by bacteria (disorder)"
+* reasonCode = $sct#10625071000119104 "bronchopneumonie způsobená bakterií"
 * subject = Reference(PatientExample)
 * dosageInstruction[0]
   * sequence = 1
   * doseAndRate.doseQuantity = 1500 $ucum#mg "milligram(s)"
   * route.coding[0] = $edqm#20035000 "Intramuscular use"
-  * route.coding[+] = $sct#78421000 "Intramuscular route"
+  * route.coding[+] = $sct#78421000 "intramuskulární podání"
   * timing
     * repeat.frequency = 1
     * repeat.period = 8
@@ -62,7 +62,7 @@ It is a prescription/request with one medication and changing dosaging. Uses 'ac
   * doseAndRate.doseRange.low = 750 $ucum#mg "milligram(s)"
   * doseAndRate.doseRange.high = 1500 $ucum#mg "milligram(s)"
   * route.coding[0] = $edqm#20035000 "Intramuscular use"
-  * route.coding[+] = $sct#78421000 "Intramuscular route"
+  * route.coding[+] = $sct#78421000 "intramuskulární podání"
   * timing
     * repeat.frequency = 1
     * repeat.period = 8
@@ -73,13 +73,13 @@ Instance: 01A-Cefuroxime1500GenericExplicit
 InstanceOf: CZ_MedicationCore
 Usage: #example
 Title: "Medication Example"
-Description: """Example of a Medication conforming to the Medication (CZ Core) profile. It represents  Cefuroxime 1500mg (1.5g) powder for solution in a vial."""
-* form = $edqm#50053000 "Powder for solution for injection or infusion"
-* ingredient.itemCodeableConcept = $sct#372833007 "Cefuroxime"
+Description: """Example of a Generic Medication conforming to the Medication (CZ Core) profile. It represents  Cefuroxime 1500mg (1.5g) powder for solution in a vial."""
+* form = $edqm#50053500 "Prášek pro injekční/infuzní roztok"
+* ingredient.itemCodeableConcept = $CZ_DLPLecivelatkyCs#4709 "CEFUROXIM"
 * ingredient.strength.numerator = 1500 $ucum#mg "milligram"
 * ingredient.strength.denominator = 1 $edqm#15060000 "Vial"
 * extension.url = "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-classification"
-* extension.valueCodeableConcept = $CZ_DLPATCCs#J01DC02 "cefuroxime"
+* extension.valueCodeableConcept = $CZ_DLPATCCs#J01DC02 "cefuroxim"
 * ingredient.isActive = true
 
 Instance: example-medicationstatement-czcore
@@ -88,8 +88,8 @@ Title: "MedicationStatement Example"
 Description: """Example of a MedicationStatement conforming to the MedicationStatement (EU Core) profile. It describes a patient taking Enalapril."""
 * subject = Reference(PatientExample)
 * subject.display = "John Doe"
-* medicationCodeableConcept = $CZ_DLPATCCs#C09AA02 "Enalapril"
-* medicationCodeableConcept.text = "Enalapril 20mg tablets"
+* medicationCodeableConcept = $DLPLecivepripravkyCs#0169879 "ENALAPRIL VITABALANS 20MG TBL NOB 100"
+* medicationCodeableConcept.text = "Enalapril 20mg tablety"
 * status = #active
 * effectiveDateTime = "2024-12-01"
 * dateAsserted = "2024-12-01"
@@ -101,7 +101,7 @@ Description: """Example of a MedicationStatement conforming to the MedicationSta
 * dosage[0].timing.repeat.periodUnit = #d
 * dosage[0].route.coding[0].system = "http://snomed.info/sct"
 * dosage[0].route.coding[0].code = #26643006
-* dosage[0].route.coding[0].display = "Oral route"
+* dosage[0].route.coding[0].display = "perorální podání"
 * dosage[0].route.coding[+].system = $edqm
 * dosage[0].route.coding[=].code = #20053000
 * dosage[0].route.coding[=].display = "Oral use"
