@@ -39,7 +39,7 @@ Description: """This profile is derived from the EU core profile and introduces 
     vital-signs 0..1
 * category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 * category[vital-signs] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs */
-* code from MedicalTestResultCodeCzVs (example)
+* code from $medical-test-codeVS (example)
 * subject only Reference(CZ_PatientCore or Device or Group or CZ_LocationCore)
   * ^requirements = "EHDSObservation.header.subject"
 * focus only Reference(CZ_PatientCore or CZ_RelatedPersonCore or Group or Device or CZ_LocationCore)
@@ -90,7 +90,7 @@ Description: """This profile is derived from the EU core profile and introduces 
   //   * value[x] only Attachment
   //   * ^short = "only for Diagrams or Pictures"
   //   * ^definition = "When the result is a Diagram or Picture (Microbiology), then the Attachment data type should be used. In FHIR R4 this can be done by preadopting the R5 Observation.value[x] element using the cross-version extension."
-  * code from MedicalTestResultCodeCzVs (example)
+  * code from $medical-test-codeVS (example)
     // * ^requirements = "EHDSObservation.component.code"
 //TODO: datatypes in xt-ehr model only valueString, valueQuantity, valueRange, valueCodeableConcept
 
