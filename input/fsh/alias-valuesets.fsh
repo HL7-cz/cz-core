@@ -1,7 +1,8 @@
 // Valuesets:
 Alias: $AllergenWithExceptions = https://ncez.mzcr.cz/terminology/ValueSet/AllergenWithExceptions
-Alias: $eHDSIReactionAllergy = http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy
-Alias: $eHDSIRouteOfAdministration = http://terminology.ehdsi.eu/ValueSet/eHDSIRouteofAdministration
+Alias: $eHDSIDoseForms = https://ncez.mzcr.cz/terminology/ValueSet/eHDSIDoseForm
+Alias: $eHDSIReactionAllergy = https://ncez.mzcr.cz/terminology/ValueSet/eHDSIReactionAllergy
+Alias: $eHDSIRouteOfAdministration = https://ncez.mzcr.cz/terminology/ValueSet/eHDSIRouteofAdministration
 Alias: $condition-cz = https://ncez.mzcr.cz/terminology/ValueSet/condition-cz
 Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $CZ_AdministrativegenderVS = https://hl7.cz/terminology/ValueSet/administrative-gender-cz
@@ -34,6 +35,7 @@ Alias: $hl7OrganizationType = http://hl7.org/fhir/ValueSet/organization-type
 Alias: $hl7vs-contact-and-relationship-cz = https://hl7.cz/terminology/ValueSet/contact-and-relationship-cz
 Alias: $idcard-uri = https://hl7.cz/terminology/ValueSet/idcard-uri
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
+Alias: $medical-test-codeVS = https://ncez.mzcr.cz/terminology/ValueSet/medical-test-code
 Alias: $MedicalDeviceVS = https://ncez.mzcr.cz/terminology/ValueSet/MedicalDeviceWithExceptions
 Alias: $MedicalDevicesSnomedAbsentUnknownUvIps = http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-snomed-absent-unknown-uv-ips
 Alias: $NRZP_PovolaniVS = https://ncez.mzcr.cz/terminology/ValueSet/nrzp-povolani-vs
@@ -43,4 +45,3 @@ Alias: $PassportNSVS = https://hl7.cz/terminology/ValueSet/passport-NS
 Alias: $RegisteringProviderServiceTypeCz = https://ncez.mzcr.cz/terminology/ValueSet/registering-provider-service-type-cz
 Alias: $SNOMEDCTMedicationCodes = http://hl7.org/fhir/ValueSet/medication-codes
 Alias: $VZPNahradyVS = https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci
-Alias: $eHDSIDoseForms = http://terminology.ehdsi.eu/ValueSet/eHDSIDoseForm
