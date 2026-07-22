@@ -17,9 +17,9 @@ Description: "Czech national profile for practitioner.Contains information about
 * identifier ^slicing.rules = #open
 * identifier ^definition = "An identifier that applies to this person in this role.\r\nTypically, a KRZP value is given and/or CLK identifier provided by the Czech Medical Chamber or identifier of Pharmacist (PharmID) provided by the Czech Chamber of Pharmacists, however use of KRZP Id is preferred. Other systems remain allowed. Flows in organizations will most likely want to also include a local identifier, using its own system. A type can be added if needed. When it is given, a consumer SHALL NOT ignore it."
 * identifier contains
-    KRZP 0..* and
-    CLK 0..* and
-    CLeK 0..*
+    KRZP 0..1 and
+    CLK 0..1 and
+    CLeK 0..1
 * identifier[KRZP].system = "https://ncez.mzcr.cz/fhir/sid/krzp" (exactly)
 * identifier[KRZP].value 1..
 * identifier[KRZP].assigner only Reference(CZ_OrganizationCore)
