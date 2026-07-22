@@ -4,7 +4,7 @@ Usage: #example
 Description: "Example of a specimen taken from animal."
 
 * status = #available
-* type = $sctCZ#119297000	"Blood specimen"
+* type = $sct#119297000	"vzorek krve"
 * subject = Reference(Patient/Kocka) "Kočka"
 * collection.collectedDateTime = "2022-10-25T13:35:00+01:00"
 
@@ -14,7 +14,7 @@ Usage: #example
 Description: "Example of a specimen taken from environment."
 
 * status = #available
-* type = $sctCZ#446302006	"Air specimen"
+* type = $sct#446302006	"vzorek vzduchu"
 * subject = Reference(Location-Praha5)
 * collection.collectedDateTime = "2022-10-25T13:35:00+01:00"
 
