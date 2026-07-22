@@ -59,4 +59,4 @@ InstanceOf: Substance-additive-cz
 Usage: #example
 Description: "Specimen additive substance example"
 
-* code = $sct#27763000 "Hydrochloric acid"
+* code = $sct#27763000 "kyselina chlorovodíková"
