@@ -5,8 +5,8 @@ Description: "Condition example for mammography finding"
 Title: "Condition - Mamo finding"
 * language = #cs
 * subject = Reference(Mracena)
-* code.coding[0] = $sctCZ#254837009 //"maligní nádor prsu"
-* code.coding[+] = $Mkn10#C503 // "ZN - dolní vnitřní kvadrant prsu"
+* code.coding[0] = $sct#254837009 "maligní nádor prsu"
+* code.coding[+] = $Mkn10#C503 "ZN - dolní vnitřní kvadrant prsu"
 * code.text = "Podezření na maligní nádor (BI-RADS 4, BI-RADS 5)."
 * bodySite.extension[bodySite].valueReference = Reference(body-structure-mamo)
 
