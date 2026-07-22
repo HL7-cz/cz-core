@@ -26,49 +26,47 @@ No definition could be found for URL value 'https://hl7.cz/fhir/sid/idcard-CZE'
 HL7 Defined CodeSystems should ensure that every concept has a definition
 
 # Ignore actor OID assignment information
-INFORMATION: Resource: The resource ActorDefinition/actor-consumer-L1 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: Resource: The resource ActorDefinition/actor-consumer-L2 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: Resource: The resource ActorDefinition/actor-consumer-L3 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: Resource: The resource ActorDefinition/actor-creator-L1 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: Resource: The resource ActorDefinition/actor-creator-L2 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-INFORMATION: Resource: The resource ActorDefinition/actor-creator-L3 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+%could usefully have an OID assigned (OIDs are easy to assign%
 
 # Deprecated value sets
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-INFORMATION: StructureDefinition/BodyStructure-cz: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-%The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated%
+#INFORMATION: StructureDefinition/BodyStructure-cz: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+#%The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated%
 
 # Errors caused by missing terminology on tx.fhir.org
-%A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the value set cannot be expanded%
+#%A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the value set cannot be expanded%
 %Binding http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 could not be expanded%
-%A definition for CodeSystem 'urn:ietf:rfc:3986' could not be found, so the value set cannot be expanded%
+#%A definition for CodeSystem 'urn:ietf:rfc:3986' could not be found, so the value set cannot be expanded%
 
 # Warnings caused by missing terminology on tx.fhir.org
-%A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/11000279109' could not be found, so the code cannot be validated%
-%A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky' could not be found, so the code cannot be validated%
-%A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecivelatky' could not be found, so the code cannot be validated%
-%A definition for CodeSystem 'https://ncez.mzcr.cz/terminology/CodeSystem/drzar' could not be found, so the code cannot be validated%
-ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky' not found
-ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky' not found
-ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/drzar' not found
-ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/cz-specimen-type-vs' not found
+# %A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/11000279109' could not be found, so the code cannot be validated%
+# %A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky' could not be found, so the code cannot be validated%
+# %A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecivelatky' could not be found, so the code cannot be validated%
+# %A definition for CodeSystem 'https://ncez.mzcr.cz/terminology/CodeSystem/drzar' could not be found, so the code cannot be validated%
+# ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky' not found
+# ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky' not found
+# ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/drzar' not found
+# ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/cz-specimen-type-vs' not found
+%There are no valid display names found for the code http://loinc.org%
+
+
 
 # Information messages caused by missing Czech translation of the code CodeSystems on terminology servers
-INFORMATION: AllergyIntolerance/AllergyToCatDander: AllergyIntolerance.code: None of the codings provided are in the value set 'eHDSI Agent or Allergen With Exceptions' (https://ncez.mzcr.cz/terminology/ValueSet/AllergenWithExceptions|1.0.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#260152009)
+# INFORMATION: AllergyIntolerance/AllergyToCatDander: AllergyIntolerance.code: None of the codings provided are in the value set 'eHDSI Agent or Allergen With Exceptions' (https://ncez.mzcr.cz/terminology/ValueSet/AllergenWithExceptions|1.0.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#260152009)
 # INFORMATION: AllergyIntolerance/allergy-1: AllergyIntolerance.code: None of the codings provided are in the value set 'eHDSI Allergen No Drug' (http://terminology.ehdsi.eu/ValueSet/eHDSIAllergenNoDrug|0.2.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies)
-AllergyIntolerance.code: None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|2.0.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies)
-INFORMATION: Device/Pacemaker: Device.type: None of the codings provided are in the value set 'Medical Device with exceptions' (https://ncez.mzcr.cz/terminology/ValueSet/MedicalDeviceWithExceptions|1.0.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#14106009)
+#AllergyIntolerance.code: None of the codings provided are in the value set 'WHO ATC - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips|2.0.0) specified in an additional binding, and a coding is recommended to come from this value set (codes = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies)
+#INFORMATION: Device/Pacemaker: Device.type: None of the codings provided are in the value set 'Medical Device with exceptions' (https://ncez.mzcr.cz/terminology/ValueSet/MedicalDeviceWithExceptions|1.0.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#14106009)
 
 
 # Warnings caused by fragment terminology in terminology IG
-%Unknown Code 'C10AA01' in the CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-atc' version '0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment%
+# %Unknown Code 'C10AA01' in the CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-atc' version '0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment%
 
 # Errors caused by missing code system supplement on tx.fhir.org
-Wrong Display Name 'matka' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'mother'
-Wrong Display Name 'příbuzný' for http://terminology.hl7.org/CodeSystem/v2-0131#N. Valid display is 'Next-of-Kin' (for the language(s) 'cs-CZ')
-Wrong Display Name 'přítel/přítelkyně' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#FRND. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'unrelated friend'
-Wrong Display Name 'emergentní kontakt' for http://terminology.hl7.org/CodeSystem/v2-0131#C. Valid display is 'Emergency Contact' (for the language(s) 'cs-CZ')
-%There are no valid display names found for the code http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP for language(s) 'cs-CZ'. The display is 'health insurance plan policy' which is the default language display%
+#Wrong Display Name 'matka' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'mother'
+#Wrong Display Name 'příbuzný' for http://terminology.hl7.org/CodeSystem/v2-0131#N. Valid display is 'Next-of-Kin' (for the language(s) 'cs-CZ')
+#Wrong Display Name 'přítel/přítelkyně' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#FRND. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'unrelated friend'
+#Wrong Display Name 'emergentní kontakt' for http://terminology.hl7.org/CodeSystem/v2-0131#C. Valid display is 'Emergency Contact' (for the language(s) 'cs-CZ')
+#%There are no valid display names found for the code http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP for language(s) 'cs-CZ'. The display is 'health insurance plan policy' which is the default language display%
 
 # Tooling Errors
 # ERROR: ImplementationGuide/hl7.fhir.cz.core: ImplementationGuide.definition.extension[35].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
@@ -78,8 +76,8 @@ WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere 
 # The ImplementationGuide uses package hl7.fhir.uv.ips#1.1.0 released on 2022-11-22, but the most recent appropriate version is 2.0.0. This reference is getting old and the more recent version should be considered
 
 # Non-match the slice is expected
-%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core|0.1.0%
-%This element does not match any known slice defined in the profile https://hl7.cz/fhir/core/StructureDefinition/cz-MedicationStatement|0.3.0%
+#%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core|0.1.0%
+#%This element does not match any known slice defined in the profile https://hl7.cz/fhir/core/StructureDefinition/cz-MedicationStatement|0.3.0%
 
 # No examples for these profiles are necessary in the core IG.
 %The Implementation Guide contains no examples for this profile%
@@ -87,64 +85,54 @@ WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere 
 %The Implementation Guide contains no examples for this extension%
 
 # This should be corrected when terminology IG will be published on cannonical URL (https://hl7.cz./terminology)
-A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky'
-A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky'
-A definition could not be found for Canonical URL 'https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci'
-A definition could not be found for Canonical URL 'https://ncez.mzcr.cz/terminology/ValueSet/PassportNS-vs'
+# A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky'
+# A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky'
+# A definition could not be found for Canonical URL 'https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci'
+# A definition could not be found for Canonical URL 'https://ncez.mzcr.cz/terminology/ValueSet/PassportNS-vs'
 
 # Property definition URI is not necessary in the IG
-%This property has only a code%
+# %This property has only a code%
 
-# Ignore Information on missing Czech translations for SNOMED CT
-INFORMATION: BodyStructure/BodyStructure01: BodyStructure.extension[0].value.ofType(CodeableConcept).coding[0].display: 'Right' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: BodyStructure/BodyStructure01: BodyStructure.morphology.coding[0].display: 'Bite' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: BodyStructure/BodyStructure01: BodyStructure.location.coding[0].display: 'Scapular region of back' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: BodyStructure/BodyStructure01: BodyStructure.locationQualifier[0].coding[0].display: 'RUQ - Right upper quadrant' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: AllergyIntolerance/AllergyToCatDander: AllergyIntolerance.reaction[0].substance.coding[0].display: 'Cat dander (substance)' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: AllergyIntolerance/AllergyToCatDander: AllergyIntolerance.reaction[0].manifestation[0].coding[0].display: 'Eruption of skin (disorder)' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: Device/LabAnalyzer: Device.type.coding[0].display: 'Clinical chemistry analyzer' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: Patient/Kocka: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0].display: 'Domestic cat' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: Patient/Mracena: Patient.extension[1].extension[1].value.ofType(CodeableConcept).coding[0].display: 'General medical service' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: Patient/Mracena: Patient.extension[2].extension[1].value.ofType(CodeableConcept).coding[0].display: 'Gynecology service' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: Specimen/Specimen-example-animal: Specimen.type.coding[0].display: 'Blood specimen' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
-INFORMATION: Specimen/Specimen-example-environment: Specimen.type.coding[0].display: 'Air specimen' is the default display; the code system http://snomed.info/sct has no Display Names for the language cs-CZ
+# Missing ISO3166 Czech designations of the country codes on tx servers
+%There are no valid display names found for the code urn:iso:std:iso:3166%
+
 
 # Ignore information about valid display names for urn:iso:std:iso:3166#CZ and SK for language cs-CZ
-%There are no valid display names found for the code urn:iso:std:iso:3166#CZ for language(s) 'cs-CZ'. The display is 'Czechia' which is the default language display%
-%There are no valid display names found for the code urn:iso:std:iso:3166#SK for language(s) 'cs-CZ'. The display is 'Slovakia' which is the default language display%
-%There are no valid display names found for the code urn:iso:std:iso:3166#CZ for language(s) 'cs'. The display is 'Czechia' which is the default language display%
+#%There are no valid display names found for the code urn:iso:std:iso:3166#CZ for language(s) 'cs-CZ'. The display is 'Czechia' which is the default language display%
+#%There are no valid display names found for the code urn:iso:std:iso:3166#SK for language(s) 'cs-CZ'. The display is 'Slovakia' which is the default language display%
+#%There are no valid display names found for the code urn:iso:std:iso:3166#CZ for language(s) 'cs'. The display is 'Czechia' which is the default language display%
 
 # Suppress multiple dependency information
-INFORMATION: StructureDefinition.snapshot.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[12].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[13].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/condition-assertedDate to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[24].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/condition-assertedDate to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.differential.element[14].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[17].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActPriority to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[17].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActPriority to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[16].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-animal to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-animal to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthPlace to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-citizenship to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-nationality to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[18].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthTime to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[58].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthTime to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.differential.element[21].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthTime to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[60].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.differential.element[5].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[14].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse to 3.1.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.1.0 (hl7.terminology.r4#6.2.0)
-INFORMATION: StructureDefinition.snapshot.element[20].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
-INFORMATION: StructureDefinition.differential.element[9].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[12].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[13].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/condition-assertedDate to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[24].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/condition-assertedDate to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.differential.element[14].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[17].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActPriority to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[17].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActPriority to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[16].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-animal to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-animal to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthPlace to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-citizenship to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-nationality to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[18].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthTime to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[58].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthTime to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.differential.element[21].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthTime to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[60].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.differential.element[5].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[14].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse to 3.1.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.1.0 (hl7.terminology.r4#6.2.0)
+#INFORMATION: StructureDefinition.snapshot.element[20].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+#INFORMATION: StructureDefinition.differential.element[9].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
 
 # Suppress pinned information
 %Pinned the version of http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement%
@@ -163,3 +151,10 @@ The slice definition for BodyStructure.extension:includedStructure.extension:bod
 
 # Additional binding code missing in examples
 %specified in an additional binding, and a coding is recommended to come from this value set%
+
+# Errors caused by missing Czech version of the edqm code system and value set on the terminology server.
+Wrong Display Name 'Prášek pro injekční/infuzní roztok' for http://standardterms.edqm.eu#50053500. Valid display is 'Powder for solution for injection/infusion' (for the language(s) 'cs')
+
+# Ignore slicing information for obligations
+%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
+
