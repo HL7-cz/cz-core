@@ -10,12 +10,12 @@ Description: "Example for AllergyIntolerance"
 * type = #allergy
 * category = #biologic
 * criticality = #low
-* code = $sctCZ#260152009 //"kočičí lupy a srst"
+* code = $sct#260152009 "kočičí kožní šupiny"
 * patient = Reference(Mracena) "Mračena"
 // * reaction.extension[0].url = "http://hl7.org/fhir/StructureDefinition/allergyintolerance-certainty"
 // * reaction.extension[=].valueCodeableConcept = $allergyintolerance-certainty#confirmed "Confirmed"
 // * reaction.extension[+].url = "http://hl7.org/fhir/StructureDefinition/openEHR-exposureDescription"
 // * reaction.extension[=].valueString = "Animal shelter"
-* reaction.substance = $sctCZ#260152009 "Cat dander (substance)"
-* reaction.manifestation[0] = $sctCZ#271807003 "Eruption of skin (disorder)"
+* reaction.substance = $sct#260152009 "kočičí kožní šupiny"
+* reaction.manifestation[0] = $sct#271807003 "kožní výsev"
 * reaction.severity = #mild
