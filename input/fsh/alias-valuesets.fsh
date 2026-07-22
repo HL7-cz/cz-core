@@ -8,6 +8,7 @@ Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $CZ_AdministrativegenderVS = https://hl7.cz/terminology/ValueSet/administrative-gender-cz
 Alias: $CZ_CoverageTypeVS = https://ncez.mzcr.cz/terminology/ValueSet/cz-coverage-type
 Alias: $CZ_HealthInsuranceCompanyCodeVs = https://ncez.mzcr.cz/terminology/ValueSet/healthInsuranceCompanyCode
+Alias: $CZ_LabSpeciesType = https://ncez.mzcr.cz/terminology/ValueSet/cz-lab-species-type
 Alias: $CZ_LateralityVs = https://ncez.mzcr.cz/terminology/ValueSet/cz-specimen-laterality
 Alias: $CZ_LogoMimeTypesVs = https://hl7.cz/terminology/ValueSet/cz-logo-mime-types
 Alias: $CZ_SiteQualifierVs = https://ncez.mzcr.cz/terminology/ValueSet/cz-sitequalifier

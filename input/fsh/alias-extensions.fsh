@@ -17,6 +17,7 @@ Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationalit
 Alias: $patient-animal = http://hl7.org/fhir/StructureDefinition/patient-animal
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
+Alias: $practitioner-animal = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
 Alias: $recordedSexOrGender = http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender
 Alias: $registering-provider = https://hl7.cz/fhir/core/StructureDefinition/registering-provider-cz
 Alias: $sex-for-clinical-use = http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse

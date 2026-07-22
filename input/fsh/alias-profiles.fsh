@@ -11,6 +11,7 @@ Alias: $medicationrequest-rendereddosageinstruction-r5 = http://hl7.org/fhir/5.0
 Alias: $medicationdispense-rendereddosageinstruction-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.renderedDosageInstruction
 Alias: $medication-eu-mpd = http://hl7.eu/fhir/mpd/StructureDefinition/Medication-eu-mpd
 Alias: $medicationrequest-eu-mpd = http://hl7.eu/fhir/mpd/StructureDefinition/MedicationRequest-eu-mpd
+Alias: $animalspecimen = http://hl7.eu/fhir/laboratory/StructureDefinition/animal-specimen-eu-lab
 //Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
 //Alias: $flag-detail = http://hl7.org/fhir/StructureDefinition/flag-detail
 //Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
