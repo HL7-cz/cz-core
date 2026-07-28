@@ -74,7 +74,7 @@ InstanceOf: CZ_MedicationCore
 Usage: #example
 Title: "Medication Example"
 Description: """Example of a Generic Medication conforming to the Medication (CZ Core) profile. It represents  Cefuroxime 1500mg (1.5g) powder for solution in a vial."""
-* form = $edqm#50053500 "Prášek pro injekční/infuzní roztok"
+* form.coding[+] = $edqm#50053500 //"Prášek pro injekční/infuzní roztok"
 * ingredient.itemCodeableConcept = $CZ_DLPLecivelatkyCs#4709 "CEFUROXIM"
 * ingredient.strength.numerator = 1500 $ucum#mg "milligram"
 * ingredient.strength.denominator = 1 $edqm#15060000 "Vial"
