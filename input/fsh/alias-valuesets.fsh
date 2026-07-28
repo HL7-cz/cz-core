@@ -33,6 +33,7 @@ Alias: $hl7MedicationStatementStatus = http://hl7.org/fhir/ValueSet/medication-s
 Alias: $hl7MedicationAdminStatus = http://hl7.org/fhir/ValueSet/medication-admin-status
 Alias: $hl7ServiceCategory = http://terminology.hl7.org/CodeSystem/service-category
 Alias: $hl7OrganizationType = http://hl7.org/fhir/ValueSet/organization-type
+Alias: $hl7PracticeCodes = http://hl7.org/fhir/ValueSet/c80-practice-codes
 Alias: $hl7vs-contact-and-relationship-cz = https://hl7.cz/terminology/ValueSet/contact-and-relationship-cz
 Alias: $idcard-uri = https://hl7.cz/terminology/ValueSet/idcard-uri
 Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
