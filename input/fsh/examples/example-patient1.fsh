@@ -10,7 +10,7 @@ Description: "Patient, contact information and practitioner"
 * identifier[PAS] = SK_PassportExample
 * identifier[OP] = CZ_exampleIdCard
 
-* extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CZ
+* extension[patient-nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CZ
 * name.use = #usual
 * name.family = "Mrakomorová"
 * name.given = "Mračena"
@@ -28,7 +28,7 @@ Description: "Patient, contact information and practitioner"
 * address[=].city = "Praha"
 * address[=].postalCode = "15000"
 * address[=].country = "CZ"
-  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Czechia"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ //"Czechia"
 
 * contact[+].relationship.coding[+] = $v3-RoleCode#MTH //"matka"
 * contact[=].relationship.coding[+] = $v2-0131#N //"příbuzný"
@@ -57,7 +57,7 @@ Description: "Patient, contact information and practitioner"
 * contact[=].address[=].city = "Trenčín"
 * contact[=].address[=].postalCode = "12345"
 * contact[=].address[=].country = "Slovensko"
-  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#SK "Slovakia"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#SK //"Slovakia"
 
 * communication[+].language = urn:ietf:bcp:47#cs
 * communication[=].preferred = true
