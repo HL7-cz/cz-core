@@ -26,4 +26,4 @@ Seznam hlavních provedených změn ve verzích tohoto IG.
   * medicalTestResult-cz-core odvozený od medical-testResult-eu-core
   * medicationAdministration-cz-core
   * medicationStatement-cz-core odvozený od medicationStatement-eu-core
-  *
+  * practitionerrole-cz-order - specifický profil pro objednatele v žádance
