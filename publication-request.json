@@ -6,5 +6,5 @@
   "status": "trial-use",
   "sequence": "STU 1",
   "first": false,
-  "desc": "This is a second extended STU release of the Czech National FHIR Core and Base package based on EU Base R4 v 2.0.0"
+  "desc": "This is a first extended STU release of the Czech National FHIR Core and Base package based on EU Base R4 v 2.0.0"
   }
