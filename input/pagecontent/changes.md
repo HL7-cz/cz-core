@@ -24,3 +24,4 @@ This page summarizes the main changes applied to this version of the guide.
   * flag-patient-cz-core derived from flag-patient-eu-core
   * deviceUseStatement-cz-core, new extension Reference(bodyStructureCz)
   * medicalTestResult-cz-core derived from medical-testResult-eu-core
+  * practitionerrole-cz-order - specific profile for order document types
