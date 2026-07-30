@@ -23,5 +23,7 @@ Description: "Czech national profile for an practitioner role used for health se
 * specialty[VZP-SMLUVNI-ODBORNOST].coding.code 1..1
 * specialty[SNOMED-CT] from $hl7PracticeCodes (preferred) // TODO: Correct binding to the CZ valueset when available
 * specialty[SNOMED-CT].coding.system = $sct
+// * specialty[SNOMED-CT].coding.version 1..1
+// * specialty[SNOMED-CT].coding.version = $sctCZ (exactly)
 * specialty[SNOMED-CT].coding.code 1..1
 //* specialty[SNOMED-CT].coding.code ^definition = "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).\r\n\r\nIf needed codes can be used from a different system, SNOMED-CT is preferred."
