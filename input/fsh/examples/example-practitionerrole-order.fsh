@@ -14,6 +14,7 @@ Description: "General practitioner's office for ordering role, with explicit use
 * code[NRZP_POVOLANI] = $nrzp_povolani#L00 "Lékař"
 
 * specialty[0] = $sct#394814009 "všeobecné praktické lékařství (specializace)"
+* specialty[0].coding[0].version = $sctCZ
 * specialty[+] = $vzp-odbornost#001 "Pracoviště praktického lékaře pro dospělé"
 * availableTime[0].daysOfWeek[0] = #mon
 * availableTime[=].daysOfWeek[+] = #wed
