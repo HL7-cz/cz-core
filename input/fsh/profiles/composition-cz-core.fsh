@@ -37,6 +37,7 @@ Description: """This profile introduces essential constraints and extensions for
 /* * encounter 0..1
 * author 1..*
  */
+* encounter only Reference(CZ_Encounter)
 * author only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_OrganizationCore or Device or CZ_PatientCore or CZ_RelatedPersonCore)
 //* date 1..1
 //* title 1..1
@@ -67,3 +68,5 @@ Description: """This profile introduces essential constraints and extensions for
 * section.text 1..
 * section.emptyReason ^short = "Empty reason"
  */
+
+* section.author only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_DeviceObserver or CZ_PatientCore or CZ_RelatedPersonCore or CZ_OrganizationCore)

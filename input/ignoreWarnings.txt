@@ -147,7 +147,7 @@ The slice definition for BodyStructure.extension:includedStructure.extension:bod
 %specified in an additional binding, and a coding is recommended to come from this value set%
 
 # Errors caused by missing Czech version of the edqm code system and value set on the terminology server.
-Wrong Display Name 'Prášek pro injekční/infuzní roztok' for http://standardterms.edqm.eu#50053500. Valid display is 'Powder for solution for injection/infusion' (for the language(s) 'cs')
+# Wrong Display Name 'Prášek pro injekční/infuzní roztok' for http://standardterms.edqm.eu#50053500. Valid display is 'Powder for solution for injection/infusion' (for the language(s) 'cs')
 
 # Ignore slicing information for obligations
 %This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%

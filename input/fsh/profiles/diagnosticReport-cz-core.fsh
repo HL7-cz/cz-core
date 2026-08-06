@@ -39,7 +39,7 @@ Description: """This profile introduces essential constraints and extensions for
 * subject only Reference (CZ_PatientCore or Group or CZ_LocationCore or Device)
 //   * ^short = "Who and/or what this report is about"
 //   * ^definition = "Who or what this report is about. The report can be about a human patient, a living subject, a device (e.g. a machine), a location or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure)."
-// * encounter only Reference (Encounter)
+* encounter only Reference (CZ_Encounter)
 //   * ^short = "The healthcare event which this Diagnostic Report is about (when test ordered)."
 //   * ^definition = """The healthcare event (e.g. a patient and healthcare provider interaction) which this DiagnosticReport is about."""
 //   * ^comment = """This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests)."""
@@ -67,15 +67,16 @@ Description: """This profile introduces essential constraints and extensions for
 // * imagingStudy
 //   * ^short = "Study subject to this report"
 // * presentedForm ^short = "Entire report as issued (pdf recommended)"
-// * media
-//   * ^short = "Additional data (like images, diagrams or documents) associated with this report"
-//   * ^definition = "A list of additional data, other then presented form of the report, associated with this report. This data is generally created during the diagnostic process, and may be directly of the patient, or of treated specimens (i.e. slides of interest)."
-//   * ^requirements = "Some diagnostic reports may include additional data such as images, diagrams or documents that are relevant to the report. This additional information can provide further context and support for the findings presented in the report."
-//   * ^alias = "DICOM; Slides; Scans; Pictures; Documents; Diagrams"
-//   * comment
-//     * ^short = "Comment about the image or data (e.g. explanation)"
-//     * ^definition = "Allows for a comment about the image or data, such as an explanation of its significance or context within the diagnostic report."
-//     * ^requirements = "The provider of the report should make a comment about each image or data included in the report. This comment can provide valuable context and help the reader understand the significance of the image or data in relation to the overall findings of the report."
-//   * link
-//     * ^short = "Reference to the image or data"
-//     * ^definition = "A reference to the image or data associated with this report."
+* media
+  * link
+    * reference 0..0
+    * type 0..0
+    * identifier 0..0
+    // * display 1..1
+    //   * ^definition = "Text stating that instead of a reference to a Media resource, a DocumentReference resource is linked through the cross-version extension 'link'."
+    //   * ^short = "Text stating use of cross-version extension 'link'"
+    * extension contains $diagnosticReport-link-xver named link 0..1
+    * extension[link]
+      * ^definition = "Reference to a DocumentReference containing additional information/attachments associated with this report."
+      * ^short = "DocumentReference containing additional information/attachments"
+      * valueReference only Reference(DocumentReference)
