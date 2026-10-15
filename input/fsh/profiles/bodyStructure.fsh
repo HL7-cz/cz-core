@@ -19,3 +19,7 @@ Description: """This profile represents the Body Structure resource by the Czech
 //* image 0..0
 
 * patient only Reference(CZ_PatientCore)
+* extension[includedStructure].extension[structure].valueCodeableConcept from $hl7BodySite (required)
+* extension[includedStructure].extension[laterality].valueCodeableConcept from $CZ_LateralityVs (required)
+* extension[includedStructure].extension[qualifier].valueCodeableConcept from $CZ_SiteQualifierVs (required)
+* morphology from $CZ_MorphologyVs (required)

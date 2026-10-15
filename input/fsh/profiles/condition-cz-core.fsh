@@ -87,7 +87,7 @@ Description: """This profile introduces essential constraints and extensions for
   // * ^binding.extension[=].extension[=].valueString = "For cross border data exchange"
   // * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   // * ^binding.description = "Valueset to describe the actual problem experienced by the patient"
-* bodySite from SNOMEDCTBodyStructures (preferred)
+* bodySite from CZ_BodySite (preferred)
 //  * extension contains $bodySite-reference named bodySite 0..1
   * extension[bodySite].valueReference only Reference(BodyStructureCzCore)
 //* identifier ^definition = "Globally unique identifier of this problem which remain constant as the resource is updated and propagates from server to server."

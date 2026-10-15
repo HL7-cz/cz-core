@@ -69,9 +69,9 @@ Description: "Patient, contact information and practitioner"
 * generalPractitioner.display = "MUDr. Josef Švejk"
 
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
-* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#700232004 "všeobecná lékařská péče - služba"
+* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sctCZ#700232004 "všeobecná lékařská péče - služba"
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
-* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#310061009 "gynekologie - služba"
+* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sctCZ#310061009 "gynekologie - služba"
 
 Instance: RegisteringProviderExample
 InstanceOf: CZ_OrganizationCore

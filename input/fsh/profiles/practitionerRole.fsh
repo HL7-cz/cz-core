@@ -11,9 +11,9 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 * . ^short = "Czech Practitioner Role (base)"
 * . ^definition = "The profile defines the representation of a healthcare role in the Czech healthcare system based on the FHIR PractitionerRole."
 
-* practitioner 1..1
+//* practitioner 1..1  // practitioner role dává smysl i bez informace o practitioner nebo organizaci. Je to jediné místo, kde lze vyjádřit potřebnou specializaci např. u neadresné žádanky
+//* organization 1..1
 * practitioner only Reference(CZ_PractitionerBase)
-* organization 1..1
 * organization only Reference(CZ_OrganizationBase)
 //* organization
 
@@ -34,16 +34,19 @@ Description: "Czech national profile for an practitioner role.It enables the ide
 * code[SNOMED-CT].coding.system = $sct (exactly)
 * code[SNOMED-CT].coding.code 1..
 */
-/*
 * specialty ^slicing.discriminator.type = #value
 * specialty ^slicing.discriminator.path = "coding.system"
 * specialty ^slicing.rules = #open
-* specialty ^comment = "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."
+//* specialty ^comment = "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."
+* specialty contains VZP-SMLUVNI-ODBORNOST 0..1
 * specialty contains SNOMED-CT 0..*
-* specialty[SNOMED-CT].coding from PracticeSettingCodeValueSet (preferred)
-* specialty[SNOMED-CT].coding ^binding.description = "base resource valueset"
-* specialty[SNOMED-CT].coding.system = "http://snomed.info/sct" (exactly)
-* specialty[SNOMED-CT].coding.code 1..
-* specialty[SNOMED-CT].coding.code ^definition = "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).\r\n\r\nIf needed codes can be used from a different system, SNOMED-CT is preferred."
-*/
+* specialty[VZP-SMLUVNI-ODBORNOST].coding from VZPSmluvniOdbornost (required)
+* specialty[VZP-SMLUVNI-ODBORNOST].coding.system = "https://ncez.mzcr.cz/terminology/CodeSystem/vzp-smluvni-odbornost" (exactly)
+* specialty[VZP-SMLUVNI-ODBORNOST].coding.code 1..1
+* specialty[SNOMED-CT] from $hl7PracticeCodesCz (required)
+* specialty[SNOMED-CT].coding.system = $sct (exactly)
+* specialty[SNOMED-CT].coding.version 1..1
+* specialty[SNOMED-CT].coding.version = $sctCZEdition
+* specialty[SNOMED-CT].coding.code 1..1
+
 //* location only Reference(CZ_LocationBase)

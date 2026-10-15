@@ -64,7 +64,7 @@ Description: "Laboratory Report ServiceRequest resource used by the DiagnosticRe
 * requisition.value = "0901001234567234"
 * status = #active
 * intent = #order
-* category = $sct#108252007 "laboratorní metoda"
+* category = $sctCZ#108252007 "laboratorní metoda"
 * priority = #asap
 * code.coding[0] = $loinc#14957-5 "Albumin [Hmotnost/objem], systém: Moč"
 * code.coding[+] = $nclp#00509 "Albumin (U; hmot. konc. [mg/l] *)"
@@ -80,7 +80,7 @@ Description: "Example of a Laboratory Result Observation conforming to the Medic
 * code.coding[+] = http://loinc.org#22700-9 "Urea [Látkové množství/objem], systém: Moč"
 * code.text = "Urea (U) [Moles/Vol]"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
-* method = $sct#70621000052105 "spektrofotometrická technika"
+* method = $sctCZ#70621000052105 "spektrofotometrická technika"
 * subject = Reference(Mracena)
 * effectiveDateTime = "2023-03-27T11:24:26+01:00"
 * performer[+].display = "Jan Laborant" // ToDo: consider cardinality

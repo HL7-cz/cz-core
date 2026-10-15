@@ -7,8 +7,8 @@ Description: "Complex care plan example"
 * id = "CarePlan-Mracena"
 * language = #cs
 // Care plan details
-* status = #active    //http://hl7.org/fhir/ValueSet/request-status
-* intent = #plan    //http://hl7.org/fhir/ValueSet/care-plan-intent
+* status = #active
+* intent = #plan
 //název
 * title = "Plán péče – Mamografie"
 //řeší (DG)

@@ -1,5 +1,11 @@
 Seznam hlavních provedených změn ve verzích tohoto IG.
 
+### od 1.0.0 do 1.1.0
+
+* professionalRole
+  * upravena kardinalita elementů practitioner a organization v profilu professionalRole
+  * přidána možnost kódování specializace pomocí číselníku smluvních odborností
+
 ### od 0.3.0 do 1.0.0
 
 * Přidána stránka pro evidenci změn v IG
