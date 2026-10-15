@@ -11,7 +11,7 @@ Description: "Heart pacemaker Bostn Scientific W1DR01 PG ACCOLADE MRI DR EL L331
 * deviceName[0].name = "PG ACCOLADE MRI DR EL L331"
 * deviceName[0].type = #model-name
 * expirationDate = "2025-09-14"
-* type = $sct#14106009 "kardiostimulátor"
+* type = $sctCZ#14106009 "kardiostimulátor"
 * patient = Reference(Mracena) "Pokusný Pacient"
 
 

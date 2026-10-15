@@ -5,4 +5,4 @@ Description: "Clinical analyzer Beckman"
 
 * manufacturer = "Beckman"
 * modelNumber = "DxC 700 AU"
-* type = $sct#11987000 "klinický biochemický analyzátor"
+* type = $sctCZ#11987000 "klinický biochemický analyzátor"

@@ -45,13 +45,13 @@ It is a prescription/request with one medication and changing dosaging. Uses 'ac
 * authoredOn = "2024-12-06"
 * requester.display = "The Best Doctor"
 * medicationReference = Reference(01A-Cefuroxime1500GenericExplicit)
-* reasonCode = $sct#10625071000119104 "bronchopneumonie způsobená bakterií"
+* reasonCode = $sctCZ#10625071000119104 "bronchopneumonie způsobená bakterií"
 * subject = Reference(PatientExample)
 * dosageInstruction[0]
   * sequence = 1
   * doseAndRate.doseQuantity = 1500 $ucum#mg "milligram(s)"
   * route.coding[0] = $edqm#20035000 "Intramuscular use"
-  * route.coding[+] = $sct#78421000 "intramuskulární podání"
+  * route.coding[+] = $sctCZ#78421000 "intramuskulární podání"
   * timing
     * repeat.frequency = 1
     * repeat.period = 8
@@ -62,7 +62,7 @@ It is a prescription/request with one medication and changing dosaging. Uses 'ac
   * doseAndRate.doseRange.low = 750 $ucum#mg "milligram(s)"
   * doseAndRate.doseRange.high = 1500 $ucum#mg "milligram(s)"
   * route.coding[0] = $edqm#20035000 "Intramuscular use"
-  * route.coding[+] = $sct#78421000 "intramuskulární podání"
+  * route.coding[+] = $sctCZ#78421000 "intramuskulární podání"
   * timing
     * repeat.frequency = 1
     * repeat.period = 8

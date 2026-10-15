@@ -15,13 +15,11 @@ Description: "Czech national profile for an Allergy Intolerance"
 * identifier 1..
 //* patient
 * patient only Reference(CZ_PatientCore)
-//* clinicalStatus 1..  // Relaxed to 0..1 to allow for cases where the clinical status is not known or not specified, which can be common in allergy intolerance records.
-//* clinicalStatus from $hl7AllergyintoleranceClinical
-//* type MS
-//* type from $hl7AllergyintoleranceType
-//* category MS
-//* category from $hl7AllergyintoleranceCategory
-
+* clinicalStatus from $hl7AllergyintoleranceClinicalCz (required)
+* type from $hl7AllergyintoleranceTypeCz
+* category from $hl7AllergyintoleranceCategoryCz
+* criticality from $hl7AllergyintoleranceCriticalityCz
+* verificationStatus from $hl7AllergyintoleranceVerificationCz
 //* code from $hl7AllergyintoleranceCode (preferred)
 //* code 1..1
 * code from $AllergenWithExceptions (preferred)
@@ -59,11 +57,11 @@ Description: "Czech national profile for an Allergy Intolerance"
   * ^binding.extension[=].extension[=].valueMarkdown = "Type of reaction (MyHealth@EU)"
   * ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
   * ^binding.description = "Type of allergy or intolerance reaction expected to be used in MyHealth@EU"
- */
-//* reaction.severity ^short = "Reaction severity"
+*/
+* reaction.severity from $hl7AllergyintoleranceSeverityCz
 //* reaction.onset ^short = "Reaction onset"
 // ------------------------------------------------------------
-
+* reaction.exposureRoute from $exposureRouteCz (preferred)
 //* note MS
 * recorder only Reference(CZ_PractitionerCore or CZ_PractitionerRoleCore or CZ_PatientCore or CZ_RelatedPersonCore)
 * asserter only Reference(CZ_PatientCore or CZ_RelatedPersonCore or CZ_PractitionerCore or CZ_PractitionerRoleCore)

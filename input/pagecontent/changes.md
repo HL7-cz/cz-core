@@ -1,5 +1,11 @@
 This page summarizes the main changes applied to this version of the guide.
 
+### from 1.0.0 to 1.1.0
+
+* professionalRole
+  * relax cardinality of practitioner a organization elements in professionalRole base profile
+  * slice for specialty alowing to use valueset of contractual specialties (smluvní odbornost)
+
 ### from 0.3.0 to 1.0.0
 
 * Added Change log page
