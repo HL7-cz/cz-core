@@ -3,10 +3,10 @@ Profile:    CZ_OrganizationBase
 Parent:     OrganizationEu
 Id:         cz-organization-base
 Title:      "Organization (CZ base)"
-Description: "Czech national profile defines the way the organization is represented in the context of the Czech national interoperability project."
+Description: "Czech national base profile defines the way the organization is represented in the context of the Czech national interoperability project."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * . ^comment = ""
 * . ^short = "Czech Organization (base)"
 * . ^definition = "Czech national profile defines how to represent an organization in HL7 FHIR."
@@ -37,7 +37,7 @@ Description: "Czech national profile defines the way the organization is represe
 * identifier[ICP].assigner only Reference(CZ_OrganizationCore)
 * identifier[KP].system = "https://ncez.mzcr.cz/fhir/sid/kp" (exactly)
 * identifier[KP].value 1..
-* identifier[KP].value from CZ_HealthInsuranceCompanyCodeVs
+* identifier[KP].value from $CZ_HealthInsuranceCompanyCodeVs
 * identifier[KP].assigner only Reference(CZ_OrganizationCore)
 
 * active ^definition = "Whether the organization's record is still in active use."
@@ -52,11 +52,9 @@ Description: "Czech national profile defines the way the organization is represe
 * type contains DRZAR 0..*
 * type[DRZAR].coding.system = $drzar (exactly)
 * type[DRZAR].coding.code 1..
-* type[DRZAR] from DrzarVS (required)
+* type[DRZAR] from $drzar-vs (required)
 
 //* telecom ^definition = "A contact detail for the organization.\r\n\r\nIt is RECOMMENDED to at least add one phone or email address."
 
 * address only CZ_Address
 //* address ^definition = "An address for the organization.\r\n\r\nIt is RECOMMENDED to include this when available"
-
-* partOf only Reference(CZ_OrganizationCore)

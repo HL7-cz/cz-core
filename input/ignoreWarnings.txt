@@ -1,7 +1,9 @@
 == Suppressed Messages ==
-
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 # A definition for CodeSystem 'url' could not be found
-A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated
+# A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated
 
 # URL does not resolve
 URL value 'https://hl7europe.org/example-identifier' does not resolve
@@ -17,6 +19,138 @@ No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/rid'
 No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/krzp'
 No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/ruian'
 No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/cpoj'
+No definition could be found for URL value 'https://hl7.cz/fhir/sid/idcard-CZE'
+No definition could be found for URL value 'https://ncez.mzcr.cz/fhir/sid/clk'
+
 
 #Ignore fragment definition
 HL7 Defined CodeSystems should ensure that every concept has a definition
+
+# Ignore actor OID assignment information
+%could usefully have an OID assigned (OIDs are easy to assign%
+
+# Deprecated value sets
+Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+%The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated%
+%The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated%
+
+# Errors caused by missing terminology on tx.fhir.org
+#%A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the value set cannot be expanded%
+%Binding http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 could not be expanded%
+#%A definition for CodeSystem 'urn:ietf:rfc:3986' could not be found, so the value set cannot be expanded%
+
+# Warnings caused by missing terminology on tx.fhir.org
+# %A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/11000279109' could not be found, so the code cannot be validated%
+# %A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecive-pripravky' could not be found, so the code cannot be validated%
+# %A definition for CodeSystem 'https://sukl.cz/terminology/CodeSystem/dlp-lecivelatky' could not be found, so the code cannot be validated%
+# %A definition for CodeSystem 'https://ncez.mzcr.cz/terminology/CodeSystem/drzar' could not be found, so the code cannot be validated%
+# ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky' not found
+# ValueSet 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky' not found
+# ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/drzar' not found
+# ValueSet 'https://ncez.mzcr.cz/terminology/ValueSet/cz-specimen-type-vs' not found
+%There are no valid display names found for the code http://loinc.org%
+%There are no valid display names found for the code http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#LU for language(s) 'cs'.%
+
+# Errors caused by missing code system supplement on tx.fhir.org
+#Wrong Display Name 'matka' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'mother'
+#Wrong Display Name 'příbuzný' for http://terminology.hl7.org/CodeSystem/v2-0131#N. Valid display is 'Next-of-Kin' (for the language(s) 'cs-CZ')
+#Wrong Display Name 'přítel/přítelkyně' for http://terminology.hl7.org/CodeSystem/v3-RoleCode#FRND. There are no valid display names found for language(s) 'cs-CZ'. Default display is 'unrelated friend'
+#Wrong Display Name 'emergentní kontakt' for http://terminology.hl7.org/CodeSystem/v2-0131#C. Valid display is 'Emergency Contact' (for the language(s) 'cs-CZ')
+%There are no valid display names found for the code http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP for language(s) 'cs-CZ'. The display is 'health insurance plan policy' which is the default language display%
+
+# Tooling Errors
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+
+# This reference is intentional
+# The ImplementationGuide uses package hl7.fhir.uv.ips#1.1.0 released on 2022-11-22, but the most recent appropriate version is 2.0.0. This reference is getting old and the more recent version should be considered
+
+# Non-match the slice is expected
+%This element does not match any known slice defined in the profile http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core|2.0.0%
+%This element does not match any known slice defined in the profile https://hl7.cz/fhir/core/StructureDefinition/cz-MedicationStatement|1.0.0%
+%This element does not match any known slice defined in the profile https://hl7.cz/fhir/core/StructureDefinition/medicationRequest-cz-core|1.0.0%
+
+# No examples for these profiles are necessary in the core IG.
+%The Implementation Guide contains no examples for this profile%
+%The Implementation Guide contains no examples for this data type profile%
+%The Implementation Guide contains no examples for this extension%
+
+# This should be corrected when terminology IG will be published on cannonical URL (https://hl7.cz./terminology)
+# A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-pripravky'
+# A definition could not be found for Canonical URL 'https://sukl.cz/terminology/ValueSet/dlp-lecive-latky'
+# A definition could not be found for Canonical URL 'https://uzis.cz/terminology/ValueSet/nzis-nahradyzazdravotnipeci'
+# A definition could not be found for Canonical URL 'https://ncez.mzcr.cz/terminology/ValueSet/PassportNS-vs'
+
+# Property definition URI is not necessary in the IG
+# %This property has only a code%
+
+# Missing ISO3166 Czech designations of the country codes on tx servers
+%There are no valid display names found for the code urn:iso:std:iso:3166%
+
+
+# Ignore information about valid display names for urn:iso:std:iso:3166#CZ and SK for language cs-CZ
+#%There are no valid display names found for the code urn:iso:std:iso:3166#CZ for language(s) 'cs-CZ'. The display is 'Czechia' which is the default language display%
+#%There are no valid display names found for the code urn:iso:std:iso:3166#SK for language(s) 'cs-CZ'. The display is 'Slovakia' which is the default language display%
+#%There are no valid display names found for the code urn:iso:std:iso:3166#CZ for language(s) 'cs'. The display is 'Czechia' which is the default language display%
+
+# Suppress multiple dependency information
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox to%
+#INFORMATION: StructureDefinition.snapshot.element[49].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#6.2.0)
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/condition-assertedDate to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to%
+%Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode to %
+%Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActPriority to %
+%Pinned the version of http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-animal to %
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthPlace to %
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-citizenship to %
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-nationality to %
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-birthTime to %
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to %
+%Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to %
+%Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse %
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite %
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/note to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-codedString to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/flag-detail to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/flag-priority to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/event-performerFunction to%
+%Pinned the version of http://hl7.org/fhir/StructureDefinition/iso21090-uncertainty to%
+
+#Suppress valueset version pinning
+%Pinned the version of http://terminology.hl7.org/ValueSet/v2-0276 to 3.0.0%
+%Pinned the version of http://terminology.hl7.org/ValueSet/v2-0092 to 3.0.0%
+%Pinned the version of http://terminology.hl7.org/ValueSet/v2-0116 to 3.0.0%
+%Pinned the version of http://terminology.hl7.org/ValueSet/v2-0364 to 3.0.0%
+
+
+
+# Suppress warning on over-constraining
+%For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance%
+
+# suppress warning on eHDSI valueSet names
+WARNING: ValueSet/eHDSIReactionAllergy: ValueSet: Constraint failed: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+
+# Known issue with hl7.fhir.uv.xver-r5.r4 version 0.1.0 (see https://chat.fhir.org/#narrow/channel/179166-implementers/topic/Which.20package.20to.20import.20for.20cross.20version.20extensions/with/584676154)
+The slice definition for BodyStructure.extension:includedStructure.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension has a minimum of 0 but the slices add up to a minimum of 1
+
+# Additional Bindings with no key
+%Constraint failed: ext-ab-1: 'Additional Bindings SHOULD have a key to allow a binding to be constrained.%
+
+# Additional binding code missing in examples
+%specified in an additional binding, and a coding is recommended to come from this value set%
+
+# Errors caused by missing Czech version of the edqm code system and value set on the terminology server.
+# Wrong Display Name 'Prášek pro injekční/infuzní roztok' for http://standardterms.edqm.eu#50053500. Valid display is 'Powder for solution for injection/infusion' (for the language(s) 'cs')
+
+# Ignore slicing information for obligations
+%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
+
+# not embedded HTML tag
+The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk

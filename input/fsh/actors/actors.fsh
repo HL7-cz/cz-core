@@ -3,7 +3,7 @@ InstanceOf: ActorDefinition
 Title: "Actor Creator L1"
 Description: """A system generating and sending/providing a L1 document to a Consumer for report storage and sharing."""
 Usage: #example
-* name = "Creator-L1"
+* name = "Creator_L1"
 * status = #active
 * type = #system
 // * type = #entity
@@ -14,7 +14,7 @@ InstanceOf: ActorDefinition
 Title: "Actor Consumer L1"
 Description: """A system receiving/querying and using a L1 document."""
 Usage: #example
-* name = "Consumer-L1"
+* name = "Consumer_L1"
 * status = #active
 * type = #system
 // * type = #entity
@@ -27,7 +27,7 @@ Title: "Actor Creator L2"
 Description: """A system generating and sending/providing a L2 document to a Consumer for report storage and sharing."""
 Usage: #example
 
-* name = "Creator-L2"
+* name = "Creator_L2"
 * status = #active
 * type = #system
 // * type = #entity
@@ -38,7 +38,7 @@ InstanceOf: ActorDefinition
 Title: "Actor Consumer L2"
 Description: """S system receiving/querying and using a L2 document."""
 Usage: #example
-* name = "Consumer-L2"
+* name = "Consumer_L2"
 * status = #active
 * type = #system
 // * type = #entity
@@ -50,7 +50,7 @@ InstanceOf: ActorDefinition
 Title: "Actor Creator L3"
 Description: """A system generating and sending/providing a L3 document to a Consumer for report storage and sharing."""
 Usage: #example
-* name = "Creator-L3"
+* name = "Creator_L3"
 * status = #active
 * type = #system
 // * type = #entity
@@ -61,7 +61,7 @@ InstanceOf: ActorDefinition
 Title: "Actor Consumer L3"
 Description: """A system receiving/querying and using a L3 document."""
 Usage: #example
-* name = "Consumer-L3"
+* name = "Consumer_L3"
 * status = #active
 * type = #system
 // * type = #entity

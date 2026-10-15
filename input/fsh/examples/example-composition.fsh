@@ -1,0 +1,97 @@
+Instance: CompositionLabExample
+InstanceOf: CZ_CompositionCore
+Usage: #example
+Description: "Example of a Laboratory Report Composition conforming to the Composition (CZ Core) profile."
+
+* extension[information-recipient]
+  * valueReference = Reference(Organization-1)
+    * display = "Nemocnice Chrudim"
+* extension[diagnosticReport].valueReference = Reference(DiagnosticReportLabExample)
+* id = "26032a57-083a-4ddf-b019-e566ae02f740"
+* identifier.system = "http://example.org/composition-ids"
+* identifier.value = "some.composition.identifier.value"
+* status = #final
+* category = $loinc#18719-5 "Chemistry studies (set)"
+* type = http://loinc.org#11502-2 "Laboratory report"
+* type.text = "Laboratorní zpráva"
+* subject = Reference(PatientExample)
+* date = "2022-03-30T11:24:26+01:00"
+* author[+] = Reference(practitionerroleLab)
+* title = "Laboratorní zpráva"
+* attester[+].mode = $composition-attestation-mode#legal
+* attester[=].time = "2022-03-25T11:00:00+01:00"
+* attester[=].party = Reference(practitionerroleLab)
+* custodian.display = "Example Health Organization"
+* section[+].title = "Laboratory examinations"
+* section[=].code = $loinc#26436-6 "Laboratory studies (set)"
+* section[=].code.text = "Laboratory studies"
+* section[=].title = "Urine examinations"  // this title should be aligned with ibservation codes
+* section[=].code = http://loinc.org#18729-4 "Urinalysis studies (set)"
+* section[=].code.text = "Vyšetření moči"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table id=\"nota1\">
+<thead><tr><th>Datum</th><th>Test</th><th>Hodnota</th><th>Jednotky</th><th>Ref. hodnoty</th><th>Interpretace</th></tr></thead>
+<tbody>
+<tr><td>2023-03-27</td><td>Urea (U) [Moles/Vol]</td><td>310</td><td>mmol/L</td><td>67 - 580 mmol/L</td><td>Velmi nízká</td></tr>
+</tbody>
+</table></div>"
+* section[=].entry = Reference(ObservationLabResultExample)
+
+Instance: DiagnosticReportLabExample
+InstanceOf: CZ_DiagnosticReportCore
+Title: "DiagnosticReport Example"
+Description: "Example of a Laboratory Report DiagnosticReport conforming to the DiagnosticReport (CZ Core) profile."
+* id = "5679723c-4fae-4ba7-9f09-5438a827bfda"
+* identifier.system = "http://example.org/diagnosticReport-ids"
+* identifier.value = "c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju"
+* extension[DiagnosticReportCompositionR5].valueReference = Reference(CompositionLabExample)
+* status = #registered
+* basedOn = Reference(ServiceRequestExample)
+* category[+] = $loinc#18719-5 "Chemistry studies (set)"
+* code = $loinc#11502-2 "Laboratory report"
+* subject = Reference(Mracena)
+* specimen.display = "Urine specimen"
+* result[+] = Reference(ObservationLabResultExample)
+
+Instance: ServiceRequestExample
+InstanceOf: ServiceRequest
+Title: "ServiceRequest Example"
+Description: "Laboratory Report ServiceRequest resource used by the DiagnosticReport example."
+* id = "1d4cbcd1-e0d3-49b6-92d8-1893da8d08e1"
+* identifier.system = "http://example.org/lis-order"
+* identifier.value = "123456"
+* requisition.system = "http://example.org/gp-order"
+* requisition.value = "0901001234567234"
+* status = #active
+* intent = #order
+* category = $sct#108252007 "laboratorní metoda"
+* priority = #asap
+* code.coding[0] = $loinc#14957-5 "Albumin [Hmotnost/objem], systém: Moč"
+* code.coding[+] = $nclp#00509 "Albumin (U; hmot. konc. [mg/l] *)"
+* code.text = "Albumin v moči"
+* subject = Reference(Mracena)
+
+Instance: ObservationLabResultExample
+InstanceOf: CZ_MedicalTestResultCore
+Title: "Observation Example"
+Description: "Example of a Laboratory Result Observation conforming to the Medical Test Result (CZ Core) profile."
+* id = "763f7902-8103-4d10-8bd1-546a726d43ee"
+* status = #final
+* code.coding[+] = http://loinc.org#22700-9 "Urea [Látkové množství/objem], systém: Moč"
+* code.text = "Urea (U) [Moles/Vol]"
+* category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
+* method = $sct#70621000052105 "spektrofotometrická technika"
+* subject = Reference(Mracena)
+* effectiveDateTime = "2023-03-27T11:24:26+01:00"
+* performer[+].display = "Jan Laborant" // ToDo: consider cardinality
+* valueQuantity.value = 310
+* valueQuantity.system = $ucum
+* valueQuantity.code = $ucum#mmol/L
+* valueQuantity.unit = "mmol/L"
+* interpretation = $v3-ObservationInterpretation#LU "Significantly low"
+* specimen.display = "Urine specimen"
+* referenceRange.low.value = 67
+* referenceRange.low.unit = "mmol/L"
+* referenceRange.high.value = 580
+* referenceRange.high.unit = "mmol/L"
+* referenceRange.type = $referencerange-meaning#normal "Normal Range"

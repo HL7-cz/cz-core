@@ -11,7 +11,7 @@ Description: "Czech national profile for a related person.This profile sets mini
 * . ^definition = "Czech national core profile defines how to represent Related Person in HL7 FHIR."
 * ^publisher = "HL7 CZ"
 //* ^status = #active
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * insert ImposeProfile($RelatedPerson, 0)
 
 * name 0..1 //MS  // name element must be provided

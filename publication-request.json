@@ -1,0 +1,10 @@
+{
+  "package-id": "hl7.fhir.cz.core",
+  "version": "1.0.0",
+  "path": "https://hl7.cz/fhir/core/1.0.0",
+  "mode": "milestone",
+  "status": "trial-use",
+  "sequence": "STU 1",
+  "first": false,
+  "desc": "This is a first extended STU release of the Czech National FHIR Core and Base package based on EU Base R4 v 2.0.0"
+  }

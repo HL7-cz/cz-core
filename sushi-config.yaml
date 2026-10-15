@@ -6,17 +6,19 @@
 id: hl7.fhir.cz.core
 canonical: https://hl7.cz/fhir/core
 name: HL7CzCoreImplementationGuide
-title: HL7 Czech Base and Core Implementation Guide
+title: HL7 Czech Base and Core FHIR IG
 description: HL7 Czech Base and Core Resources Implementation Guide
 status: draft # draft | active | retired | unknown
-version: 0.3.0-ballot
+version: 1.1.0
 #language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+# jurisdiction: urn:iso:std:iso:3166#CZ "Czechia"
 jurisdiction: urn:iso:std:iso:3166#CZ "Czechia"
+#jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#203 "Czech Republic (CZE)"
 publisher:
   name: HL7 Czech Republic
   url: https://www.hl7.cz/
@@ -36,11 +38,16 @@ publisher:
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #     version: 1.0.0
 dependencies:
-  hl7.fhir.uv.ips: 1.1.0
-  hl7.fhir.eu.base: 0.1.0-ballot
-  hl7.fhir.cz.terminology: current
-  hl7.fhir.extensions.r5: 4.0.1
-  # hl7.fhir.eu.laboratory: current
+  # hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.uv.extensions.r4: 5.3.0
+  hl7.fhir.eu.base: 2.0.0
+  hl7.fhir.eu.extensions.r4: 1.3.0
+  ihe.pharm.mpd.r4: 1.0.0-comment-2
+  hl7.fhir.cz.terminology: 0.3.0
+  hl7.fhir.eu.mpd: 1.0.0
+  # hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
+  hl7.fhir.eu.laboratory: 2.0.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -72,6 +79,10 @@ pages:
     title: Basic FHIR elements in English
   elements-FHIR-cs.md:
     title: Basic FHIR elements in Czech
+  # missing-data-en.md:
+  #   title: Handling Missing Data
+  missing-data-cs.md:
+    title: Zpracování chybějících dat
   subjects-en.md:
     title: Subjects in English
   subjects-cs.md:
@@ -102,6 +113,10 @@ pages:
     title: Dependencies
   dependencies-cs.md:
     title: Závislosti
+  changes.md:
+    title: Change log
+  changes-cs.md:
+    title: Záznam změn
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -111,19 +126,9 @@ pages:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #
 parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  special-url:
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-administrative-gender-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-contact-person-relation-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-drzar
-    - https://ncez.mzcr.cz/fhir/CodeSystem/nrzp-povolani
-    - https://ncez.mzcr.cz/fhir/ValueSet/cz-drzar-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/nrzp-povolani-vs
-    - https://ncez.mzcr.cz/fhir/ValueSet/PassportNS-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/cz-tab-ta
-    - https://ncez.mzcr.cz/fhir/ValueSet/typ-registrujiciho-lekare-vs
-    - https://ncez.mzcr.cz/fhir/CodeSystem/role-code-supplement
-    - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
-    - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
+#  special-url:
+#    - http://terminology.ehdsi.eu/ValueSet/eHDSIReactionAllergy
+
   pin-canonicals: pin-multiples
   path-expansion-params: '../../expansion-params.json'
 #    - http://ncez.mzcr.cz/fhir/StructureDefinition/address-point-cz
@@ -147,6 +152,7 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   apply-version: true
   show-inherited-invariants: true
   usage-stats-opt-out: true
+  ips-comparison: 2.0.0  # compare to IPS version 2.0.0
   # excludexml: false
   # excludejson: false
   # excludettl: true
@@ -179,6 +185,8 @@ menu:
   Introduction:
     Basic FHIR elements (en): elements-FHIR-en.html
     Basic FHIR elements (cs): elements-FHIR-cs.html
+    Handling Missing Data (en): https://hl7.eu/fhir/base/2.0.0/missing-data.html
+    Handling Missing Data (cs): missing-data-cs.html
   Function view:
     Subjects (en): subjects-en.html
     Subjects (cs): subjects-cs.html
@@ -187,16 +195,18 @@ menu:
     Identifiers (en): identifiers-en.html
     Identifiers (cs): identifiers-cs.html
   About:
-    Authors (en): authors.html
-    Authors (cs): authors-cs.html
+    Changes (en): changes.html
+    Changes (cs): changes-cs.html
     Downloads (en): downloads.html
     Downloads (cs): downloads-cs.html
     Dependencies (en): dependencies.html
     Dependencies (cs): dependencies-cs.html
+    Authors (en): authors.html
+    Authors (cs): authors-cs.html
     Copyright (en): copyright.html
     Copyright (cs): copyright-cs.html
   Artifacts: artifacts.html
-  IG Base EU: https://build.fhir.org/ig/hl7-eu/base/index.html
+  IG Base EU: https://hl7.eu/fhir/base/2.0.0/  # TODO: update to correct URL when available
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

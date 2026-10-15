@@ -2,14 +2,14 @@
 Profile:    CZ_Signature
 Parent:     Signature
 Id:         cz-signature
-Title:      "Signature (CZ)"
+Title:      "Signature (CZ core)"
 Description: "Czech national profile on Signature holds an electronic representation of a signature or timestamp and its supporting context in a FHIR accessible form."
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * . ^comment = ""
 * . ^short = "Signature according to Czech conventions"
 * . ^definition = "Signature according to Czech conventions. The type determines whether it is a signature or a timestamp."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * type MS
 * type ^definition = "The kind of signature that determines whether it is a signature or a timestamp. RECOMMENDED to include."

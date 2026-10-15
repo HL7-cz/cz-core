@@ -10,7 +10,7 @@ Description: "This profile sets minimum expectations for the Patient resource co
 * . ^comment = ""
 * . ^short = "Czech Patient (base)"
 * . ^definition = "This profile sets minimum expectations for represention of Patient in FHIR for the purpose of the Czech national interoperability standards."
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 * insert ImposeProfile($Patient-eu-core, 0)
 
 //* language = urn:ietf:bcp:47#cs

@@ -3,21 +3,14 @@ InstanceOf: CZ_PatientCore
 Usage: #example
 Description: "Patient, contact information and practitioner"
 
-* contained[+] = RegisteringProviderExample
+//* contained[+] = RegisteringProviderExample
 * identifier[RC] = rodnecislo_7161264528
-* identifier[RID][+].system = "https://ncez.mzcr.cz/fhir/sid/rid"
-* identifier[RID][=].value = "2066425387"
-* identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-CZE"
-* identifier[PAS][=].value = "23476533"
-* identifier[PAS][=].use = #official
-* identifier[PAS][=].type = $v2-0203#PPN
-* identifier[PAS][=].assigner.display = "Ministerstvo vnitra České republiky"
-* identifier[PAS][+].system = "http://terminology.hl7.org/NamingSystem/passportNumNS-SVK"
-* identifier[PAS][=].value = "88476522"
-* identifier[PAS][=].use = #official
-* identifier[PAS][=].type = $v2-0203#PPN
+* identifier[RID] = rid_2066425387
+* identifier[PAS] = CZ_PassportExample
+* identifier[PAS] = SK_PassportExample
+* identifier[OP] = CZ_exampleIdCard
 
-* extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CZ
+* extension[patient-nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CZ
 * name.use = #usual
 * name.family = "Mrakomorová"
 * name.given = "Mračena"
@@ -35,10 +28,10 @@ Description: "Patient, contact information and practitioner"
 * address[=].city = "Praha"
 * address[=].postalCode = "15000"
 * address[=].country = "CZ"
-  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ "Czechia"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#CZ //"Czechia"
 
-* contact[+].relationship.coding[+] = $v3-RoleCode#MTH "matka"
-* contact[=].relationship.coding[+] = $v2-0131#N "Příbuzný"
+* contact[+].relationship.coding[+] = $v3-RoleCode#MTH //"matka"
+* contact[=].relationship.coding[+] = $v2-0131#N //"příbuzný"
 * contact[=].name.use = #usual
 * contact[=].name.family = "Mrakomorová"
 * contact[=].name.given[+] = "Biologická"
@@ -47,8 +40,8 @@ Description: "Patient, contact information and practitioner"
 * contact[=].telecom[=].system = #phone
 * contact[=].telecom[=].value = "+420 604 123 456"
 
-* contact[+].relationship.coding[+] = $v3-RoleCode#FRND "přítel/přítelkyně"
-* contact[=].relationship.coding[+] = $v2-0131#C "Emergentní kontakt"
+* contact[+].relationship.coding[+] = $v3-RoleCode#FRND //"přítel/přítelkyně"
+* contact[=].relationship.coding[+] = $v2-0131#C //"emergentní kontakt"
 * contact[=].name.use = #usual
 * contact[=].name.family = "Dlouhá"
 * contact[=].name.given[0] = "Alena"
@@ -64,7 +57,7 @@ Description: "Patient, contact information and practitioner"
 * contact[=].address[=].city = "Trenčín"
 * contact[=].address[=].postalCode = "12345"
 * contact[=].address[=].country = "Slovensko"
-  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#SK "Slovakia"
+  * extension[countryCode].valueCoding = urn:iso:std:iso:3166#SK //"Slovakia"
 
 * communication[+].language = urn:ietf:bcp:47#cs
 * communication[=].preferred = true
@@ -76,15 +69,15 @@ Description: "Patient, contact information and practitioner"
 * generalPractitioner.display = "MUDr. Josef Švejk"
 
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
-* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#700232004 "General medical service"
+* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#700232004 "všeobecná lékařská péče - služba"
 * extension[registeringProvider][+].extension[value].valueReference = Reference (RegisteringProviderExample)
-* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#310060005 "Obstetrics and gynecology service"
+* extension[registeringProvider][=].extension[category].valueCodeableConcept = $sct#310061009 "gynekologie - služba"
 
 Instance: RegisteringProviderExample
 InstanceOf: CZ_OrganizationCore
 Title: "Organization: Registering healthcare provider example"
 Description: "Example of registering healthcare provider"
-Usage: #example //#inline
+Usage: #example
 
 * identifier[+].system = "https://ncez.mzcr.cz/fhir/sid/ico"
 * identifier[=].value = "456789655"

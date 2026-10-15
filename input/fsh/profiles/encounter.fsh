@@ -1,14 +1,24 @@
 Profile: CZ_Encounter
 Parent: Encounter
 Id: cz-encounter
-Title: "Encounter (CZ)"
-Description: "Czech profile for encounter. "
+Title: "Encounter (CZ base)"
+Description: "Czech base profile for encounter. "
 
-* insert SetFmmandStatusRule ( 0, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
-* identifier 1..
 * status
 * class
 * text
-* serviceProvider 1..1 
 * serviceProvider only Reference(CZ_OrganizationCore)
+
+
+Profile: CZ_EncounterCore
+Parent: CZ_Encounter
+Id: encounter-cz-core
+Title: "Encounter (CZ core)"
+Description: "Czech base profile for encounter. "
+
+* insert SetFmmandStatusRule ( 2, trial-use )
+
+//* identifier 1..
+* serviceProvider 1..1  // make service provider mandatory

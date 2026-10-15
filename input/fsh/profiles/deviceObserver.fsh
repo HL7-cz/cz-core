@@ -1,7 +1,7 @@
 Profile: CZ_DeviceObserver
 Parent: Device
 Id: cz-device-observer
-Title: "Device: Performer/Observer (CZ)"
+Title: "Device: Performer/Observer (CZ core)"
 Description: "Czech profile represents the constraints applied to the Device resource by the Czech national interoperability project.This profile describes a device that plays the role of observer or performer."
 //* ^status = #active
 * ^experimental = false
@@ -9,7 +9,7 @@ Description: "Czech profile represents the constraints applied to the Device res
 * . ^short = "Czech device"
 * . ^definition = "Profile represents the Device resource that plays the role of observer or performer."
 
-* insert SetFmmandStatusRule ( 1, draft )
+* insert SetFmmandStatusRule ( 2, trial-use )
 
 * identifier //MS
 * manufacturer //MS

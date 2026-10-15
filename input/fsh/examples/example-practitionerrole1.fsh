@@ -11,9 +11,9 @@ Description: "General practitioner's office"
 * period.end = "2022-12-31T00:00:00.000Z"
 * practitioner = Reference(Practitioner/Practitioner-2) "MUDr. Hana Doktorová"
 * organization = Reference(Organization/Organization-2) "Ordinace praktického lékaře, MUDr. Hana Doktorová"
-* code = $nrzp_povolani#L00 "Lékař"
+* code[NRZP_POVOLANI] = $nrzp_povolani#L00 "Lékař"
 
-* specialty = $sct#419772000 "Family practice"
+* specialty = $sct#394814009 "všeobecné praktické lékařství (specializace)"
 * availableTime[0].daysOfWeek[0] = #mon
 * availableTime[=].daysOfWeek[+] = #wed
 * availableTime[=].availableStartTime = "12:30:00"
@@ -27,3 +27,14 @@ Description: "General practitioner's office"
 * notAvailable.during.start = "2023-08-01T00:00:00.000Z"
 * notAvailable.during.end = "2023-08-20T00:00:00.000Z"
 * availabilityExceptions = "Státní svátky"
+
+Instance: practitionerroleLab
+InstanceOf: CZ_PractitionerRoleCore
+Usage: #example
+Description: "Laboratory professional role example"
+* identifier.system = "http://www.acme.org/practitioners"
+* identifier.value = "148"
+* active = true
+* practitioner = Reference(Practitioner-lab) "Laboratorní Chemik"
+* organization = Reference(Synlab) "Biochemická laboratoř"
+* code[NRZP_POVOLANI] = $nrzp_povolani#L00 "Lékař"
